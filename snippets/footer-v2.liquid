@@ -1,0 +1,81 @@
+<footer class="footer_v2">
+  <div class="top-footer">
+    <div class="container container-casa">    
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="info_footer info_contact">
+            <div class="title_footer">          
+              <h4 class="mb-0 title_border">{{settings.titlecolum_fv2_1}}</h4>         
+            </div>
+            <ul class="list-unstyled mb-0">
+              {% for link in linklists[settings.menu_fv2_1].links %}
+              <li><a href="{{link.url}}" title="{{link.title}}">{{link.title}}</a></li>
+              {% endfor %}
+            </ul>        
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="info_footer">
+            <div class="title_footer">          
+              <h4 class="mb-0 title_border">{{settings.titlecolum_fv2_2}}</h4>         
+            </div>
+            <ul class="list-unstyled mb-0">
+              {% for link in linklists[settings.menu_fv2_2].links %}
+              <li><a href="{{link.url}}" title="{{link.title}}">{{link.title}}</a></li>
+              {% endfor %}
+            </ul>        
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="info_footer">
+            <div class="title_footer">          
+              <h4 class="mb-0 title_border">{{settings.titlecolum_fv2_3}}</h4>         
+            </div>
+            <ul class="list-unstyled mb-0">
+              {% for link in linklists[settings.menu_fv2_3].links %}
+              <li><a href="{{link.url}}" title="{{link.title}}">{{link.title}}</a></li>
+              {% endfor %}
+            </ul>        
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="info_footer">
+            <div class="title_footer">          
+              <h4 class="mb-0 title_border">{{settings.titlecolum_fv2_4}}</h4>         
+            </div>
+            <ul class="list-unstyled mb-0">
+              {% for link in linklists[settings.menu_fv2_4].links %}
+              <li><a href="{{link.url}}" title="{{link.title}}">{{link.title}}</a></li>
+              {% endfor %}
+            </ul>        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% if settings.enable_fv2_bottom %}
+  <div class="copyright">
+    <div class="container container-casa">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-6 text-center text-lg-left text-md-left">
+          {% if settings.fv2_bottom_copyright != blank %}
+          <p class="text-copyright mb-0">{{settings.fv2_bottom_copyright}}</p>
+          {% else %}
+          <p class="text-copyright mb-0">©<a href="#">ShopiLaunch</a> Supply 2019</p>           
+          {% endif %}
+        </div>
+        <div class="col-lg-6 col-md-6 text-center text-lg-right text-md-right">
+          {% if settings.fv2_bottom_payment_img != blank %}
+          <img src="{{settings.fv2_bottom_payment_img | img_url:'master'}}"  alt="">
+          {% else %}
+          <img src="//placehold.it/229x23"  alt="">
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</footer>
+<style>
+  
+</style>

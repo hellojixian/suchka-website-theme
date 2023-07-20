@@ -1,0 +1,36 @@
+<!-- /snippets/comment.liquid -->
+{% comment %}
+
+This snippet generates the structure of a comment.
+It is used to show not only recent comments, but also comments that were
+just published but not yet approved.
+
+More information:
+- http://docs.shopify.com/themes/liquid-variables/comment
+
+{% endcomment %}
+
+
+  <div class="comment-details">
+    <div class="comment-thumb">
+      {% if section.settings.enabledimage_comments_v1 %}
+      {% if section.settings.image_comments_v1 != blank %}
+      <a href="{{section.settings.url_image_comments_v1}}">
+        <img src="{{section.settings.image_comments_v1|img_url:'master'}}" class="img-fluid" alt="banner">
+      </a>
+      {% else %}
+      <a href="">
+        <img src="https://placehold.it/120x120" alt="customer">
+      </a>
+      {% endif %}
+      {% endif %}
+    </div>
+    <div class="comment-info">
+      <a href="/" class="author-name font-bold black">{{ comment.author }}</a>
+      <span><a href="#comments" class="reply-button">{{section.settings.rep_commnet}}</a></span>
+      <div class="date-post">{{ comment.created_at | date: ' %b %d, %Y' }} </div>
+      <div class="desc">{{ comment.content }}</div>
+      
+      
+    </div>
+  </div>

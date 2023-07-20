@@ -1,0 +1,259 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-collection-v4" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  <div class="section-collection-v4 mt-moile">
+    <div class="container container-casa">
+      
+      <div class="text-center title-all-home3">
+        {% if section.settings.title_section != blank%}
+        <h3 class="block-title mb-0">{{section.settings.title_section}}</h3>      	
+        {% endif %}
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 infoleft">
+          <div class="row">
+            <div class="col-lg-6 col-sm-6 item">
+              <div class="box-info ">
+                <div class="box-img">
+                  <a href="{{section.settings.url_collection1}}">
+                    {% if section.settings.img_collection1 != blank %}
+                    <img src="{{section.settings.img_collection1 | img_url:'master'}}" class="img-fluid">
+                    {% else %}
+                    <img src="//placehold.it/330x348" class="img-fluid" alt="">
+                    {% endif %}
+                  </a>
+                </div>
+                <div class="content-banner text-center">        
+                  {% if section.settings.title_collection1 != blank %}
+                  <a href="{{section.settings.url_collection1}}">{{section.settings.title_collection1}}</a>
+                  {% endif %}
+                </div>
+              </div>              
+            </div>
+            
+            <div class="col-lg-6 col-sm-6 item">
+              <div class="box-info ">
+                <div class="box-img">
+                  <a href="{{section.settings.url_collection2}}">
+                    {% if section.settings.img_collection2 != blank %}
+                    <img src="{{section.settings.img_collection2 | img_url:'master'}}" class="img-fluid">
+                    {% else %}
+                    <img src="//placehold.it/330x348" class="img-fluid" alt="">
+                    {% endif %}
+                  </a>
+                </div>
+                <div class="content-banner text-center">        
+                  {% if section.settings.title_collection2 != blank %}
+                  <a href="{{section.settings.url_collection2}}">{{section.settings.title_collection2}}</a>
+                  {% endif %}
+                </div>
+              </div>              
+            </div>
+            
+            <div class="col-lg-6 col-sm-6 item">
+              <div class="box-info ">
+                <div class="box-img">
+                  <a href="{{section.settings.url_collection3}}">
+                    {% if section.settings.img_collection3 != blank %}
+                    <img src="{{section.settings.img_collection3 | img_url:'master'}}" class="img-fluid">
+                    {% else %}
+                    <img src="//placehold.it/330x348" class="img-fluid" alt="">
+                    {% endif %}
+                  </a>
+                </div>
+                <div class="content-banner text-center">        
+                  {% if section.settings.title_collection3 != blank %}
+                  <a href="{{section.settings.url_collection3}}">{{section.settings.title_collection3}}</a>
+                  {% endif %}
+                </div>
+              </div>              
+            </div>            
+            
+            <div class="col-lg-6 col-sm-6 item">
+              <div class="box-info ">
+                <div class="box-img">
+                  <a href="{{section.settings.url_collection4}}">
+                    {% if section.settings.img_collection4 != blank %}
+                    <img src="{{section.settings.img_collection4 | img_url:'master'}}" class="img-fluid">
+                    {% else %}
+                    <img src="//placehold.it/330x348" class="img-fluid" alt="">
+                    {% endif %}
+                  </a>
+                </div>
+                <div class="content-banner text-center">        
+                  {% if section.settings.title_collection4 != blank %}
+                  <a href="{{section.settings.url_collection4}}">{{section.settings.title_collection4}}</a>
+                  {% endif %}
+                </div>
+              </div>              
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 mt-dt">
+          <div class="box-info ">
+            <div class="box-img">
+              <a href="{{section.settings.url_collection5}}">
+                {% if section.settings.img_collection5 != blank %}
+                <img src="{{section.settings.img_collection5 | img_url:'master'}}" class="img-fluid">
+                {% else %}
+                <img src="//placehold.it/690x726" class="img-fluid" alt="">
+                {% endif %}
+              </a>
+            </div>
+            <div class="content-banner text-center">        
+              {% if section.settings.title_collection5 != blank %}
+              <a href="{{section.settings.url_collection5}}">{{section.settings.title_collection5}}</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+
+{
+  "name": "Collection v4",
+  "settings": [
+	{
+      "type": "text",
+      "id": "title_section",
+      "label": "Title section",
+      "default": "Shop By Catagories"
+    },
+    {
+      "type": "header",
+      "content": "Info left"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_collection1",
+      "label": "Image collection 1",
+      "info": "330 x 348px recommended"
+    },
+    {
+      "type": "url",
+      "id": "url_collection1",
+      "label": "URL Collection 1",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "title_collection1",
+      "label": "Title Collection 1",
+      "default": "Nuans"
+    },
+
+	{
+      "type": "image_picker",
+      "id": "img_collection2",
+      "label": "Image collection 2",
+      "info": "330 x 348px recommended"
+    },
+    {
+      "type": "url",
+      "id": "url_collection2",
+      "label": "URL Collection 2",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "title_collection2",
+      "label": "Title Collection 2",
+      "default": "Backpacks"
+    },
+
+	{
+      "type": "image_picker",
+      "id": "img_collection3",
+      "label": "Image collection 3",
+      "info": "330 x 348px recommended"
+    },
+    {
+      "type": "url",
+      "id": "url_collection3",
+      "label": "URL Collection 3",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "title_collection3",
+      "label": "Title Collection 3",
+      "default": "Mouse"
+    },
+
+	{
+      "type": "image_picker",
+      "id": "img_collection4",
+      "label": "Image collection 4",
+      "info": "330 x 348px recommended"
+    },
+    {
+      "type": "url",
+      "id": "url_collection4",
+      "label": "URL Collection 4",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "title_collection4",
+      "label": "Title Collection 4",
+      "default": "Visual Assistant"
+    },
+
+	{
+      "type": "header",
+      "content": "Info Right"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_collection5",
+      "label": "Image collection 5",
+      "info": "690 x 726px recommended"
+    },
+    {
+      "type": "url",
+      "id": "url_collection5",
+      "label": "URL Collection 5",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "title_collection5",
+      "label": "Title Collection 5",
+      "default": "Gadget"
+    },	
+
+    {
+      "type": "header",
+      "content": "Section Space"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection v4",
+      "category": "HOME 3"
+    }
+  ]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,87 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-newsletter-v1" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  {% if settings.newsletter_form_action != blank %}
+  {% assign form_action = settings.newsletter_form_action %}
+  {% else %}
+  {% assign form_action = '#' %}
+  {% endif %}
+  <div class="section-newsletter-v1 {% if section.settings.enable-pd-h4 %}pd-h4{% endif %}">
+    <div class="container container-casa">      
+
+      {% if section.settings.title_newletter != blank %}
+      <div class="title_newletter">
+        <h3 class="title mb-0 ">{{section.settings.title_newletter}}</h3>
+      </div>
+      {% endif %}
+      <div class="row "> 
+        <div class="col-lg-12">
+          <div class="newletter_email">          
+            <form class="needs-validation form-inline" action="{{form_action}}" method="post">
+              <div class="form-group">                           
+                <input type="email" name="EMAIL" class="form-control" placeholder="{{ 'general.newsletter_form.newsletter_emailh1' | t }}" required >                 
+              </div>
+              <button class="btn" type="submit">{{ 'general.newsletter_form.submit' | t }}</button>
+            </form>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% schema %}
+{
+  "name": "Newsletter v1",
+  "settings": [
+	 {
+        "type": "checkbox",
+        "id": "enable-pd-h4",
+        "label": "padding h4",
+        "default": true,
+		"info": "style section home4"
+      },
+	{
+      "type": "header",
+      "info": "MailChimp form action URL: Setting in Login Store > Customize theme > Theme settings tab > Mailchimp",
+      "content": "Newsletter"
+    },
+    {
+      "type": "text",
+      "id": "title_newletter",
+      "label": "Title Newletter",
+      "default": "Casano is here for<br> creative pros to  carry, build & hack life better."
+    },
+
+    {
+      "type": "header",
+      "content": "Section Space"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Newsletter v1",
+      "category": "HOME 1"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

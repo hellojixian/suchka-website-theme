@@ -1,0 +1,32 @@
+<footer class="footer_v4">
+  <div class="container container-casa">    
+    <div class="row align-items-center">
+      <div class="col-lg-3 col-md-3 copyright">
+        {% if settings.fv4_bottom_copyright != blank %}
+          <p class="text-copyright mb-0">{{settings.fv4_bottom_copyright}}</p>
+          {% else %}
+          <p class="text-copyright mb-0">©<a href="#">ShopiLaunch</a> Supply 2019</p>           
+          {% endif %}
+      </div>
+
+      <div class="col-lg-6 col-md-6 text-center">
+        <div class="menu">
+          <ul class="list-inline list-unstyled mb-0 ">
+            {% for link in linklists[settings.menu_fv4].links %}
+            <li class="list-inline-item mr-0"><a href="{{link.url}}" title="{{link.title}}">{{link.title}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3 text-lg-right">
+        {% if settings.fv4_bottom_payment_img != blank %}
+        <img src="{{settings.fv4_bottom_payment_img | img_url:'master'}}"  alt="">
+        {% else %}
+        <img src="//placehold.it/229x23"  alt="payment">
+        {% endif %}
+      </div> 
+
+    </div>
+  </div> 
+</footer>

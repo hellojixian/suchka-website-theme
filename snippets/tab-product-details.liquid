@@ -1,0 +1,74 @@
+<div class=" tab-pd-details">
+    <ul class="nav nav-tabs tab_prod">
+      {% if section.settings.enable_description_tab %}
+      <li>
+        <a  data-toggle="tab" href="#des" class="active" >{{section.settings.destab_title}}</a>
+      </li>
+      {% endif %}
+      {% if section.settings.enable_addition_tab %}
+      <li >
+        <a   data-toggle="tab" href="#add"  >{{section.settings.addtab_title}}</a>
+      </li>
+      {% endif %}
+      
+      
+      {% if section.settings.enable_review_tab %}
+      <li>
+        <a data-toggle="tab" href="#review" >{{section.settings.reviewtab_title}}</a>
+      </li>
+      {% endif %}
+    </ul>
+    <div class="tab-content" >
+      {% if section.settings.enable_description_tab %}
+      <div class="tab-pane fade show active" id="des">
+        <div class="desc product-desc">{{ product.description}}
+<!--           <div class="container container-v2 py-4">
+            <div class="row">
+              <div class="col-md-6">
+                <a href="">
+                	<img src="//placehold.it/680x680">
+                </a>
+              </div>
+              <div class="col-md-6 info1">
+                <div>
+                  <h3>Adjustable Hook & <br> Loop fastener</h3>
+                  <p>Fusce fermentum odio nec arcu. Praesent vestibulum dapibus nibh. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus dolor.</p>
+                  <a href="">Buy now</a>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          <a class="d-block py-3" href="">
+          	<img src="//placehold.it/1920x1110">
+          </a>
+           <div class="container container-v2 py-4">
+            <div class="row">
+              <div class="col-md-6 info2">
+                <div>
+                  <h3>Adjustable Hook & <br> Loop fastener</h3>
+                  <p>Fusce fermentum odio nec arcu. Praesent vestibulum dapibus nibh. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus dolor.</p>
+                  <a href="">Buy now</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <a href="">
+                	<img src="//placehold.it/680x680">
+                </a>
+              </div>
+              
+            
+            </div>
+          </div> -->
+        
+        </div>      
+      </div>
+      {% endif %}
+      {% if section.settings.enable_addition_tab %}
+      <div class="tab-pane fade" id="add">{{section.settings.addtab_content}}</div>
+      {% endif %}
+      {% if section.settings.enable_review_tab %}
+      <div class="tab-pane fade container" id="review"><div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div></div>
+      {% endif %}
+    </div>
+  </div>

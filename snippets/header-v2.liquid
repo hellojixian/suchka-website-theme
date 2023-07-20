@@ -1,0 +1,82 @@
+<header id="header" class="header-v2-h2 js_height_hd jsheader2 d-none d-xl-block {% if settings.hdv2_enable_absolute %}header-absolute {% endif %}">
+  <div class="container-casa">
+    <div class="row align-items-center">      
+      <div class="col-lg-2 left">
+        <div class="logo">
+          <div class="center logo delay05">          	
+            {% if settings.hdv2_logo_svg !=blank %}
+            <div class="logosvg" style="max-width:{{settings.hdv2_logo_maxwidth}}px;">
+              <a class="logourl" href="{{shop.url}}">{{settings.hdv2_logo_svg}}</a>
+            </div>
+            {% else %}          	
+            <a href="{{shop.url}}">
+              {% if settings.hdv2_logo != blank %}
+              <img src="{{settings.hdv2_logo|img_url:'master'}}" width="{{settings.hdv2_logo_maxwidth}}" alt="{{shop.name}}">
+              {% else %}
+              <img src="//placehold.it/112x16" width="{{settings.hdv2_logo_maxwidth}}" alt="{{shop.name}}">
+              {% endif %}
+            </a>
+            {% endif %}          
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 d-flex justify-content-center">
+        <div class="menu text-center">
+			{% include 'eveland-menu' %}
+        </div>
+      </div>
+       <div class="col-lg-2 currencies-login">        
+        <div class="cart-login-search align-items-center"> 
+          <ul class="list-inline list-unstyled mb-0 right">
+            <li class="list-inline-item mr-0">              
+              <a href="{% if customer %}/account {% else %}javascript:void(0){% endif %}" class="login {% if customer %}{% else %}js-call-popup-login{% endif %}">
+                {% if settings.hd_icon_login_svg != blank %}
+                {{settings.hd_icon_login_svg}}
+                {% else %}
+                <i class="{{settings.hd_icon_login}}"></i>
+                {% endif %}
+              </a>
+            </li>            
+            <li class="list-inline-item mr-0">
+              <a href="javascript:void(0)" class="search js-search-destop">
+                {% if settings.hd_icon_search_svg != blank %}
+                {{settings.hd_icon_search_svg}}
+                {% else %}
+                <i class="{{settings.hd_icon_search}}"></i>
+                {% endif %}
+
+              </a>
+            </li>
+            
+            <li class="list-inline-item mr-0">
+              <a href="javascript:void(0)" class="cart js-call-minicart">
+                {% if settings.hd_icon_cart_svg != blank %}
+                {{settings.hd_icon_cart_svg}}
+                {% else %}
+                <i class="{{settings.hd_icon_cart}}"></i>
+                {% endif %}
+                <span class="number-cart enj-cartcount">{{ cart.item_count }}</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</header>
+<style>
+  #header .container-casa .currencies-login .cart-login-search ul li a svg{
+    fill:{{settings.hdv_color_content_header-h2}};
+  }
+  #header.header-v2-h2 .container-casa .menu ul li .nav-link,
+  #header .container-casa .currencies-login .cart-login-search ul li a{
+    color:{{settings.hdv_color_content_header-h2}};
+  }
+  #header .container-casa .currencies-login .cart-login-search ul li .cart .number-cart{
+    background-color:{{settings.bg_color_cart_chagne-hd2}};
+    color:{{settings.content_color_cart_chagne_hdv2}};
+  }
+
+
+</style>

@@ -1,0 +1,189 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-slideshow-v1" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  <div class="section-slideshow-v1 ">
+    <div class="container container-casa">
+      <div class="slick-side-h1">
+        {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+        {% if block.type == "slideshow" %}
+        <div class="items-slide-h4">
+          <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6 col-sm-6 order-2 order-sm-1 order-md-1 order-lg-1">
+              <div class="caption-slide">
+                <div class="infor-slide">
+                  {% if block.settings.block_title != blank %}
+                  <h1 style="color:{{block.settings.color_title}}">
+                    {{ block.settings.block_title }}
+                  </h1>
+                  {% endif %}
+                  {% if block.settings.block_sub_title != blank %}
+                  <div class="details-title" style="color:{{block.settings.color_subtitle}}">
+                    {{ block.settings.block_sub_title }}
+                  </div>
+                  {% endif %}
+                </div>
+                {% if block.settings.block_btn_name != blank %}
+                <div class="box-button">
+                  <a href="{{block.settings.block_btn_url}}" class="button-shopnow btn-sv4-{{section.id}}-{{block.id}}">
+                    <span>{{ block.settings.block_btn_name }}</span>
+                  </a>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-6 col-sm-6 order-1 order-sm-2 order-md-2 order-lg-2">
+              <div class="banner-slide">
+                <a href="{{block.settings.banner_url}}" class="image-slide d-block">
+                  {% if block.settings.bg_banner != blank %}
+                  <img src="{{block.settings.bg_banner | img_url:'master'}}" alt="img-slide-h4" class="img-fluid w-100"/>
+                  {% else %}
+                  <img src="//placehold.it/810x850" alt="img-slide-h4" class="img-fluid w-100"/>
+                  {% endif %}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  {% for block in section.blocks %}
+  {% if block.type == "slideshow" %}
+  .slick-side-h1 .caption-slide .box-button .btn-sv4-{{section.id}}-{{block.id}} {
+    background-color: {{block.settings.bg_block_button}};
+  }
+  .slick-side-h1 .caption-slide .box-button .btn-sv4-{{section.id}}-{{block.id}}:hover {
+    background-color: {{block.settings.bg_block_button_hover}};
+  }
+  {% endif %}
+  {% endfor %}
+</style>
+
+{% schema %}
+{
+  "name": "Slideshow v1",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Space"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slideshow",
+      "name": "slideshow",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Infor Slide"
+        },
+        {
+          "type": "text",
+          "id": "block_title",
+          "label": "Title sideshow",
+          "default": " The Watch Everyone Desires!"
+        },
+		 {
+          "type": "color",
+          "id": "color_title",
+          "label": "color Title",
+          "default": "#000"
+        },
+        {
+          "type": "text",
+          "id": "block_sub_title",
+          "label": "Sub Title sideshow",
+          "default": "Do deserunt tempor nostrud id reprehenderit aliquip sunt excepteur ut eu esse ad fugiat magna voluptate enim sed."
+        },
+		 {
+          "type": "color",
+          "id": "color_subtitle",
+          "label": "color Sub Title",
+          "default": "#000"
+        },
+        {
+          "type": "text",
+          "id": "block_btn_name",
+          "label": "Button sideshow",
+          "default": " Shop now"
+        },
+        {
+          "type": "url",
+          "id": "block_btn_url",
+          "label": "Button Url",
+          "default": "/collections/all"
+        },
+        {
+          "type": "header",
+          "content": "Background & color button"
+        },
+        {
+          "type": "color",
+          "id": "bg_block_button",
+          "label": "Background Button",
+          "default": "#222"
+        },
+        {
+          "type": "color",
+          "id": "bg_block_button_hover",
+          "label": "Background Button Hover",
+          "default": "rgba(255, 166, 168, 0.75)"
+        },
+		{
+			"type": "header",
+			"content": "Image"
+		},
+        {
+          "type": "image_picker",
+          "id": "bg_banner",
+          "label": "Background Image",
+          "info": "810 x 850px recommended"
+        },
+        {
+          "type": "url",
+          "id": "banner_url",
+          "label": "Banner Url",
+          "default": "/collections/all"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slideshow v1",
+      "category": "HOME 1",
+      "blocks": [
+        {
+          "type": "slideshow",
+          "settings": {
+
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

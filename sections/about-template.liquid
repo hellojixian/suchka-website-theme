@@ -1,0 +1,330 @@
+<div class="wrap-bread-crumb breadcrumb_collection2 about">
+  <div class="text-center bg-breadcrumb" style="background-image : url({% if section.settings.bg_breadcrumb != blank  %}{{section.settings.bg_breadcrumb | img_url : 'master'}} {% else %}//placehold.it/1920x420 {% endif %})">
+    <div class="title-page">
+
+      <h2 class="">{{page.title}}</h2>
+
+    </div>
+    {% include 'breadcrumb' %}
+  </div>
+</div>
+<section>
+  <div class="aboutus-pages">
+    <div class="container page-main-content">
+      
+      {% if section.settings.enable_info_top %}
+      <div class="info-about-top text-center">
+		{% if section.settings.enable_img_top %}
+        <div class="box-img-about">
+          {% if section.settings.img_about_top != blank %}
+          <img src="{{section.settings.img_about_top | img_url:'master'}}" class="img-fluid">
+          {% else %}
+          <img src="//placehold.it/1040x540" class="img-fluid" alt="">
+          {% endif %}
+        </div>
+        {% endif %}
+        
+        <div class="content-top-about">
+          {% if section.settings.title-cotent-about != blank %}
+          <h3 class="title-cotent-about mb-0">{{section.settings.title-cotent-about}}</h3>
+          {% endif %}
+          
+          {% if section.settings.sub-title-cotent-about != blank %}
+          <p class="mb-0">{{section.settings.sub-title-cotent-about}}</p>
+          {% endif %}
+        </div>        
+      </div>
+      {% endif %}
+      
+      {% if section.settings.enable_intro %}
+        <div class="about-introduce">
+          
+            {% for block in section.blocks %}
+            {% if block.type == 'introduce' %}
+            {% assign mod = forloop.index | modulo: 2 %}
+            {% if mod == 0 %}
+          <div class="row align-items-center">
+            <div class="col-md-6 intro_image ">
+              <img class="w-100" src="{% if block.settings.image_intro != blank %} {{block.settings.image_intro | img_url : 'master'}} {% else %}//placehold.it/549x596{% endif %}">
+            </div> 
+            <div class="col-md-6 intro_detail d-flex align-items-center">
+              <div class="info-intro">
+                {% if block.settings.title_intro != blank %}
+                <h3 class="title_intro">{{block.settings.title_intro}}</h3>
+                {% endif %}
+                {% if block.settings.content_intro != blank %}
+                <p class="content_intro">{{block.settings.content_intro}}</p>
+                {% endif %}
+                {% if block.settings.button_name != blank %}
+                <a href="{{block.settings.url_button_name}}" class="button-shop">{{block.settings.button_name}}</a>
+                {% endif %} 
+              </div>
+            </div>
+          </div>        
+          {% else %}
+          <div class="row align-items-center">
+            <div class="col-md-6 order-2 order-md-1 intro_detail d-flex align-items-center">
+              <div class="info-intro">
+                {% if block.settings.title_intro != blank %}
+                <h3 class="title_intro">{{block.settings.title_intro}}</h3>
+                {% endif %}
+                {% if block.settings.content_intro != blank %}
+                <p class="content_intro">{{block.settings.content_intro}}</p>
+                {% endif %}
+                {% if block.settings.button_name != blank %}
+                <a href="{{block.settings.url_button_name}}" class="button-shop">{{block.settings.button_name}}</a>
+                {% endif %}                
+              </div>
+            </div>            
+            <div class="col-md-6 order-1 order-md-2 intro_image">
+              <img class="w-100" src="{% if block.settings.image_intro != blank %} {{block.settings.image_intro | img_url : 'master'}} {% else %}//placehold.it/549x596{% endif %}">
+            </div>
+          </div>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+          
+        </div>
+      {% endif %}
+    </div>
+    
+    {% if section.settings.enable_s_servicebox %}
+    <div class="section-service-v1" style="background-image: url({% if section.settings.bg_image != blank %}{{section.settings.bg_image | img_url : 'master' }} {%else%} //placehold.it/1920x365 {% endif %})">
+      <div class="container page-main-content">
+        <div class="row slickjs-services-v1">
+          {% if section.blocks.size > 0 %}
+          {% for block in section.blocks %}
+          {% if block.type == "service" %}
+          
+          <div class="text-center itemtservice justify-content-center">
+            <div class="box-service col-lg-12">
+              <div class="icon left">          
+                <i class="{{block.settings.block_icon}} "></i>
+              </div>
+              <div class="service-content text-lg-left">
+                {% if block.settings.block_title != blank %}
+                <h4 class="title">{{block.settings.block_title}}</h4>
+                {% endif %}
+                {% if block.settings.block_content != blank %}          	
+                <p class="content">{{block.settings.block_content}}</p>
+                {% endif %}
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          
+          
+          {% endif %}
+          {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    
+    
+    {% if section.settings.enable_newletter %}
+    <div class="container page-main-content section-newsletter-v1">
+      {% if section.settings.title_newletter != blank %}
+      <div class="title_newletter">
+        <h3 class="title mb-0 ">{{section.settings.title_newletter}}</h3>
+      </div>
+      {% endif %}
+      <div class="row "> 
+        <div class="col-lg-12">
+          <div class="newletter_email">          
+            <form class="needs-validation form-inline" action="{{form_action}}" method="post">
+              <div class="form-group">                           
+                <input type="email" name="EMAIL" class="form-control" placeholder="{{ 'general.newsletter_form.newsletter_emailh1' | t }}" required >                 
+              </div>
+              <button class="btn" type="submit">{{ 'general.newsletter_form.submit' | t }}</button>
+            </form>
+          </div> 
+        </div>
+      </div>
+    </div>
+ 	{% endif %}
+    
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About Us",
+  "settings": [
+	{
+		"type" : "image_picker",
+		"id": "bg_breadcrumb",
+		"label" : "Background Image BreadCrumb",
+		"info" : "1920x420px recommended"
+	},
+	{
+      "type": "header",
+      "content": "Info top"
+    },
+	{
+      "type": "checkbox",
+      "id": "enable_info_top",
+      "label": "Enable info top?",
+      "default": true
+    },
+	{
+      "type": "checkbox",
+      "id": "enable_img_top",
+      "label": "Enable?",
+      "default": true
+    },
+	{
+        "type" : "image_picker",
+        "id": "img_about_top",
+        "label" : "Image top",
+        "info" : "1040x540px recommended"
+     },
+	{
+      "type": "text",
+      "id": "title-cotent-about",
+      "label": "Title content About",
+      "default": "Our Story is Your Story"
+    },
+	{
+      "type": "textarea",
+      "id": "sub-title-cotent-about",
+      "label": "sub Title content About",
+      "default": "Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Sed cursus turpis vitae tortor. Nullam cursus lacinia erat. Nullam accumsan lorem in dui.Praesent metus semper a, adipiscing nec, purus. Ut a nisl id ante tempus hendrerit. Sed fringilla mauris sit amet nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Quisque id odio."
+    },
+	{
+      "type": "header",
+      "content": "Introduce"
+    },
+	{
+      "type": "paragraph",
+      "content": "Please scroll to bottom and click Add content to add content for Introduce"
+    },
+	
+	{
+      "type": "checkbox",
+      "id": "enable_intro",
+      "label": "Enable?",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Service Box"
+    },
+	{
+      "type": "paragraph",
+      "content": "Please scroll to bottom and click Add content to add content for Introduce"
+    },
+	{
+      "type": "checkbox",
+      "id": "enable_s_servicebox",
+      "label": "Enable?",
+      "default": true
+    },
+	{
+		"type" : "image_picker",
+		"id": "bg_image",
+		"label" : "Background Image ServiceBox",
+		"info" : "1920x650px recommended"
+	},
+	{
+      "type": "header",
+      "content": "Newletter"
+    },
+	{
+      "type": "checkbox",
+      "id": "enable_newletter",
+      "label": "Enable?",
+      "default": true
+    },
+	{
+      "type": "header",
+      "info": "MailChimp form action URL: Setting in Login Store > Customize theme > Theme settings tab > Mailchimp",
+      "content": "Newsletter"
+    },
+    {
+      "type": "text",
+      "id": "title_newletter",
+      "label": "Title Newletter",
+      "default": "Casano is here for<br> creative pros to  carry, build & hack life better."
+    }
+
+
+  ],
+  "blocks": [
+    {
+      "type": "service",
+      "name": "Service V1",
+      "settings": [
+		{
+        "type": "text",
+        "id": "block_icon",
+        "label": "Icon",
+        "default": "icon-plane",
+        "info": "[Get icon in here](https:\/\/fontawesome.com\/v4.7.0\/icons)"
+        },
+        {
+          "type": "text",
+          "id": "block_title",
+          "label": "Title",
+          "default": " Free Shipping"
+        },
+        {
+          "type": "text",
+          "id": "block_content",
+          "label": "Content",
+          "default": " Free worldwide shipping on all Area order<br> above $100"
+        }
+      ]
+    },
+	{
+      "type": "introduce",
+      "name": "Introduce",
+	  "settings": [
+        {
+        "type" : "image_picker",
+        "id": "image_intro",
+        "label" : "Image Introduce",
+        "info" : "549x596px recommended"
+        },
+        {
+          "type": "text",
+          "id": "title_intro",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "content_intro",
+          "label": "Content"
+        },
+		 {
+          "type": "text",
+          "id": "button_name",
+          "label": "button name",
+          "default": "shop men"
+        },
+        {
+          "type": "url",
+          "id": "url_button_name",
+          "label": "URL button name",
+          "default": "/collections/all"
+        }
+      ]
+	}
+  ],
+  "presets": [
+    {
+      "name": "About Us",
+       "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

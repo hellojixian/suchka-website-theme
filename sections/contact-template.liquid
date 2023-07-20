@@ -1,0 +1,271 @@
+<div class="wrap-bread-crumb breadcrumb_collection2 about">
+  <div class="text-center bg-breadcrumb" style="background-image : url({% if section.settings.bg_breadcrumb != blank  %}{{section.settings.bg_breadcrumb | img_url : 'master'}} {% else %}//placehold.it/1920x510 {% endif %})">
+    <div class="title-page">
+
+      <h2 class="">{{page.title}}</h2>
+
+    </div>
+    {% include 'breadcrumb' %}
+  </div>
+</div>
+<section id="content">
+  <div class="content-page contact-page">
+    <div class="container container-casa">
+      {% if section.settings.enable_map %}	
+      <a class="d-block" style="margin-bottom: 50px" target="_blank" href="{{section.settings.link_map}}">
+      	<img src="{% if section.settings.image_map != blank %} {{section.settings.image_map | img_url : 'master'}} {% else %}//placehold.it/1400x727 {% endif %}">
+      </a>
+	  {% endif %}
+    </div>
+
+    <div class="container container-casa">
+      <div class="section-contact-form">
+        {% if section.settings.title_contactform_email != blank %}
+        <h3 class="block-title-contactform">{{section.settings.title_contactform_email}}</h3>
+        {% endif %}
+        <div class="row">          
+          
+           {% if section.settings.enable_s_contactform %}
+          <div class="col-md-6 col-sm-12 col-12">
+            
+            
+            <div class="contact-form-page">
+
+              {% form 'contact' %}
+
+              {% if form.posted_successfully? %}
+              <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p style="margin-bottom: 5px;">
+                  {{ 'contact.form.post_success' | t }}
+                </p>
+              </div>
+              {% endif %}
+
+              {% if form.errors %}
+              <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <!-- {{ form.errors.size }} or {{ form.errors | size }} -->
+                <p style="margin-bottom: 5px;">Your contact form has {{ form.errors | size | pluralize: "an error", "a few errors" }}. To submit your form, make the following changes and try again:</p>
+                {% for field in form.errors %}
+                <p style="margin-bottom: 5px;">The {{ field | capitalize | replace: 'Body', 'Message' }} field {{ form.errors.messages[field] }}.</p>
+                {% endfor %}
+              </div>
+              {% endif %}
+              <div class="contact-form">
+                <p class="contact-email">                  
+                  <label><span class="style-label-all">{{section.settings.contactform_email}}<span class="required">*</span></span></label>
+                  <input class="" type="email"  name="contact[email]" required>
+                </p>
+                <p class="contact-name">
+                  <label><span class="style-label-all">{{section.settings.contactform_name}}<span class="required">*</span></span></label>
+                  <input class="" type="text" id="contactFormName" name="contact[name]" required>
+                </p>
+                
+                <p class="contact-message">
+                  <label><span class="style-label-all">{{section.settings.contactform_content}}<span class="required">*</span></span></label>
+                  <textarea class="" cols="30" rows="10" id="contactFormMessage" name="contact[body]" required></textarea>
+                </p>
+                <p class="contact-submit mb-0">                  
+                  <input  class="shop-button" type="submit" value="{{section.settings.contactform_btn}}">
+                </p>
+              </div>
+              {% endform %}
+            </div>
+          </div>
+          {% endif %}
+          
+          {% if section.settings.enable_info %}
+          <div class="col-md-6">
+            {% for block in section.blocks %}
+            {% if block.type == 'info' %}
+            <div class=" info-shop ">
+              <h3 class="title">
+                {{block.settings.block_title}}
+              </h3>
+              <div class="content">{{block.settings.block_content}}</div>
+            </div> 
+            {% endif %}
+            {% endfor %}
+
+          </div>
+          {% endif %} 
+        </div>
+      </div>
+    </div>
+    
+    {% if section.settings.enable_newletter %}
+    <div class="section-newsletter-v1">
+      <div class="container container-casa">
+        {% if section.settings.title_newletter != blank %}
+        <div class="title_newletter">
+          <h3 class="title mb-0 ">{{section.settings.title_newletter}}</h3>
+        </div>
+        {% endif %}
+        <div class="row "> 
+          <div class="col-lg-12">
+            <div class="newletter_email">          
+              <form class="needs-validation form-inline" action="{{form_action}}" method="post">
+                <div class="form-group">                           
+                  <input type="email" name="EMAIL" class="form-control" placeholder="{{ 'general.newsletter_form.newsletter_emailh1' | t }}" required >                 
+                </div>
+                <button class="btn" type="submit">{{ 'general.newsletter_form.submit' | t }}</button>
+              </form>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Contact Us",
+  "settings": [
+	
+	{
+    "type" : "image_picker",
+    "id": "bg_breadcrumb",
+    "label" : "Background Image Breadcrumb",
+    "info" : "1920x510px recommended"
+    },
+	{
+		"type" : "header",
+		"content" : "Config Map"
+	},
+	{
+      "type": "checkbox",
+      "id": "enable_map",
+      "label": "Enable?",
+      "default": true
+    },
+    {
+    "type" : "image_picker",
+    "id": "image_map",
+    "label" : "Image Map",
+    "info" : "1400x727px recommended"
+    },
+	{
+		"type" : "url",
+		"id" : "link_map",
+		"label" : "link map"
+	},
+	{
+      "type": "header",
+      "content": "Shop Info & Address"
+    },
+	{
+		"type" : "paragraph",
+		"content" : "Please scroll to bottom and click Add Content to add info for your Shop"
+	},
+	{
+      "type": "checkbox",
+      "id": "enable_info",
+      "label": "Enable?",
+      "default": true
+    },
+
+    {
+      "type": "header",
+      "content": "Section Contact Form"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_s_contactform",
+      "label": "Enable?",
+      "default": true
+    },
+	{
+      "type": "text",
+      "id": "title_contactform_email",
+      "label": "Title conatctform email",
+      "default": "Submit a request"
+    },
+	{
+      "type": "text",
+      "id": "contactform_email",
+      "label": "Lable email",
+      "default": "Email address"
+    },
+    {
+      "type": "text",
+      "id": "contactform_name",
+      "label": "Lable name",
+      "default": "Name"
+    },    
+    {
+      "type": "text",
+      "id": "contactform_content",
+      "label": "Label Message",
+      "default": "Your message"
+    },
+    {
+      "type": "text",
+      "id": "contactform_btn",
+      "label": "Button name",
+      "default": "submit"
+    },
+	{
+      "type": "header",
+      "content": "Newletter"
+    },
+	{
+      "type": "checkbox",
+      "id": "enable_newletter",
+      "label": "Enable?",
+      "default": true
+    },
+	{
+      "type": "header",
+      "info": "MailChimp form action URL: Setting in Login Store > Customize theme > Theme settings tab > Mailchimp",
+      "content": "Newsletter"
+    },
+    {
+      "type": "text",
+      "id": "title_newletter",
+      "label": "Title Newletter",
+      "default": "Casano is here for<br> creative pros to  carry, build & hack life better."
+    }
+  ],
+"blocks": [
+    {
+      "type": "info",
+      "name": "Info",
+      "settings": [
+
+        {
+          "type": "text",
+          "id": "block_title",
+          "label": "Title",
+          "default": " Address"
+        },
+        {
+          "type": "textarea",
+          "id": "block_content",
+          "label": "Content",
+          "default": "<p> We do not sell product from our corporate headquarters in New York City. If you want to visit, please reach out to our customer service team first.</p> <ul> <li> 1201 Broadway</li> <li> Suite 600</li> <li> New York, NY 10001</li> </ul>"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Contact Us",
+       "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

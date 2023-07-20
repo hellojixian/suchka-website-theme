@@ -1,0 +1,67 @@
+<header id="header" class="header-v3-h3 js_height_hd jsheader3 d-none d-xl-block">
+  <div class="container-casa">
+    <div class="row align-items-center">
+      <div class="col-lg-2">
+        <div class="logo">
+          <div class="center logo delay05">          	
+            {% if settings.hdv3_logo_svg !=blank %}
+            <div class="logosvg" style="max-width:{{settings.hdv3_logo_maxwidth}}px;">
+              <a class="logourl" href="{{shop.url}}">{{settings.hdv3_logo_svg}}</a>
+            </div>
+            {% else %}          	
+            <a href="{{shop.url}}">
+              {% if settings.hdv3_logo != blank %}
+              <img src="{{settings.hdv3_logo|img_url:'master'}}" width="{{settings.hdv3_logo_maxwidth}}" alt="{{shop.name}}">
+              {% else %}
+              <img src="//placehold.it/112x16" width="{{settings.hdv3_logo_maxwidth}}" alt="{{shop.name}}">
+              {% endif %}
+            </a>
+            {% endif %}          
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 d-flex justify-content-end">
+        <div class="menu">
+			{% include 'eveland-menu' %}
+        </div>
+      </div>
+       <div class="col-lg-2 currencies-login">        
+        <div class="cart-login-search align-items-center"> 
+          <ul class="list-inline list-unstyled mb-0 right">
+            <li class="list-inline-item mr-0">              
+              <a href="{% if customer %}/account {% else %}javascript:void(0){% endif %}" class="login {% if customer %}{% else %}js-call-popup-login{% endif %}">
+                {% if settings.hd_icon_login_svg != blank %}
+                {{settings.hd_icon_login_svg}}
+                {% else %}
+                <i class="{{settings.hd_icon_login}}"></i>
+                {% endif %}
+              </a>
+            </li>            
+            <li class="list-inline-item mr-0">
+              <a href="javascript:void(0)" class="search js-search-destop">
+                {% if settings.hd_icon_search_svg != blank %}
+                {{settings.hd_icon_search_svg}}
+                {% else %}
+                <i class="{{settings.hd_icon_search}}"></i>
+                {% endif %}
+
+              </a>
+            </li>
+            
+            <li class="list-inline-item mr-0">
+              <a href="javascript:void(0)" class="cart js-call-minicart">
+                {% if settings.hd_icon_cart_svg != blank %}
+                {{settings.hd_icon_cart_svg}}
+                {% else %}
+                <i class="{{settings.hd_icon_cart}}"></i>
+                {% endif %}
+                <span class="number-cart enj-cartcount">{{ cart.item_count }}</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</header>

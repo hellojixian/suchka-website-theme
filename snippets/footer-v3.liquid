@@ -1,0 +1,49 @@
+<footer class="footer_v3">
+  <div class="container container-casa">    
+    <div class="row align-items-center">
+      <div class="col-lg-3 copyright">
+        {% if settings.fv3_bottom_copyright != blank %}
+          <p class="text-copyright mb-0">{{settings.fv3_bottom_copyright}}</p>
+          {% else %}
+          <p class="text-copyright mb-0">©<a href="#">ShopiLaunch</a> Supply 2019</p>           
+          {% endif %}
+      </div>
+
+      <div class="col-lg-6 text-center">
+        <div class="border-content">
+        <div class="menu">
+          <ul class="list-inline list-unstyled mb-0 ">
+            {% for link in linklists[settings.menu_fv3].links %}
+            <li class="list-inline-item mr-0"><a href="{{link.url}}" title="{{link.title}}">{{link.title}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="logo-center">
+          {% if settings.logo_svg3 !=blank %}
+          <div class="logosvg" style="max-width:{{settings.fv3_main_logo_maxwidth}}px;">
+            <a class="d-block" href="{{shop.url}}">{{settings.logo_svg3}}</a>
+          </div>          
+          {% else %}          	
+          <a href="{{shop.url}}" class="logo">
+            {% if settings.fv3_main_logo != blank %}
+            <img src="{{settings.fv3_main_logo | img_url:'master'}}"  width="{{settings.fv3_main_logo_maxwidth}}" alt="logo">
+            {% else %}
+            <img src="//placehold.it/112x16" width="{{settings.fv3_main_logo_maxwidth}}" alt="logo">
+            {% endif %}
+          </a>
+          {% endif %}
+        </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 text-center text-md-right text-lg-right">
+        {% if settings.fv3_bottom_payment_img != blank %}
+        <img src="{{settings.fv3_bottom_payment_img | img_url:'master'}}"  alt="">
+        {% else %}
+        <img src="//placehold.it/215x12"  alt="">
+        {% endif %}
+      </div> 
+
+    </div>
+  </div> 
+</footer>

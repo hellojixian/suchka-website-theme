@@ -1,0 +1,144 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-product-v3" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{%endif%} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  <div class="section-product-v3">
+    <div class="container container-casa">
+      <div class="row align-items-center">
+        <div class="col-lg-3">
+          <div class="box relative mb-4 mb-sm-0">
+            <div class="box-images">
+              <a href="{{section.settings.url_button}}">
+              {% if section.settings.images-left != blank %}
+              <img src="{{section.settings.images-left | img_url:'master'}}" class="img-fluid imgtop">
+              {% else %}
+              <img src="//placehold.it/450x600" class="img-fluid imgtop" alt="banner">
+              {% endif %}
+              </a>
+            </div>
+
+            <div class="box-info-product absolute">
+              {% if section.settings.title_icon != blank %}
+              <div class="icon-top">
+                <i class="{{section.settings.title_icon}}"></i>
+              </div>
+              {% endif %}
+              {% if section.settings.title != blank %}
+              <h3 class="title-top">{{section.settings.title}}</h3>
+              {% endif %}
+
+              {% if section.settings.button_name != blank %}
+              <a href="{{section.settings.url_button}}" class="button-shop">{{section.settings.button_name}}</a>
+              {% endif %}
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9 ">
+            <div class="row product_handpicked slick_product_handpicked">    
+              {% assign products_limit = section.settings.products_limit %}
+              {% assign col = section.settings.select_collection %}
+              {% for product in collections[col].products limit: products_limit %}
+              <div class="col-lg-4 col-6 product_item">
+                {% include 'product-item-v4' %}
+              </div>
+              {% else %}
+              {% for i in (1..12) %}
+              <div class="col-lg-4 col-6 product_item">
+                {% include 'empty-product-item-v4' %}
+              </div>
+              {% endfor %}
+              {% endfor %}
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Product v3",
+  "settings": [
+	{
+      "type": "header",
+      "content": "Info left"
+    },
+	{
+      "type": "image_picker",
+      "id": "images-left",
+      "label": "Image",
+      "info": "450x 600px png recommended"
+    },
+	{
+      "type": "text",
+      "id": "title_icon",
+      "label": "Icon",
+      "default": "icon-diamond",
+      "info": "[Get icon in here](https:\/\/fontawesome.com\/v4.7.0\/icons)"
+    },
+	{
+      "type": "text",
+      "id": "title",
+      "label": "Title section",
+      "default": "Handpicked Products"
+    },
+
+	{
+      "type": "text",
+      "id": "button_name",
+      "label": "button name",
+      "default": "SHOP NOW"
+    },
+    {
+      "type": "url",
+      "id": "url_button",
+      "label": "URL button ",
+      "default": "/collections/all"
+    },
+
+	{
+      "type": "header",
+      "content": "Info Product"
+    },
+    {
+      "type": "collection",
+      "id": "select_collection",
+      "label": "Select Collection"
+    },
+	{
+      "type": "range",
+      "id": "products_limit",
+      "label": "Limit products",
+      "min": 2,
+      "max": 50,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Section Space"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product v3",
+      "category": "HOME 3"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

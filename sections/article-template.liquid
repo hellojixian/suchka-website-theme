@@ -1,0 +1,398 @@
+<!-- /sections/article-template.liquid -->
+<section id="content">
+  
+  <div class="content-page article-page">
+    <div class="container container-casa">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="top-breadcrumb">
+            {% include 'breadcrumb' %}
+          </div>
+        </div>
+      </div>
+      <div class="row content-all-page-article">
+        {% if section.settings.blog_layout == "blog_layo_left" %}
+        <div class="col-lg-4 col-xl-3 col-md--4 ">
+          {% include 'article-sidebar' %}
+        </div>
+        {% endif %}
+        <div style="{% if section.settings.blog_layout == "blog_layo_none" %} max-width: 1040px; margin: 0 auto {% endif %}" class="{% if section.settings.blog_layout == "blog_layo_none" %} col-lg-12 {% else %} col-lg-8 col-md-8 col-xl-9{% endif %}">
+          
+          <div class="content-single-blog">
+             
+            <div class="post-details">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="box-img picture-avatar">
+                    <img src="{{ article.image.src | img_url: 'original' }}" alt="{{ article.title }}" / class="w-100 img-fluid">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row cate-date align-items-center">               
+                <div class="col-lg-6 col-4">
+                  <div class="cate">                                    
+                    {% if section.settings.show_cate %}                 
+                    <a href="{{blog.url}}" class="silver">{{blog.title}}</a>
+                    {% endif %}
+                  </div>
+                </div>
+                <div class="col-lg-6 col-8">
+                  <div class="date right">
+                    {% if section.settings.show_datetime%}
+                    <span><i class="icon-clock mr-2"></i>{{article.published_at | date: "%d.%B.%Y" }}</span>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+              
+              <h2 class="article_title">{{article.title}}</h2>
+              <div class="cmt-author">
+                {% if section.settings.show_author %}
+                <span class="author">{{'blogs.article.by' | t}} <a href="{{ article.url }}">{{ article.author }}</a></span>
+                {% endif %}
+              </div> 
+              
+              <!-- End Single Post Thumb -->
+
+
+              <div class="content-post-default">
+                {{article.content}}
+              </div>
+
+              
+                <div class="cate-tags-share">
+                  <div class="row align-items-center">
+                  {% if section.settings.show_tag %}
+                  <div class="col-md-6 col-12 tags ">
+                    {% for tag in article.tags %}
+                    <a href="{{ blog.url }}/tagged/{{ tag | handle }}" >{{ tag }}</a> 
+                    {% endfor %}
+                  </div>
+                  {% endif %}
+                    
+                    {% if section.settings.enable_share_blogv1 %}
+                    <div class="col-md-6 col-12">
+                      <div class="share right">
+                        {% include 'social-share-blog' %}                   
+                      </div>
+                    </div>
+                  {% endif %}
+                    
+                  </div>
+                </div>                
+              
+              
+            </div>
+            {% if blog.comments_enabled? %}
+            {% include 'comment-article' %}
+            {% endif %}
+          </div>
+        </div>	
+        {% if section.settings.blog_layout == "blog_layo_right" %}
+        <div class="col-lg-4 col-xl-3 col-md-4">
+          {% include 'article-sidebar' %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Article page",
+  "settings": [
+    {
+      "type": "select",
+      "id": "blog_layout",
+      "options": [
+        {
+          "value": "blog_layo_left",
+          "label": "Sidebar Left"
+        },
+        {
+          "value": "blog_layo_right",
+          "label": "Sidebar Right"
+        },
+        {
+          "value": "blog_layo_none",
+          "label": "No Sidebar"
+        }
+      ],
+      "label": "Select Layout",
+      "default": "blog_layo_left"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "label": "Show author?",
+      "default": true
+    },
+
+
+    {
+      "type": "checkbox",
+      "id": "show_cate",
+      "label": "Show category?",
+      "default": true
+    },
+	{
+      "type": "checkbox",
+      "id": "show_datetime",
+      "label": "Show date?",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tag",
+      "label": "Show tags?",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_share_blogv1",
+      "label": "Enable share v1?",
+      "default": true
+    },
+	{
+      "type": "checkbox",
+      "id": "enabledimage_comments_v1",
+      "label": "Enable Image comments v1?",
+      "default": true
+    },	
+    {
+      "type": "image_picker",
+      "id": "image_comments_v1",
+      "label": "Image comments v1",
+      "info": "120 x 120px recommended"
+    },
+	{	
+      "type": "url",
+      "id": "url_image_comments_v1",
+      "label": "URL Image comments v1",
+      "default": "/collections/all"
+    },
+	{
+      "type": "text",
+      "id": "rep_commnet",
+      "label": "name rep comment",
+      "default": "REPLY"
+    },
+
+    {
+      "type": "header",
+      "content": "Sidebar Config"
+    },
+	{
+      "type": "header",
+      "content": "Search"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_widget_search",
+      "label": "Enable?",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "shop_by_search_placeholder",
+      "label": "Input placeholder",
+      "default": "Search here..."
+    },
+    {
+      "type": "header",
+      "content": "Widget Categories"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_widget_cate",
+      "label": "Enable?",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "widget_cate_title",
+      "label": "Title Widget",
+      "default": "Categories"
+    },
+    {
+      "type": "link_list",
+      "id": "widget_cate_menu",
+      "label": "Menu for Categories"
+    },
+
+	
+	{
+      "type": "header",
+      "content": "Widget Newsletter"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_newsletter",
+      "label": "Enable?",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "widget_newsletter",
+      "label": "Title Widget",
+      "default": "NEWSLETTER"
+    },
+	{
+        "type": "text",
+        "id": "icon-mail-title",
+        "label": "Icon title",
+		"default": "icon-mail",
+        "info": "[Get icon here](https:\/\/fontawesome.com\/v4.7.0\/icons\/)"
+    },
+	{
+      "type": "text",
+      "id": "widget_newsletter_des",
+      "label": "Description Widget",
+      "default": "Discover the latest trends in Offer & Design"
+    },
+
+	{
+      "type": "header",
+      "content": "Follow Us"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_widget_followus",
+      "label": "Enable?",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "title_followus",
+      "label": "Title Widget",
+      "default": "Follow Us"
+    },
+
+	{
+        "type": "text",
+        "id": "blog_sidbar_ic1",
+        "label": "Icon 1",
+        "info": "[Get icon here](https:\/\/fontawesome.com\/v4.7.0\/icons\/)"
+    },
+
+	{
+        "type": "url",
+        "id": "url_blog_sidbar_ic1",
+        "label": "URL",
+        "default": "\/collections\/all"
+    },
+	{
+        "type": "text",
+        "id": "blog_sidbar_ic2",
+        "label": "Icon 2",
+        "info": "[Get icon here](https:\/\/fontawesome.com\/v4.7.0\/icons\/)"
+    },
+
+	{
+        "type": "url",
+        "id": "url_blog_sidbar_ic2",
+        "label": "URL",
+        "default": "\/collections\/all"
+    },
+	{
+        "type": "text",
+        "id": "blog_sidbar_ic3",
+        "label": "Icon 3",
+        "info": "[Get icon here](https:\/\/fontawesome.com\/v4.7.0\/icons\/)"
+    },
+
+	{
+        "type": "url",
+        "id": "url_blog_sidbar_ic3",
+        "label": "URL",
+        "default": "\/collections\/all"
+    },
+	{
+        "type": "text",
+        "id": "blog_sidbar_ic4",
+        "label": "Icon 4",
+        "info": "[Get icon here](https:\/\/fontawesome.com\/v4.7.0\/icons\/)"
+    },
+
+	{
+        "type": "url",
+        "id": "url_blog_sidbar_ic4",
+        "label": "URL",
+        "default": "\/collections\/all"
+    },
+
+	{
+      "type": "header",
+      "content": "Instagram"
+    },
+	{
+      "type": "checkbox",
+      "id": "enable_widget_insta",
+      "label": "Enable?",
+      "default": true
+    },
+	{
+      "type": "text",
+      "id": "title_insta",
+      "label": "Widget Title",
+      "default": "Instagram"
+    },
+	{
+        "type": "text",
+        "id": "ins_userid",
+        "label": "User ID"
+    },
+	{
+        "type": "text",
+        "id": "ins_access_token",
+        "label": "User ID"
+    },
+	{
+        "type": "range",
+        "id": "ins_limit_number",
+        "min": 1,
+        "max": 10,
+        "step": 1,
+		"label" : "Limit Image",
+        "default": 6
+    },
+	
+    {
+      "type": "header",
+      "content": "Tag"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_widget_tag",
+      "label": "Enable?",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "shop_by_tag_title",
+      "label": "Widget Title",
+      "default": "Tags"
+    },
+	{
+      "type": "header",
+      "content": "Widget banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_widget",
+      "label": "Image",
+      "info": "330x376 px recommended"
+    },
+    {
+      "type": "url",
+      "id": "banner_widget_url",
+      "label": "URL",
+      "default": "/collections/all"
+    }
+    
+  ]
+}
+{% endschema %}

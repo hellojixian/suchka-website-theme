@@ -1,0 +1,36 @@
+<!-- /templates/404.liquid -->
+<div id="content">
+  <div class="content-page">
+    <div class="container">
+      <div class="content-404 text-center">
+        {% if settings.enable_image_404 %}
+        <div class="box-picture">
+          {% if settings.error_bg_img != blank %}
+          <img src="{{settings.error_bg_img | img_url:'master'}}" class="img-fluid">
+          {% else %}
+          <img src="//placehold.it/546x531" class="img-fluid" alt="">
+          {% endif %}
+        </div>
+        {% endif %}
+        {% if settings.title_page_404 != blank %}
+        <h2 class="title-404">{{settings.title_page_404}}</h2> 
+        {% endif%}
+        {% if settings.enable_search_404 %}
+        <div class="search">
+          <form class="wg-search-form" action="/search">
+            <input type="text" placeholder="{{settings.search_placeholder}}" name="q" value="{{ search.terms | escape }}"  />
+            <button type="submit" value=""><i class="icon-search"></i></button>
+          </form>
+        </div>
+        {% endif %}
+        {% if settings.buttonname_404 != blank %}
+
+          <a href="/" class="button-cancel">{{settings.buttonname_404}}</a>
+      
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+

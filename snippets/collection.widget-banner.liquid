@@ -1,0 +1,9 @@
+<div class="banner_sidebar">
+  <a href="{{section.settings.banner_url}}">
+    {% if section.settings.banner_sidebar != blank %}
+    <img src="{{section.settings.banner_sidebar|img_url:'master'}}" class="img-fluid" alt="sidebar">
+    {% else %}
+    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+  </a>
+</div>

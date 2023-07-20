@@ -1,0 +1,11 @@
+
+  {% for i in (1..4) %}
+  {% capture collection_widget_drop %}collection_widget_drop_{{i}}{% endcapture %}
+  {% if section.settings[collection_widget_drop] != blank %}
+    <div class="col-lg-3 col-6 col-md-4">
+      {% include section.settings[collection_widget_drop] %}
+    </div>
+  {% endif %}
+  {% endfor %}
+
+<!-- #secondary -->
