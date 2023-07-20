@@ -6,29 +6,29 @@
       <span></span>
     </span>
   </a>
-  
+
   <div class="logo_menumoblie">
 
     {% if settings.logo_svgmobile != blank %}
     <a href="{{shop.url}}">{{settings.logo_svgmobile}}</a>
-    {% else %}          	
+    {% else %}
     <a href="{{shop.url}}">
       {% if settings.logo_mobile != blank %}
-      <img src="{{settings.logo_mobile|img_url:'master'}}" width="{{settings.mobile_logo_maxwidth}}" alt="logo">
+      <img src="{{settings.logo_mobile|img_url:'master'}}" alt="logo">
       {% else %}
-      <img src="//placehold.it/112x16" width="{{settings.mobile_logo_maxwidth}}" alt="logo">
+      <img src="//placehold.it/112x16"  alt="logo">
       {% endif %}
     </a>
     {% endif %}
   </div>
-  
+
   <div class="menuright">
     <span class=" pr-3 js-search-destop"><i class="icon-search"></i></span>
     <a href="javascript:void(0)" title="" class="js-call-minicart"><i class="icon-cart"></i>
       <span class="count_pr_incart enj-cartcount">{{cart.item_count }}</span>
     </a>
   </div>
-  
+
 </div>
 <div class="box_contentmenu_background">
 </div>
@@ -53,12 +53,12 @@
       </li>
     </ul>
     <div class="tab-content">
-      <div role="tabpanel" class="tab-pane show in active tab_children_menu" id="tab_menu_mobile">        
+      <div role="tabpanel" class="tab-pane show in active tab_children_menu" id="tab_menu_mobile">
 
         {% assign i = 1 %}
 
         {% assign main_menu = settings.main_menu_store %}
-        {% for link in linklists[main_menu].links %}    
+        {% for link in linklists[main_menu].links %}
         {% assign item = link.title | downcase %}
         {% assign child_list_handle = link.title | handleize %}
 
@@ -66,7 +66,7 @@
 
         <div class="menu-horizon-list">
           {% if link.title contains '[' %}
-          {%- assign label  = link.title | split: '[' | last  | split: ']' | first -%}  
+          {%- assign label  = link.title | split: '[' | last  | split: ']' | first -%}
           {%- assign bgc  = link.title | split: '(' | last  | split: ')' | first -%}
 
           <a href="{{ link.url }}" title="{{link.title | split: '[' | first }}" class="relative nammenu ">{{link.title | split: '[' | first }}
@@ -74,7 +74,7 @@
             <style>
               .label_menu-{{link.title | handleize}}-{{forloop.index}}:before {
                 border-top: 4px solid {{link.title | split: '(' | last  | split: ')' | first}};
-              }            
+              }
             </style>
           </a>
           {% else %}
@@ -97,7 +97,7 @@
                 <style>
                   .label_menu-{{childlink.title | handleize}}-{{forloop.index}}:before {
                     border-top: 4px solid {{childlink.title | split: '(' | last  | split: ')' | first}};
-                  }            
+                  }
                 </style>
               </a>
               {% else %}
@@ -110,14 +110,14 @@
               <li>
 
                 {% if grandchildlink.title contains '[' %}
-                {%- assign label  = grandchildlink.title | split: '[' | last  | split: ']' | first -%}  
+                {%- assign label  = grandchildlink.title | split: '[' | last  | split: ']' | first -%}
                 {%- assign bgc  = grandchildlink.title | split: '(' | last  | split: ')' | first -%}
                 <a href="{{ grandchildlink.url }}" title="{{grandchildlink.title | split: '[' | first }}" class="relative delay03 uppercase menu_lv1 "><span>{{grandchildlink.title | split: '[' | first }}</span>
                   <div class="absolute label_menu label_menu-{{grandchildlink.title | handleize}}-{{forloop.index}}" {% if grandchildlink.title contains '(' %}style="background-color: {{grandchildlink.title | split: '(' | last  | split: ')' | first}};"{% endif %}>{{grandchildlink.title | split: '[' | last  | split: ']' | first}}</div>
                   <style>
                     .label_menu-{{grandchildlink.title | handleize}}-{{forloop.index}}:before {
                       border-top: 4px solid {{grandchildlink.title | split: '(' | last  | split: ')' | first}};
-                    }            
+                    }
                   </style>
                 </a>
                 {% else %}
@@ -137,14 +137,14 @@
 
         <div class="menu-horizon-list ">
           {% if link.title contains '[' %}
-          {%- assign label  = link.title | split: '[' | last  | split: ']' | first -%}  
+          {%- assign label  = link.title | split: '[' | last  | split: ']' | first -%}
           {%- assign bgc  = link.title | split: '(' | last  | split: ')' | first -%}
           <a href="{{ link.url }}" title="{{link.title | split: '[' | first }}" class="nammenu relative delay03 uppercase menu_lv1 "><span>{{link.title | split: '[' | first }}</span>
             <div class="absolute label_menu label_menu-{{link.title | handleize}}-{{forloop.index}}" {% if link.title contains '(' %}style="background-color: {{link.title | split: '(' | last  | split: ')' | first}};"{% endif %}>{{link.title | split: '[' | last  | split: ']' | first}}</div>
             <style>
               .label_menu-{{link.title | handleize}}-{{forloop.index}}:before {
                 border-top: 4px solid {{link.title | split: '(' | last  | split: ')' | first}};
-              }            
+              }
             </style>
           </a>
           {% else %}
@@ -259,7 +259,7 @@
       </div>
     </div>
     <div class="close-menu-mobile text-center js-eveland-close">
-      <i class="ti-close mr-3"></i>Close    
+      <i class="ti-close mr-3"></i>Close
     </div>
   </div>
 </div>
