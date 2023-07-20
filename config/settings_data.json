@@ -313,7 +313,7 @@
     "icon_mail_fv5": "icon-mail",
     "enable_fv5_bottom": true,
     "fv5_bottom_copyright": "<p class=\"text-copyright mb-0\">©2020 <a href=\"http:\/\/suchka.me\" target=\"_blank\">Suchka LLC, UA<\/a> .All rights reserved<\/p>",
-    "fv5_bottom_payment_img": "shopify:\/\/shop_images\/paymenlight.png",
+    "fv5_bottom_payment_img": "shopify:\/\/shop_images\/payment-logo.png",
     "po_style": "po_swatchs",
     "show_new_label": true,
     "product_new_time": "69",
