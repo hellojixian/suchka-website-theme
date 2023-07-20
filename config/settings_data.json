@@ -3299,7 +3299,6 @@
           "1564476166439": {
             "type": "banner_collection",
             "settings": {
-              "brand_img": "shopify:\/\/shop_images\/product-banner.jpg",
               "brand_url": "shopify:\/\/collections\/all",
               "block_content": "Backpacks"
             }
@@ -3341,7 +3340,7 @@
           "1567221241444"
         ],
         "settings": {
-          "bg_breadcrumb": "shopify:\/\/shop_images\/product-banner.jpg",
+          "bg_breadcrumb": "shopify:\/\/shop_images\/product-banner_911dc0b3-737c-4dce-a4da-c5c7d7c509d4.jpg",
           "color_breadcrumb": "#ffffff",
           "color_breadcrumb_2": "#b8b8b8",
           "breadcrumb_layout": "breadcrumb_1",
