@@ -12,7 +12,7 @@
   width: 100%;
   margin: 0 auto;
 }
-@font-face { 
+@font-face {
     font-family: Sofia Pro;
   	src: url({{ "SofiaProBold.ttf" | asset_url}});
     font-style: normal;
@@ -37,13 +37,13 @@
     font-style: normal;
     font-weight: 400
 }
-@font-face { 
+@font-face {
     font-family: Sofia Pro;
   	src: url({{ "SofiaProLight.ttf" | asset_url}});
     font-style: normal;
     font-weight: 300
 }
-@font-face { 
+@font-face {
     font-family: Sofia Pro;
   	src: url({{ "SofiaProExtraLight.ttf" | asset_url}});
     font-style: normal;
@@ -64,7 +64,7 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.video-wrapper { 
+.video-wrapper {
   position: relative;
   overflow: hidden;
   max-width: 100%;
@@ -108,11 +108,11 @@
 .engoc-review-app {
   h1, h2, h3, h4, h5, h6, label {
     font-weight: normal !important;
-  } 
+  }
 }
 
 /* Quantity product detail */
-.qtyminus, .qtyplus { 
+.qtyminus, .qtyplus {
   i {
     font-size: 10px;
   }
@@ -293,16 +293,16 @@
 /* ========================================
 10. Swatch
 ======================================== */
-/* 
+/*
 Swatches Styles
 */
 
 {% assign width = '30px' %}
 {% assign height = '30px' %}
-.swatch { 
+.swatch {
   margin-bottom: 10px;
   width: 100%;
-  margin:1em 0; 
+  margin:1em 0;
   align-items: center;
 }
 .maxus-productdetail__options{
@@ -313,7 +313,7 @@ Swatches Styles
 
 
 /* Hide radio buttons.*/
-.swatch input { 
+.swatch input {
   display:none;
 }
 .swatch label {
@@ -324,7 +324,7 @@ Swatches Styles
   /* To give width and height */
   float:left;
   /* Color swatches contain no text so they need to have a width. */
-  min-width:{{ width }} !important; 
+  min-width:{{ width }} !important;
   height:{{ height }} !important;
   /* No extra spacing between them */
   margin:0;
@@ -349,7 +349,7 @@ Swatches Styles
 .swatch input:checked + label {
   background: #000;
   border-color:transparent;
-} 
+}
 .swatch .swatch-element {
   float:left;
   -webkit-transform:translateZ(0); /* webkit flicker fix */
@@ -404,8 +404,8 @@ Swatches Styles
   -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
   z-index: 10000;
-  -moz-box-sizing:border-box; 
-  -webkit-box-sizing:border-box; 
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
   box-sizing:border-box;
 }
 .swatch .tooltip:before {
@@ -467,7 +467,7 @@ Swatches Styles
 ======================================== */
 .engoc_sw_filter_tag {
   .filter-tag {
-    ul { 
+    ul {
       li {
         margin-bottom: 10px;
 
@@ -708,7 +708,7 @@ Swatches Styles
   overflow: hidden;
 
   visibility: hidden;
-  opacity: 0;  
+  opacity: 0;
 
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -766,10 +766,10 @@ Swatches Styles
 
   &.active{
     visibility: visible;
-    opacity: 1; 
+    opacity: 1;
     top: 0;
     height: auto;
-    width: auto; 
+    width: auto;
 
     .content{
       max-height: 100%;
@@ -912,7 +912,7 @@ CUSTOM GOOGLE FONTS
 $font-primary: {{fontname_1}};
 $font-primary2: {{fontname_2}};
 $font-primary3: {{fontname_3}};
- 
+
 {% else %}
 $font-primary: 'Sofia Pro', sans-serif;
 $font-primary2: 'Prata', serif;
@@ -1107,7 +1107,7 @@ CASANO
         }
       }
     }
-    
+
   }
   .img-product{
     overflow:hidden;
@@ -1238,22 +1238,22 @@ CASANO
     .variant-product{
       bottom: 67px;
       opacity: 1 ;
-      visibility: visible; 
+      visibility: visible;
     }
     .des-font{
       bottom: 28px;
       opacity: 1 ;
-      visibility: visible; 
+      visibility: visible;
     }
     .price-product{
       top: 20px;
       opacity: 1 ;
-      visibility: visible; 
+      visibility: visible;
     }
     .product-icon-action{
       top: 50%;
       opacity: 1 ;
-      visibility: visible;      
+      visibility: visible;
     }
   }
 }
@@ -1275,7 +1275,7 @@ CASANO
         }
       }
     }
-    
+
   }
 
   .price-product{
@@ -1347,14 +1347,14 @@ CASANO
       }
     }
   }
-  
+
   .product-icon-action{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     display: block;
-    transition: 0.5s;  
+    transition: 0.5s;
     opacity: 0 ;
     visibility: hidden;
     li{
@@ -1422,7 +1422,7 @@ CASANO
     left: 28px;
     font-weight: 400;
   }
- 
+
   &:hover{
     .sold-out{
       transform:  translate(-50%, -50%)  scale(1);
@@ -1431,12 +1431,12 @@ CASANO
     .variant-product{
       right: 25px;
       opacity: 1 ;
-      visibility: visible; 
+      visibility: visible;
     }
     .product-icon-action{
       left: 25px;
       opacity: 1 ;
-      visibility: visible;      
+      visibility: visible;
     }
   }
 }
@@ -1458,8 +1458,8 @@ CASANO
         }
       }
     }
-    
-  }  
+
+  }
   .img-product{
     overflow:hidden;
     .label-new{
@@ -1520,13 +1520,13 @@ CASANO
       }
     }
   }
-  
+
   .product-icon-action{
     position: absolute;
     bottom: 84px;
     left: 0;
     display: block;
-    transition: 0.5s;  
+    transition: 0.5s;
     opacity: 0 ;
     visibility: hidden;
     li{
@@ -1593,13 +1593,13 @@ CASANO
     font-weight: 400;
     color: $color-main3;
   }
-  
+
   .des-font{
     font-size: 16px;
     font-weight: 400;
     margin-top: 20px;
   }
- 
+
   &:hover{
     .sold-out{
       transform:  translate(-50%, -50%)  scale(1);
@@ -1608,12 +1608,12 @@ CASANO
     .variant-product{
       right: 25px;
       opacity: 1 ;
-      visibility: visible; 
+      visibility: visible;
     }
     .product-icon-action{
       left: 25px;
       opacity: 1 ;
-      visibility: visible;      
+      visibility: visible;
     }
   }
 }
@@ -1640,7 +1640,7 @@ CASANO
           color: $color-main2;
         }
       }
-    }    
+    }
   }
   .img-product{
     overflow:hidden;
@@ -1786,17 +1786,17 @@ CASANO
     .add-to-cart{
       transform: unset;
       opacity: 1 ;
-      visibility: visible;  
+      visibility: visible;
     }
     .product-icon-action{
       transform: unset;
       opacity: 1 ;
-      visibility: visible; 
+      visibility: visible;
     }
     .img-product{
       .variant-product{
         opacity: 1 ;
-        visibility: visible; 
+        visibility: visible;
         bottom:62px;
       }
     }
@@ -1888,13 +1888,13 @@ CASANO
       }
     }
   }
-  
+
   .product-icon-action{
     position: absolute;
     bottom: 84px;
     left: 0;
     display: block;
-    transition: 0.5s;  
+    transition: 0.5s;
     opacity: 0 ;
     visibility: hidden;
     li{
@@ -1982,12 +1982,12 @@ CASANO
     .variant-product{
       right: 25px;
       opacity: 1 ;
-      visibility: visible; 
+      visibility: visible;
     }
     .product-icon-action{
       left: 25px;
       opacity: 1 ;
-      visibility: visible;      
+      visibility: visible;
     }
     .des-font{
       bottom: 15px;
@@ -2066,7 +2066,7 @@ CASANO
           width: 100%;
           height: 0;
           opacity: 0;
-          visibility: hidden;      
+          visibility: hidden;
           -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
           z-index: -1;
@@ -2083,8 +2083,8 @@ CASANO
           }
         }
       }
-    }    
-  }  
+    }
+  }
 }
 
 .title-all-home1{
@@ -2136,7 +2136,7 @@ CASANO
     padding-top: 70px;
     ul{
       li{
-        a{        
+        a{
           font-size: 16px;
           font-weight: 400;
           color: $color-main3;
@@ -2166,7 +2166,7 @@ CASANO
       }
     }
   }
-  
+
   .tab-content{
     .product-tab-pd{
     	margin-bottom:25px;
@@ -2198,7 +2198,7 @@ CASANO
           width: 100%;
           height: 0;
           opacity: 0;
-          visibility: hidden;      
+          visibility: hidden;
           -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
           z-index: -1;
@@ -2269,7 +2269,7 @@ CASANO
           width: 100%;
           height: 0;
           opacity: 0;
-          visibility: hidden;      
+          visibility: hidden;
           -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
           z-index: -1;
@@ -2390,7 +2390,7 @@ CASANO
             font-size:14px;
             color: $color-main3;
           }
-        }          
+        }
       }
       .btn{
         position: absolute;
@@ -2474,7 +2474,7 @@ CASANO
     &:hover{
       .content-intagram{
         opacity:1;
-        visibility: visible;       
+        visibility: visible;
       }
       img{
         filter: brightness(0.3);
@@ -2534,7 +2534,7 @@ CASANO
           width: 100%;
           height: 0;
           opacity: 0;
-          visibility: hidden;      
+          visibility: hidden;
           -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
           z-index: -1;
@@ -2556,7 +2556,7 @@ CASANO
 }
 
 .section-banner-v4{
-  margin-top: -200px;  
+  margin-top: -200px;
   .banner-box{
     position: relative;
     overflow: hidden;
@@ -2605,7 +2605,7 @@ CASANO
           width: 100%;
           height: 0;
           opacity: 0;
-          visibility: hidden;      
+          visibility: hidden;
           -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
           z-index: -1;
@@ -2632,7 +2632,7 @@ CASANO
         }
         .button-shop{
           opacity: 1;
-          visibility: visible;      
+          visibility: visible;
         }
       }
     }
@@ -2686,7 +2686,7 @@ CASANO
             font-size:14px;
             color: $color-main3;
           }
-        }          
+        }
       }
       .btn{
         position: absolute;
@@ -2801,11 +2801,11 @@ CASANO
       transition: color .4s ease-in-out;
       transform-origin: left top;
       bottom: 31%;
-      &:hover{      
-        color:$color-main2; 
+      &:hover{
+        color:$color-main2;
       }
     }
-  }   
+  }
   .spring_carousel {
     .item {
       h3 {
@@ -2848,7 +2848,7 @@ CASANO
           width: 100%;
           height: 0;
           opacity: 0;
-          visibility: hidden;      
+          visibility: hidden;
           -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
           z-index: -1;
@@ -2890,11 +2890,11 @@ CASANO
     margin-right:48px;
     border-right: 1px solid #ffffff63;
   }
-  
-  
+
+
   @media (min-width: 992px) and (max-width: 1199.98px){
-    
-      
+
+
     .spring_carousel {
       .item {
         h3 {
@@ -2908,9 +2908,9 @@ CASANO
           padding: 12px;
         }
       }
-    } 
+    }
   }
-  
+
   @media (min-width: 768px) and (max-width: 991.9px){
     margin-bottom:50px;
     .spring_carousel {
@@ -2929,7 +2929,7 @@ CASANO
         }
       }
     }
-  }  
+  }
 
   @media (min-width: 576px) and (max-width: 767.9px){
      button.prev-slide {
@@ -2942,14 +2942,14 @@ CASANO
       align-items:unset!important;
     }
     margin-bottom:50px;
-  
+
     .box-info{
       .label_text {
         margin-top: 20px;
         position: unset;
         transform: rotate(0deg);
       }
-    }   
+    }
     .spring_carousel {
       .item {
         h3 {
@@ -2967,7 +2967,7 @@ CASANO
       }
     }
   }
-  
+
   @media (max-width: 575.98px){
     margin-bottom:50px;
     button.prev-slide {
@@ -2985,7 +2985,7 @@ CASANO
 
     .box-info{
       margin-bottom: 30px;
-    }   
+    }
     .spring_carousel {
       .item {
         margin-top:0px;
@@ -3005,7 +3005,7 @@ CASANO
     }
 
   }
-  
+
 }
 
 .section-newsletter-v2.pd-small{
@@ -3025,7 +3025,7 @@ CASANO
     position: relative;
     font-weight: 400;
     text-transform: capitalize;
-   
+
     &:before{
       content: '';
       position: absolute;
@@ -3076,7 +3076,7 @@ CASANO
         width: 100%;
         height: 0;
         opacity: 0;
-        visibility: hidden;      
+        visibility: hidden;
         -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
         z-index: -1;
@@ -3102,7 +3102,7 @@ CASANO
   border-bottom: 1px solid #ececec;
   .content-section-blog{
     padding-top:50px;
-    
+
     .info_blog{
       .title-blog{
         font-family: $font-primary;
@@ -3142,7 +3142,7 @@ CASANO
         }
       }
     }
-    
+
     .post-meta{
       font-size: 14px;
       border-bottom: 1px solid #eaeaea;
@@ -3194,7 +3194,7 @@ CASANO
       }
     }
   }
-  
+
   .slick-slide img {
     transition: all .3s ease;
     &:hover{
@@ -3256,7 +3256,7 @@ CASANO
           width: 100%;
           height: 0;
           opacity: 0;
-          visibility: hidden;      
+          visibility: hidden;
           -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
           z-index: -1;
@@ -3393,7 +3393,7 @@ CASANO
   }
 }
 
-.title-all-home3{  
+.title-all-home3{
   margin-bottom: 54px !important;
   padding-bottom: 25px;
   position: relative;
@@ -3507,7 +3507,7 @@ CASANO
             font-size:14px;
             color: #fff;
           }
-        }          
+        }
       }
       .btn{
         position: absolute;
@@ -3550,7 +3550,7 @@ CASANO
     margin-bottom: 34px !important;
     padding-bottom: 25px;
   }
-  
+
   .next-slide{
     width: 50px;
     height: 50px;
@@ -3591,7 +3591,7 @@ CASANO
       background-color: $color-main2;
     }
   }
-  
+
 }
 
 .section-instagram-v2{
@@ -3751,7 +3751,7 @@ CASANO
           width: 100%;
           height: 0;
           opacity: 0;
-          visibility: hidden;      
+          visibility: hidden;
           -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
           z-index: -1;
@@ -3886,7 +3886,7 @@ CASANO
         width: 100%;
         height: 0;
         opacity: 0;
-        visibility: hidden;      
+        visibility: hidden;
         -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
         z-index: -1;
@@ -3957,7 +3957,7 @@ CASANO
           width: 100%;
           height: 0;
           opacity: 0;
-          visibility: hidden;      
+          visibility: hidden;
           -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
           z-index: -1;
@@ -4028,7 +4028,7 @@ CASANO
         width: 100%;
         height: 0;
         opacity: 0;
-        visibility: hidden;      
+        visibility: hidden;
         -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
         z-index: -1;
@@ -4107,7 +4107,7 @@ CASANO
       	color:$color-main2;
       }
     }
-  } 
+  }
 
   .button-setion{
     .button-shop{
@@ -4193,7 +4193,7 @@ CASANO
           width: 100%;
           height: 0;
           opacity: 0;
-          visibility: hidden;      
+          visibility: hidden;
           -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
           z-index: -1;
@@ -4211,7 +4211,7 @@ CASANO
         }
       }
     }
-  }  
+  }
   .box-info.end{
   	padding-top:30px;
   }
@@ -4223,11 +4223,11 @@ CASANO
   .slick-dotted.slick-slider {
     margin-bottom: 0px;
   }
-  
+
   .slick-dots {
     position: absolute;
     top: unset;
-    bottom: 5%;    
+    bottom: 5%;
     left: 50%;
     transform: translate(-50%);
     width: unset;
@@ -4250,7 +4250,7 @@ CASANO
       }
     }
   }
-  
+
   .info-sideh3{
     position:relative;
     .picture-slideshow{
@@ -4266,7 +4266,7 @@ CASANO
       left: 13.1%;
       top: 50%;
       transform: translateY(-50%);
-      z-index:2;     
+      z-index:2;
 
       .box-title{
         overflow: hidden;
@@ -4279,7 +4279,7 @@ CASANO
           opacity:0;
         }
       }
-      
+
       .subtitle-1{
         padding-top: 10px;
         overflow: hidden;
@@ -4291,7 +4291,7 @@ CASANO
           opacity:0;
         }
       }
-      
+
       .box-button{
         a{
           letter-spacing: 4px;
@@ -4314,10 +4314,10 @@ CASANO
             transition-delay: 0s;
           }
         }
-      }      
+      }
     }
   }
-  
+
   .slick-active {
     .info-sideh3{
       .picture-slideshow{
@@ -4479,7 +4479,7 @@ CASANO
     &.selected{
       transition: transform .7s ease 0s,opacity .7s ease 0s;
       -o-transition: transform .7s ease 0s,opacity .7s ease 0s;
-      -webkit-transition: transform .7s ease 0s,opacity .7s ease 0s; 
+      -webkit-transition: transform .7s ease 0s,opacity .7s ease 0s;
       opacity: 1;
       visibility: visible;
       z-index: 0;
@@ -4490,7 +4490,7 @@ CASANO
       transform: scale(1);
     }
   }
-  
+
   .slick-dotted.slick-slider {
     margin-bottom: 0px;
   }
@@ -4513,7 +4513,7 @@ CASANO
         }
         @media only screen and (min-width: 992px) {
           font-size: 45px;
-        } 
+        }
         @media only screen and (min-width: 1670px) {
           font-size: 50px;
         }
@@ -4636,11 +4636,11 @@ CASANO
         transition: background-position 400ms, color 400ms ease, border-color 400ms ease;
       }
     }
-  } 
+  }
 }
 
 .section-slideshow-v2{
-  .itemv-slide-h2{    
+  .itemv-slide-h2{
     .info-sideh2{
       position:relative;
       .box-content{
@@ -4699,7 +4699,7 @@ CASANO
             }
           }
         }
-        
+
       }
       .picture_left{
         position: absolute;
@@ -4708,9 +4708,9 @@ CASANO
         transition: all 1s cubic-bezier(0,.45,.58,.2);
         transform: scale(0.9);
       }
-    }    
-  } 
-   
+    }
+  }
+
   .slick-dots {
     position: absolute;
     top: unset;
@@ -4736,7 +4736,7 @@ CASANO
       }
     }
   }
-  
+
   .slick-dotted.slick-slider {
     margin-bottom: 0px;
   }
@@ -4746,11 +4746,11 @@ CASANO
          .box-contentp{
             p{
               opacity: 1;
-              transform: unset;        	
+              transform: unset;
             }
          }
         .title1,
-        .title2        
+        .title2
         {
           opacity: 1;
           transform: unset;
@@ -4764,11 +4764,11 @@ CASANO
         transform: scale(1);
       }
     }
-    
+
   }
 }
 
-.footer_v1{  
+.footer_v1{
   padding-top: 22px;
   padding-bottom: 22px;
   border-top: 1px solid {{settings.color_bordertop_fv1}};
@@ -4804,7 +4804,7 @@ CASANO
   .casano-socials{
     ul{
       li{
-        a{        
+        a{
           width: 34px;
           height: 34px;
           display: inline-flex;
@@ -4947,7 +4947,7 @@ CASANO
             font-weight: 500;
             color:{{settings.color_content_fv3}};
              &:hover{
-             color:{{settings.color_hover_content_fv3}};            
+             color:{{settings.color_hover_content_fv3}};
              }
           }
         }
@@ -4991,7 +4991,7 @@ CASANO
             font-weight: 500;
             color:{{settings.color_content_fv4}};
              &:hover{
-             color:{{settings.color_hover_content_fv4}};            
+             color:{{settings.color_hover_content_fv4}};
              }
           }
         }
@@ -5037,7 +5037,7 @@ CASANO
         }
       }
     }
-    
+
     .info_footer{
       ul{
         li{
@@ -5080,7 +5080,7 @@ CASANO
           color: {{settings.color_placehover_fv5}};
           font-weight: 400;
           font-family: $font-primary;
-        }        
+        }
       }
       .submit-newsletter {
         width: 79px;
@@ -5095,7 +5095,7 @@ CASANO
         &:hover{
           background-color: {{settings.color_title_fv5}};
           color: {{settings.color_background_fv5}};
-        }        
+        }
       }
     }
 
@@ -5123,7 +5123,7 @@ CASANO
 // pages casano
 
 
-.aboutus-pages{ 
+.aboutus-pages{
   padding-top: 90px;
   .page-main-content{
     max-width: 1070px;
@@ -5173,7 +5173,7 @@ CASANO
 
   .about-introduce{
     .intro_image{
-      padding-bottom: 70px; 
+      padding-bottom: 70px;
       overflow: hidden;
       img{
         transition: color 0.25s,border-color 0.25s,background-color 0.25s,opacity 0.25s,width 0.25s ease
@@ -5185,7 +5185,7 @@ CASANO
       }
     }
     .intro_detail{
-      padding-bottom: 70px; 
+      padding-bottom: 70px;
       .info-intro{
         .title_intro{
           font-size: 20px;
@@ -5240,7 +5240,7 @@ CASANO
             width: 100%;
             height: 0;
             opacity: 0;
-            visibility: hidden;      
+            visibility: hidden;
             -webkit-transition: all .3s ease-in-out;
             transition: all .3s ease-in-out;
             z-index: -1;
@@ -5260,7 +5260,7 @@ CASANO
       }
     }
   }
-  
+
   .section-service-v1{
   margin-top:90px;
   padding-top: 130px;
@@ -5288,8 +5288,8 @@ CASANO
     font-weight: 400;
     font-family: $font-primary;
   }
-}  
- 
+}
+
   .section-newsletter-v1{
   padding-top: 65px;
   padding-bottom: 80px;
@@ -5333,7 +5333,7 @@ CASANO
             font-size:14px;
             color: $color-main3;
           }
-        }          
+        }
       }
       .btn{
         position: absolute;
@@ -5388,7 +5388,7 @@ CASANO
       border-bottom: 1px solid;
     }
   }
-  
+
   .section-contact-form{
     padding-bottom: 75px;
     .contact-form-page{
@@ -5416,7 +5416,7 @@ CASANO
             padding: 15px;
             padding-left: 25px;
             border-radius: 3px;
-          }         
+          }
         }
         .contact-message{
           margin-bottom: 18px;
@@ -5500,8 +5500,8 @@ CASANO
 
   }
 
- 
- 
+
+
    .section-newsletter-v1{
      border-top: 1px solid #ebebeb;
   padding-top: 65px;
@@ -5546,7 +5546,7 @@ CASANO
             font-size:14px;
             color: $color-main3;
           }
-        }          
+        }
       }
       .btn{
         position: absolute;
@@ -5593,7 +5593,7 @@ CASANO
     margin: 65px auto 45px;
     text-transform: unset;
   }
- 
+
   .search{
     position: relative;
     max-width: 560px;
@@ -5639,7 +5639,7 @@ CASANO
      	background-color: $color-main2;
      }
   }
-  
+
 }
 
 .article-page{
@@ -5647,7 +5647,7 @@ CASANO
   .content-all-page-article{
   	padding-top:40px;
   }
-  
+
   .top-breadcrumb{
   	padding-top:30px;
     .bread-crumb{
@@ -5666,7 +5666,7 @@ CASANO
       }
     }
   }
-  
+
   .content-single-blog{
     .post-details{
       .picture-avatar{
@@ -5721,12 +5721,12 @@ CASANO
             font-weight : 500;
             padding-left: 5px;
             &:hover{
-            	color: $color-main2;	
+            	color: $color-main2;
             }
           }
         }
       }
-      
+
       .content-post-default{
         p{
           font-size: 16px;
@@ -5759,7 +5759,7 @@ CASANO
         border-top:  1px solid #eaeaea;
         padding: 13px 0;
         margin-top:34px;
-        .tags{         
+        .tags{
           a{
             display: inline-block;
             margin: 6px 12px 6px 0;
@@ -5808,7 +5808,7 @@ CASANO
       }
     }
   }
- 
+
   .reply-comment{
     .title_form{
       font-size: 26px;
@@ -5868,7 +5868,7 @@ CASANO
             font-family: $font-primary;
             color: #999999;
           }
-        }  
+        }
       }
       .contact-message{
         clear: both;
@@ -5913,7 +5913,7 @@ CASANO
       }
     }
   }
-  
+
   .blog-comment-detail{
     border-top:  1px solid #eaeaea;
     .title_cmt_details{
@@ -5978,8 +5978,8 @@ CASANO
       }
     }
   }
-  
-   .article_sidebar{   
+
+   .article_sidebar{
      .widget-search{
       padding-bottom: 40px;
       .wg-search-form{
@@ -6004,7 +6004,7 @@ CASANO
           right: 0;
           padding: 0;
           height: 56px;
-          width: 70px;          
+          width: 70px;
           text-align: center;
           i{
             color: $color-main;
@@ -6019,8 +6019,8 @@ CASANO
         }
       }
     }
-    
-    .widget-title{        
+
+    .widget-title{
       border-bottom: 1px solid #e7e7e7;
       .title-all-article{
         font-family: $font-primary;
@@ -6045,7 +6045,7 @@ CASANO
     }
 
     .blog_sidebar_cate{
-      padding-bottom: 17px;      
+      padding-bottom: 17px;
       .widget-content{
         margin-top:20px;
         .list-category-toggle{
@@ -6073,10 +6073,10 @@ CASANO
       }
 
     }
-    
+
     .blog_sidebar_recent{
       padding-bottom: 44px;
-      .widget-title{        
+      .widget-title{
         border-bottom: 1px solid #e7e7e7;
         .title{
           font-family: $font-primary;
@@ -6131,7 +6131,7 @@ CASANO
         }
       }
     }
-    
+
     .widget_newsletter{
       padding-bottom: 48px;
       .newsletter_form{
@@ -6150,7 +6150,7 @@ CASANO
           color: $color-main;
           max-width: 190px;
           margin-left: auto;
-          margin-right: auto;      
+          margin-right: auto;
           font-family: $font-primary;
           font-size: 16px;
           font-weight: 400;
@@ -6201,7 +6201,7 @@ CASANO
         }
       }
     }
-    
+
     .widget_instagram{
       padding-bottom: 38px;
       .instagram-content{
@@ -6230,8 +6230,8 @@ CASANO
           }
         }
       }
-    }   
-    
+    }
+
     .widget_followus{
       padding-bottom: 40px;
       .list_social{
@@ -6274,7 +6274,7 @@ CASANO
         }
       }
     }
-    
+
     .widget-tags{
       padding-bottom: 30px;
       .list-tag{
@@ -6307,7 +6307,7 @@ CASANO
         }
       }
     }
-    
+
     .widget_picture{
       padding-bottom: 30px;
       overflow: hidden;
@@ -6346,7 +6346,7 @@ CASANO
     }
 
   }
-  
+
 }
 
 .blog-page{
@@ -6437,8 +6437,8 @@ CASANO
           }
         }
       }
-      
-      .blog_classic{        
+
+      .blog_classic{
         .box-img{
         	margin-bottom:30px;
           	border-radius:3px;
@@ -6468,7 +6468,7 @@ CASANO
               }
             }
           }
-          
+
           .article_title{
             margin-bottom: 8px;
             font-size: 30px;
@@ -6477,7 +6477,7 @@ CASANO
             color:$color-main;
             font-weight: 300;
           }
-          
+
           .cmt-author{
             margin-bottom: 18px;
             .author{
@@ -6494,7 +6494,7 @@ CASANO
                 font-weight : 500;
                 padding-left: 5px;
                 &:hover{
-                  color: $color-main2;	
+                  color: $color-main2;
                 }
               }
             }
@@ -6505,7 +6505,7 @@ CASANO
             font-weight: 400;
             color: $color-main3;
           }
-          
+
           .shop-button{
             font-size: 12px;
             letter-spacing: 0.3em;
@@ -6515,7 +6515,7 @@ CASANO
             line-height: 1;
           }
         }
-        
+
       }
       .blog_classic.one{
         .blog-post{
@@ -6549,8 +6549,8 @@ CASANO
         .blog-post{
         	padding-top:36px;
         }
-      }      
-      
+      }
+
       .blog_standar{
          margin-bottom: 55px;
         &:last-child{
@@ -6610,7 +6610,7 @@ CASANO
                 font-weight : 500;
                 padding-left: 5px;
                 &:hover{
-                  color: $color-main2;	
+                  color: $color-main2;
                 }
               }
             }
@@ -6633,11 +6633,11 @@ CASANO
         }
 
       }
-      
+
     }
     .pagi-nav {
       border-top: none;
-      display: flex; 
+      display: flex;
       align-items: center;
       margin-top:45px;
       span{
@@ -6674,7 +6674,7 @@ CASANO
       }
     }
   }
-   .blog_sidebar{   
+   .blog_sidebar{
      .widget-search{
       padding-bottom: 40px;
       .wg-search-form{
@@ -6699,7 +6699,7 @@ CASANO
           right: 0;
           padding: 0;
           height: 56px;
-          width: 70px;          
+          width: 70px;
           text-align: center;
           i{
             color: $color-main;
@@ -6714,8 +6714,8 @@ CASANO
         }
       }
     }
-    
-    .widget-title{        
+
+    .widget-title{
       border-bottom: 1px solid #e7e7e7;
       .title-all-article{
         font-family: $font-primary;
@@ -6740,7 +6740,7 @@ CASANO
     }
 
     .blog_sidebar_cate{
-      padding-bottom: 17px;      
+      padding-bottom: 17px;
       .widget-content{
         margin-top:20px;
         .list-category-toggle{
@@ -6768,10 +6768,10 @@ CASANO
       }
 
     }
-    
+
     .blog_sidebar_recent{
       padding-bottom: 44px;
-      .widget-title{        
+      .widget-title{
         border-bottom: 1px solid #e7e7e7;
         .title{
           font-family: $font-primary;
@@ -6826,7 +6826,7 @@ CASANO
         }
       }
     }
-    
+
     .widget_newsletter{
       padding-bottom: 48px;
       .newsletter_form{
@@ -6845,7 +6845,7 @@ CASANO
           color: $color-main;
           max-width: 190px;
           margin-left: auto;
-          margin-right: auto;      
+          margin-right: auto;
           font-family: $font-primary;
           font-size: 16px;
           font-weight: 400;
@@ -6896,7 +6896,7 @@ CASANO
         }
       }
     }
-    
+
     .widget_instagram{
       padding-bottom: 38px;
       .instagram-content{
@@ -6925,8 +6925,8 @@ CASANO
           }
         }
       }
-    }   
-    
+    }
+
     .widget_followus{
       padding-bottom: 40px;
       .list_social{
@@ -6969,7 +6969,7 @@ CASANO
         }
       }
     }
-    
+
     .widget-tags{
       padding-bottom: 30px;
       .list-tag{
@@ -7002,7 +7002,7 @@ CASANO
         }
       }
     }
-    
+
     .widget_picture{
       padding-bottom: 30px;
       overflow: hidden;
@@ -7041,7 +7041,7 @@ CASANO
     }
 
   }
-  
+
 }
 
 .collection-page-sidebar{
@@ -7086,14 +7086,14 @@ CASANO
           }
         }
       }
-	.filter_sidebar{    
+	.filter_sidebar{
       padding: 0px 0px;
       padding-left: 6px;
       overflow-y: auto;
       position: relative;
       .filter-category{
         padding-top: 25px;
-       
+
         .widget-content{
           margin-top: 10px;
           .list-category-toggle{
@@ -7124,7 +7124,7 @@ CASANO
                 text-align: center;
                 float: right;
                 text-decoration: none;
-                
+
                 .engoc-faq-icon-plus {
                   display: block;
                 }
@@ -7166,14 +7166,14 @@ CASANO
           }
         }
       }
-      
+
       .filter-color{
         padding-top: 15px;
-        
+
         .list_color{
           padding-left: 0;
           padding-top: 30px;
-          
+
           li{
             list-style: none;
             display: inline-flex;
@@ -7211,7 +7211,7 @@ CASANO
                 transition: 0.5s;
               }
               &:hover,
-              &.active              
+              &.active
               {
                 .stylecorlor{
                   &:before{
@@ -7224,14 +7224,14 @@ CASANO
                 }
               }
             }
-            
+
           }
         }
       }
-      
+
       .filter-size{
       	padding-top: 20px;
-        
+
         .list-size{
           padding-left: 0;
           padding-top: 23px;
@@ -7262,11 +7262,11 @@ CASANO
           }
         }
       }
-      
+
       .filter-price {
       	padding-top: 25px;
-       
-        
+
+
         .list-price{
           	padding-top: 15px;
           	padding-left: 0;
@@ -7280,7 +7280,7 @@ CASANO
                 i{
                 	color: #d4d4d4;
                   	font-size: 16px;
-                  	padding-right :14px;	
+                  	padding-right :14px;
                 }
                 &:hover, &.active{
                   color: $color-main2;
@@ -7292,7 +7292,7 @@ CASANO
             }
           }
       }
-      
+
       .widget-tags{
         padding-top: 25px;
 
@@ -7320,13 +7320,13 @@ CASANO
                 border: 1px solid $color-main !important;
                 color: $color-main;
               }
-             
+
             }
           }
         }
       }
 
-      .widget-title{        
+      .widget-title{
         border-bottom: 1px solid #e7e7e7;
         .title{
           font-family: $font-primary;
@@ -7349,9 +7349,9 @@ CASANO
           }
         }
       }
-      
+
     }
-    
+
 }
 
 .collection-page-fullwidth,.collection-page-sidebar{
@@ -7359,7 +7359,7 @@ CASANO
   	padding-bottom:40px;
   }
   .banner-collection{
-    margin-top:-120px;    
+    margin-top:-120px;
     .item{
       padding: 19px;
       text-align: center;
@@ -7378,7 +7378,7 @@ CASANO
         margin: 0 auto;
       }
     }
-    
+
     .next-slide{
       width: 40px;
       height: 40px;
@@ -7421,10 +7421,10 @@ CASANO
         background-color: $color-main2;
       }
     }
-    
-    
+
+
   }
-  
+
   .collection_prod{
     margin-top: 30px;
   }
@@ -7461,7 +7461,7 @@ CASANO
       z-index: 2;
     }
   }
-  
+
   .filter-to-left{
     z-index: 99;
   	width: 415px;
@@ -7517,11 +7517,11 @@ CASANO
         border-radius: 6px;
         opacity: .8;
         }
-      
+
       .filter-category{
         padding-top: 25px;
-        
-        
+
+
         .widget-content{
           margin-top: 10px;
           .list-category-toggle{
@@ -7584,14 +7584,14 @@ CASANO
           }
         }
       }
-      
+
       .filter-color{
         padding-top: 15px;
-        
+
         .list_color{
           padding-left: 0;
           padding-top: 30px;
-          
+
           li{
             list-style: none;
             display: inline-flex;
@@ -7629,7 +7629,7 @@ CASANO
                 transition: 0.5s;
               }
               &:hover,
-              &.active              
+              &.active
               {
                 .stylecorlor{
                   &:before{
@@ -7642,14 +7642,14 @@ CASANO
                 }
               }
             }
-            
+
           }
         }
       }
-      
+
       .filter-size{
       	padding-top: 20px;
-        
+
         .list-size{
           padding-left: 0;
           padding-top: 23px;
@@ -7680,11 +7680,11 @@ CASANO
           }
         }
       }
-      
+
       .filter-price {
       	padding-top: 25px;
-       
-        
+
+
         .list-price{
           	padding-top: 15px;
           	padding-left: 0;
@@ -7698,7 +7698,7 @@ CASANO
                 i{
                 	color: #d4d4d4;
                   	font-size: 16px;
-                  	padding-right :14px;	
+                  	padding-right :14px;
                 }
                 &:hover, &.active{
                   color: $color-main2;
@@ -7710,8 +7710,8 @@ CASANO
             }
           }
       }
-      
-      .widget-title{        
+
+      .widget-title{
         .title{
           font-family: $font-primary;
           font-size: 20px;
@@ -7735,7 +7735,7 @@ CASANO
           }
         }
       }
-      
+
       .widget-tags{
         .list-tag{
           padding-left: 0;
@@ -7771,13 +7771,13 @@ CASANO
           }
         }
       }
-   
+
     }
-    
+
   }
-  
-  .content-page{    
-  
+
+  .content-page{
+
     .cate-info{
       .next-slide,.prev-slide{
         position: absolute;
@@ -7850,13 +7850,13 @@ CASANO
           &:hover{
             color: $color-main2;
             i{
-              color: $color-main2;	
+              color: $color-main2;
             }
           }
         }
       }
     }
-    
+
     .title-cate{
       padding-top: 70px;
       h2{
@@ -7888,19 +7888,19 @@ CASANO
             text-transform: uppercase;
           }
         }
-        
-       
+
+
       }
-      
+
       .filter_sortby{
         .sort-pagi-bar{
           padding-left: 0;
           list-style: none;
         }
       }
-    }   
+    }
   }
-  
+
 }
 
   .js_filtermobile {
@@ -7977,15 +7977,15 @@ CASANO
   margin: 15px 0px 35px;
   border: none;
 
-  
- .filter_sidebar{    
+
+ .filter_sidebar{
       padding-left: 6px;
       overflow-y: auto;
       position: relative;
-   
+
       .filter-category{
         padding-top: 25px;
-       
+
         .widget-content{
               margin-top: 10px;
           .list-category-toggle{
@@ -7993,7 +7993,7 @@ CASANO
             li{
             	list-style: none;
               line-height:36px;
-              a{                
+              a{
                 font-family: $font-primary;
                 font-size: 16px;
                 font-weight: 400;
@@ -8011,14 +8011,14 @@ CASANO
                 }
               }
             }
-        
+
           }
           .toggle-menumobile{
                 width: 50px;
                 text-align: center;
                 float: right;
                 text-decoration: none;
-                
+
                 .engoc-faq-icon-plus {
                   display: block;
                 }
@@ -8057,14 +8057,14 @@ CASANO
           }
         }
       }
-      
+
       .filter-color{
         padding-top: 15px;
-        
+
         .list_color{
           padding-left: 0;
           padding-top: 30px;
-          
+
           li{
             list-style: none;
             display: inline-flex;
@@ -8102,7 +8102,7 @@ CASANO
                 transition: 0.5s;
               }
               &:hover,
-              &.active              
+              &.active
               {
                 .stylecorlor{
                   &:before{
@@ -8115,14 +8115,14 @@ CASANO
                 }
               }
             }
-            
+
           }
         }
       }
-      
+
       .filter-size{
       	padding-top: 20px;
-        
+
         .list-size{
           padding-left: 0;
           padding-top: 23px;
@@ -8153,11 +8153,11 @@ CASANO
           }
         }
       }
-      
+
       .filter-price {
       	padding-top: 25px;
-       
-        
+
+
         .list-price{
           	padding-top: 15px;
           	padding-left: 0;
@@ -8171,7 +8171,7 @@ CASANO
                 i{
                 	color: #d4d4d4;
                   	font-size: 16px;
-                  	padding-right :14px;	
+                  	padding-right :14px;
                 }
                 &:hover, &.active{
                   color: $color-main2;
@@ -8183,8 +8183,8 @@ CASANO
             }
           }
       }
-      
-      .widget-title{        
+
+      .widget-title{
         .title{
           font-family: $font-primary;
           font-size: 20px;
@@ -8208,9 +8208,9 @@ CASANO
           }
         }
       }
-   
+
     }
-    
+
 }
 
 .prod_sticky{
@@ -8342,7 +8342,7 @@ CASANO
           }
         }
       }
-    } 
+    }
     .detail-info{
       .top-product{
         border-bottom: 1px solid #e7e7e7;
@@ -8354,7 +8354,7 @@ CASANO
         color: #010101;
         text-transform: capitalize;
       }
-      .product-price{        
+      .product-price{
         padding-bottom: 5px;
         del{
           font-size: 18px;
@@ -8549,12 +8549,12 @@ CASANO
         color: #979797;
         li{
           list-style: none;
-          line-height: 30px;          
+          line-height: 30px;
           label{
             font-family: $font-primary;
             font-size: 14px;
             font-weight: 400;
-            color: #000;           
+            color: #000;
             padding-right: 5px;
             margin-bottom: 0 !important;
           }
@@ -8576,10 +8576,10 @@ CASANO
           }
         }
       }
-      
+
     }
-    
-    .details-content{      
+
+    .details-content{
       .product-desc{
         font-size: 16px;
         line-height: 28px;
@@ -8587,7 +8587,7 @@ CASANO
         text-align: left;
       }
     }
-    
+
   }
   .swatch {
     display: unset !important;
@@ -8728,7 +8728,7 @@ CASANO
           }
         }
       }
-    } 
+    }
 
     .detail-info{
       .top-product{
@@ -8741,7 +8741,7 @@ CASANO
         color: #010101;
         text-transform: capitalize;
       }
-      .product-price{        
+      .product-price{
         padding-bottom: 5px;
         del{
           font-size: 18px;
@@ -8936,12 +8936,12 @@ CASANO
         color: #979797;
         li{
           list-style: none;
-          line-height: 30px;          
+          line-height: 30px;
           label{
             font-family: $font-primary;
             font-size: 14px;
             font-weight: 400;
-            color: #000;           
+            color: #000;
             padding-right: 5px;
             margin-bottom: 0 !important;
           }
@@ -8982,7 +8982,7 @@ CASANO
         top: 50%;
       }
     }
-    
+
     .tab_prod {
       border-top: none;
       display: inline-block;
@@ -9115,7 +9115,7 @@ CASANO
           }
         }
       }
-    } 
+    }
 
     .detail-info{
       .top-product{
@@ -9128,7 +9128,7 @@ CASANO
         color: #010101;
         text-transform: capitalize;
       }
-      .product-price{        
+      .product-price{
         padding-bottom: 5px;
         del{
           font-size: 18px;
@@ -9323,12 +9323,12 @@ CASANO
         color: #979797;
         li{
           list-style: none;
-          line-height: 30px;          
+          line-height: 30px;
           label{
             font-family: $font-primary;
             font-size: 14px;
             font-weight: 400;
-            color: #000;           
+            color: #000;
             padding-right: 5px;
             margin-bottom: 0 !important;
           }
@@ -9353,7 +9353,7 @@ CASANO
 
     }
 
-    
+
     .swatch {
       display: unset !important;
     }
@@ -9431,7 +9431,7 @@ CASANO
       margin: 0 -4px;
     }
   }
-  
+
   .slick-track{
     margin: unset;
     .engoj-nav-item{
@@ -9484,8 +9484,8 @@ CASANO
       }
     }
   }
-  
-      
+
+
       .prod_sub{
         img{
           margin-bottom: 13px;
@@ -9603,7 +9603,7 @@ CASANO
           }
         }
       }
-    } 
+    }
 
     .detail-info{
       .top-product{
@@ -9616,7 +9616,7 @@ CASANO
         color: #010101;
         text-transform: capitalize;
       }
-      .product-price{        
+      .product-price{
         padding-bottom: 5px;
         del{
           font-size: 18px;
@@ -9636,7 +9636,7 @@ CASANO
         padding-bottom:18px;
       }
 
-      
+
       .pd_summary{
         font-family: $font-primary;
         font-size: 16x;
@@ -9644,20 +9644,20 @@ CASANO
         line-height: 28px;
         padding-top: 25px;
       }
-      
-      
+
+
       .product-meta-info{
         padding-left: 0;
         margin-top: 20px;
         color: #979797;
         li{
           list-style: none;
-          line-height: 30px;          
+          line-height: 30px;
           label{
             font-family: $font-primary;
             font-size: 14px;
             font-weight: 400;
-            color: #000;           
+            color: #000;
             padding-right: 5px;
             margin-bottom: 0 !important;
           }
@@ -9681,7 +9681,7 @@ CASANO
       }
 
     }
-    
+
     .btn-addwhlist{
         a{
           margin-top:25px;
@@ -9712,7 +9712,7 @@ CASANO
         }
       }
 
-	.btn-action{      
+	.btn-action{
         .shop-button{
           margin-top: 25px;
           font-family: $font-primary;
@@ -9742,7 +9742,7 @@ CASANO
             transition: .3s;
           }
         }
-      
+
         .shop-button-amazon{
           font-family: $font-primary;
           transition: all .3s ease;
@@ -9772,7 +9772,7 @@ CASANO
             transition: .3s;
           }
         }
-      
+
         .shop-button-soldout{
           margin-top: 25px;
           font-family: $font-primary;
@@ -9853,7 +9853,7 @@ CASANO
         top: 50%;
       }
     }
-    
+
     .tab_prod {
       border-top: none;
       display: inline-block;
@@ -9863,15 +9863,15 @@ CASANO
       padding-right: 17px;
     }
   }
-  
+
   .swatch .title_variant{
     margin-top: 0px;
   }
   .maxus-color{
     margin-bottom: 20px;
   }
-  
- 
+
+
 }
 
 .list_ul_engo_full{
@@ -9919,7 +9919,7 @@ CASANO
         }
       }
     }
-  } 
+  }
 
 .detail-share-social{
   position: fixed;
@@ -9941,7 +9941,7 @@ CASANO
       font-size: 11px;
       font-weight: 500;
       color: #fff;
-      text-transform: uppercase;            
+      text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 0 !important;
     }
@@ -9954,7 +9954,7 @@ CASANO
     z-index: 2;
     top: -45px;
     opacity: 0;
-    visibility: hidden; 
+    visibility: hidden;
     -webkit-transform: translateX(-20px);
     -moz-transform: translateX(-20px);
     -ms-transform: translateX(-20px);
@@ -9980,7 +9980,7 @@ CASANO
         }
       }
     }
-  }  
+  }
 
   &:hover{
     cursor: pointer;
@@ -9998,14 +9998,14 @@ CASANO
       visibility: visible;
     }
   }
-}      
+}
 
 .tab-pd-details{
   border-bottom: 1px solid #e4e4e4;
   padding-bottom: 95px;
   margin-bottom: 50px;
   text-align : center;
-  .tab_prod{ 
+  .tab_prod{
   	border-bottom: none;
     border-top: 1px solid #e4e4e4;
     padding:30px 0;
@@ -10026,7 +10026,7 @@ CASANO
         margin-left: 17px;
         margin-right: 17px;
         transition: .3s;
-        
+
         &:before{
           content: '';
           position: absolute;
@@ -10053,9 +10053,9 @@ CASANO
             transform: scale(1);
           }
         }
-      }	
+      }
     }
-  }  
+  }
 
   .product-desc{
     margin-top: 35px;
@@ -10091,7 +10091,7 @@ CASANO
     }
 
   }
-  
+
 }
 
 .related-product{
@@ -10103,7 +10103,7 @@ CASANO
       height: auto;
     }
   }
-  
+
   .next-slide{
     position: absolute;
     right: 5%;
@@ -10425,7 +10425,7 @@ CASANO
       height: 42px;
       min-width: 216px !important;
       background: transparent;
-           
+
     }
      &:after {
         content: "\f107";
@@ -10436,32 +10436,32 @@ CASANO
         top: 8px;
         z-index: 1;
         color: #000;
-      }    
+      }
   }
 }
 
 
 // RESPONSIVE CASANO
 @media (min-width: 1200px) and (max-width: 1500px){
-  
+
   .section-slideshow-v2{
-    .itemv-slide-h2{    
-      .info-sideh2{       
+    .itemv-slide-h2{
+      .info-sideh2{
         .picture_left{
           top: 10%;
           right: 0;
           width:50%;
         }
-      }    
-    }  
+      }
+    }
     .slick-dots {
       bottom: 30px;
-      left: 10%;   
+      left: 10%;
 
     }
   }
-  
-  
+
+
   .blog-page .content-blog-page .blog-list-view .blog_classic.tow img {
     min-height: 400px;
   }
@@ -10471,7 +10471,7 @@ CASANO
   .section-banner-v7{
     padding: 210px 100px 240px 100px;
   }
-  
+
   .section-banner-v8{
     padding: 210px 100px 240px 100px;
   }
@@ -10483,7 +10483,7 @@ CASANO
   .section-banner-v4 {
     margin-top: -100px;
   }
-  
+
   .section-banner-v10 {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -10492,7 +10492,7 @@ CASANO
 
 @media (min-width: 992px) and (max-width: 1199.98px){
    .section-slideshow-v2{
-    .itemv-slide-h2{    
+    .itemv-slide-h2{
       .info-sideh2{
         .picture-slideshow{
           img{
@@ -10509,11 +10509,11 @@ CASANO
           right: 0;
           width:50%;
         }
-      }    
-    }  
+      }
+    }
     .slick-dots {
       bottom: 30px;
-      left: 10%;    
+      left: 10%;
 
     }
   }
@@ -10539,7 +10539,7 @@ CASANO
     min-width: 200px;
     padding: 0;
   }
-  
+
   .blog-page .content-blog-page .blog-list-view .blog_classic.tow img {
     min-height: 400px;
   }
@@ -10548,7 +10548,7 @@ CASANO
       margin-top: 0;
     }
   }
-  
+
   .product-details-center-image .content-page-detail .btn-action .shop-button{
     padding: 0 38px;
   }
@@ -10556,7 +10556,7 @@ CASANO
     padding: 210px 100px 240px 100px;
     background-attachment: unset;
   }
-  
+
   .section-banner-v8{
     padding: 210px 100px 240px 100px;
     background-attachment: unset;
@@ -10589,7 +10589,7 @@ CASANO
       }
     }
   }
-  
+
   .section-banner-v3 {
     margin-top: 60px;
     .box-img img {
@@ -10613,12 +10613,12 @@ CASANO
     padding-top: 100px;
     padding-bottom: 100px;
   }
-  
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px){
   .section-slideshow-v2{
-    .itemv-slide-h2{    
+    .itemv-slide-h2{
       .info-sideh2{
         .picture-slideshow{
           img{
@@ -10654,16 +10654,16 @@ CASANO
           right: 0;
           width:50%;
         }
-      }    
-    }  
+      }
+    }
     .slick-dots {
       bottom: 30px;
       left: 10%;
-      transform: translate(-50%);     
+      transform: translate(-50%);
 
     }
   }
-  
+
   .section-slideshow-v3{
     .info-sideh3{
       .picture-slideshow{
@@ -10679,15 +10679,15 @@ CASANO
             padding: 12px 25px;
             margin-top: 20px;
           }
-        }      
+        }
       }
     }
   }
-  
+
   .product-variabale .content-page-detail .gallery-control {
     padding-right: 0px;
   }
-  
+
   .product-variabale .content-page-detail .detail-info .btn-action .shop-button{
     min-width: 200px;
     padding: 0;
@@ -10703,7 +10703,7 @@ CASANO
   .collection-page-fullwidth .content-page .shop_control .filter-drop-right .filter, .collection-page-sidebar .content-page .shop_control .filter-drop-right .filter{
   	display:none !important;;
   	}
-  
+
    .blog-page{
     .content-blog-page{
       padding-top: 50px;
@@ -10721,8 +10721,8 @@ CASANO
       }
     }
   }
-  
-  
+
+
   .contact-page{
     .section-contact-form{
       .info-shop{
@@ -10733,13 +10733,13 @@ CASANO
       }
     }
   }
-  
+
   .aboutus-pages{
     .section-service-v1{
       margin-top: 0;
     }
   }
-  
+
   .tab-pd-details {
     padding-bottom: 50px;
     margin-bottom: 50px;
@@ -10771,7 +10771,7 @@ CASANO
   .mt-moile{
     margin-top:60px;
   }
-  
+
    .next-slide{
     font-size: 20px;
     right: 6px;
@@ -10804,7 +10804,7 @@ CASANO
     visibility: visible;
     position: absolute;
   }
-  
+
   .section-banner-v1{
     .box-banner{
       .info-banner-top{
@@ -10813,10 +10813,10 @@ CASANO
         .title{
           font-size: 20px;
         }
-      }    
+      }
     }
   }
-  
+
   .section-banner-v2 {
     margin-top: 60px;
     .box-img img {
@@ -10839,7 +10839,7 @@ CASANO
       }
     }
   }
-  
+
   .section-newsletter-v1{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -10847,11 +10847,11 @@ CASANO
       padding-bottom: 0;
     }
   }
-  
+
   .footer_v1 .casano-socials ul li a{
     margin-right: 3px;
   }
-  
+
   .footer_v2{
     .top-footer {
       padding-top: 60px;
@@ -10866,11 +10866,11 @@ CASANO
       }
     }
   }
-  
+
   .section-collection-v2 {
-    margin-top: 60px;   
+    margin-top: 60px;
   }
-  
+
    .section-product-v2{
     .product-section-v2-pdtop{
       padding-top:30px;
@@ -10882,8 +10882,8 @@ CASANO
         }
       }
     }
-  }  
-  
+  }
+
   .section-banner-v3 {
     margin-top: 60px;
     .box-img img {
@@ -10902,7 +10902,7 @@ CASANO
       }
     }
   }
-  
+
   .section-newsletter-v2 {
     margin-top: -196px;
     padding-top: 255px;
@@ -10912,7 +10912,7 @@ CASANO
       text-align: center;
     }
   }
-  
+
   .section-collection-v3{
     .col-lg-3{
       margin-top:30px;
@@ -10954,9 +10954,9 @@ CASANO
       visibility: visible;
       z-index:1;
     }
-  
+
   }
-  
+
   .section-banner-v5{
     .box-img img {
       min-height: 400px;
@@ -11007,7 +11007,7 @@ CASANO
       margin-bottom: 0;
     }
   }
-  
+
   .footer_v3 {
     .copyright p{
       text-align: center;
@@ -11017,7 +11017,7 @@ CASANO
       line-height: 30px;
     }
   }
-    
+
    .section-product-v5{
     .product-item-v3{
       .price-product,
@@ -11035,12 +11035,12 @@ CASANO
     }
 
   }
-  
+
   .section-banner-v7{
     padding: 210px 100px 240px 100px;
     background-attachment: unset;
   }
-  
+
   .section-banner-v8{
     padding: 210px 100px 240px 100px;
     background-attachment: unset;
@@ -11050,7 +11050,7 @@ CASANO
     padding: 465px 100px 100px 100px;
     background-attachment: unset;
   }
-  
+
     .section-product-v6 {
     padding-top: 0;
     padding-bottom: 80px;
@@ -11064,7 +11064,7 @@ CASANO
       }
     }
   }
-  
+
   .section-banner-v10 {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -11084,17 +11084,17 @@ CASANO
     }
   }
 
-  //page 
+  //page
 .product-variabale .content-page-detail .gallery-control {
     padding-right: 0;
 }
-  
-  
+
+
 }
 
 @media (min-width: 576px) and (max-width: 767.98px){
   .section-slideshow-v2{
-    .itemv-slide-h2{    
+    .itemv-slide-h2{
       .info-sideh2{
         .picture-slideshow{
           img{
@@ -11130,12 +11130,12 @@ CASANO
           right: 0;
           width:50%;
         }
-      }    
-    }  
+      }
+    }
     .slick-dots {
       bottom: 30px;
       left: 50%;
-      transform: translate(-50%);     
+      transform: translate(-50%);
 
     }
   }
@@ -11155,15 +11155,15 @@ CASANO
             padding: 12px 25px;
             margin-top: 20px;
           }
-        }      
+        }
       }
     }
   }
-  
+
     .product-details-sidebar .content-page-detail .detail-info .product-title{
     padding-top: 30px;
   }
-  
+
   .collection-page-fullwidth .content-page .shop_control .filter-drop-right .filter, .collection-page-sidebar .content-page .shop_control .filter-drop-right .filter{
   	display:none !important;;
   	}
@@ -11187,7 +11187,7 @@ CASANO
       }
     }
   }
-  
+
   .contact-page {
     padding-top: 50px;
     .section-contact-form{
@@ -11201,7 +11201,7 @@ CASANO
       }
     }
   }
-  
+
   .aboutus-pages{
     padding-top: 50px;
     .info-about-top {
@@ -11227,8 +11227,8 @@ CASANO
       padding-bottom: 50px
     }
   }
-  
-  
+
+
   .mt-moile{
     margin-top:50px;
   }
@@ -11268,12 +11268,12 @@ CASANO
     visibility: visible;
     position: absolute;
   }
-  
+
   .title-all-home1 .block-title {
     padding-bottom: 12px;
     margin-bottom: 15px;
   }
-  
+
   .section-banner-v2 {
     margin-top: 50px;
     .box-img img {
@@ -11296,7 +11296,7 @@ CASANO
       }
     }
   }
-  
+
   .section-product-v1{
     .product-item-v1,
     .product-item-v2,
@@ -11306,7 +11306,7 @@ CASANO
       margin-top: 30px;
     }
   }
-  
+
   .product-item-v1{
     .img-product{
       .label-new,
@@ -11319,11 +11319,11 @@ CASANO
       }
     }
     .add-to-cart{
-      display: none !important; 
+      display: none !important;
     }
     .variant-product,
     .product-icon-action{
-      display: none !important; 
+      display: none !important;
     }
   }
   .product-item-v2{
@@ -11338,14 +11338,14 @@ CASANO
       }
     }
     .add-to-cart{
-      display: none !important; 
+      display: none !important;
     }
     .variant-product,
     .product-icon-action{
-      display: none !important; 
+      display: none !important;
     }
   }
-  
+
   .product-item-v3{
     .img-product{
       .label-new,
@@ -11358,11 +11358,11 @@ CASANO
       }
     }
     .add-to-cart{
-      display: none !important; 
+      display: none !important;
     }
     .variant-product,
     .product-icon-action{
-      display: none !important; 
+      display: none !important;
     }
   }
 
@@ -11378,14 +11378,14 @@ CASANO
       }
     }
     .add-to-cart{
-      display: none !important; 
+      display: none !important;
     }
     .variant-product,
     .product-icon-action{
-      display: none !important; 
+      display: none !important;
     }
   }
-  
+
   .section-banner-v1{
     .box-banner{
       .info-banner-top{
@@ -11394,7 +11394,7 @@ CASANO
         .title{
           font-size: 20px;
         }
-      }    
+      }
     }
     .col-lg-6{
       margin-top:30px;
@@ -11403,7 +11403,7 @@ CASANO
       }
     }
   }
-  
+
 
    .section-newsletter-v1{
     padding-top: 50px;
@@ -11418,7 +11418,7 @@ CASANO
        display: none;
      }
   }
-  
+
   .footer_v1 {
     text-align: center;
     .menu{
@@ -11429,7 +11429,7 @@ CASANO
       padding-left: 16px;
     }
   }
-  
+
     .footer_v2{
     text-align: center;
     .top-footer {
@@ -11453,7 +11453,7 @@ CASANO
       }
     }
   }
-  
+
   .footer_v5{
     .col-lg-3{
       margin-top: 30px;
@@ -11468,7 +11468,7 @@ CASANO
       }
     }
   }
-  
+
   .section-product-v2{
     .product-section-v2-pdtop{
       padding-top:30px;
@@ -11488,11 +11488,11 @@ CASANO
       }
     }
   }
-  
+
   .section-collection-v2 {
-    margin-top: 50px;   
+    margin-top: 50px;
   }
-  
+
   .section-banner-v3 {
     margin-top: 50px;
     .box-img img {
@@ -11511,11 +11511,11 @@ CASANO
       }
     }
   }
-  
+
     .section-intagram-v1{
     .box-sextion-top{
       .icon-top{
-        font-size: 50px;        
+        font-size: 50px;
       }
       .title_insta {
         margin-top: 20px;
@@ -11526,7 +11526,7 @@ CASANO
       width: 50%;
     }
   }
-  
+
   .section-newsletter-v2{
     text-align: center;
     padding-bottom: 50px;
@@ -11550,7 +11550,7 @@ CASANO
         display:none;
       }
     }
-    
+
     .newletter_email .newsletter-form-wrap input,
     .newletter_email .newsletter-form-wrap .submit-newsletter{
       height: 45px;
@@ -11571,12 +11571,12 @@ CASANO
       }
     }
   }
-  
+
   .section-product-v3 {
     margin-top: 50px;
     text-align:center;
     .box-info-product{
-      .title-top{      	    
+      .title-top{
         padding-bottom: 22px;
         margin-bottom: 30px;
         max-width: unset;
@@ -11601,9 +11601,9 @@ CASANO
       visibility: visible;
       z-index:1;
     }
-  
+
   }
-  
+
   .section-banner-v5{
     .box-img img {
       min-height: 400px;
@@ -11643,14 +11643,14 @@ CASANO
       }
     }
   }
-  
+
   .section-newsletter-v3{
     padding: 50px 20px 50px 20px;
     .form-group {
       margin-bottom: 0;
     }
   }
-  
+
 
   .footer_v3 {
     .copyright p{
@@ -11661,7 +11661,7 @@ CASANO
       line-height: 30px;
     }
   }
-  
+
   .section-product-v5{
     .title-tab{
       margin-bottom: 30px;
@@ -11702,7 +11702,7 @@ CASANO
       }
     }
   }
-  
+
   .section-banner-v6{
     .banner-box.one{
     	margin-bottom:30px;
@@ -11712,7 +11712,7 @@ CASANO
     }
 
   }
-  
+
   .footer_v4{
     text-align: center;
     .copyright p {
@@ -11722,7 +11722,7 @@ CASANO
       padding: 20px 5px;
     }
   }
-  
+
   .section-banner-v7{
     padding-top: 210px;
     padding-bottom: 240px;
@@ -11740,9 +11740,9 @@ CASANO
     padding-top: 465px;
     padding-bottom: 100px;
     background-attachment: unset;
-  }  
+  }
 
-  
+
   .section-product-v6 {
     padding-top: 0;
     padding-bottom: 50px;
@@ -11777,7 +11777,7 @@ CASANO
       }
     }
   }
-  
+
   .section-service-v1 {
     margin-top: 50px;
     padding-top: 50px;
@@ -11794,7 +11794,7 @@ CASANO
         text-align: left;
       }
     }
-  }  
+  }
 
   .tab-pd-details {
     padding-bottom: 50px;
@@ -11822,14 +11822,14 @@ CASANO
   }
 
 	  //page
-  
-  .product-details-center-image{    
+
+  .product-details-center-image{
     .content-page-detail{
       padding-bottom: 0px;
     }
   }
-  
-  
+
+
   .product-variabale .content-page-detail {
     padding-bottom: 0px;
   }
@@ -11864,7 +11864,7 @@ CASANO
       }
     }
   }
-  
+
   .product-variabale{
     .content-page-detail {
       .detail-info{
@@ -11880,7 +11880,7 @@ CASANO
         .gutter:nth-child(even) {
           padding-left: 15px;
         }
-        
+
         .galaryone{
           margin-top:10px;
         }
@@ -11891,7 +11891,7 @@ CASANO
     }
   }
 
-  
+
    .product-item-v1{
     .img-product{
       .label-new,
@@ -11908,11 +11908,11 @@ CASANO
       padding-top: 16px;
     }
     .add-to-cart{
-      display: none !important; 
+      display: none !important;
     }
     .variant-product,
     .product-icon-action{
-      display: none !important; 
+      display: none !important;
     }
   }
   .product-item-v2{
@@ -11932,14 +11932,14 @@ CASANO
       padding-top: 16px;
     }
     .add-to-cart{
-      display: none !important; 
+      display: none !important;
     }
     .variant-product,
     .product-icon-action{
-      display: none !important; 
+      display: none !important;
     }
   }
-  
+
   .product-item-v3{
     .img-product{
       .label-new,
@@ -11961,14 +11961,14 @@ CASANO
       visibility: visible;
     }
     .add-to-cart{
-      display: none !important; 
+      display: none !important;
     }
     .variant-product,
     .product-icon-action{
-      display: none !important; 
+      display: none !important;
     }
   }
-  
+
   .product-item-v4{
     .img-product{
       .label-new,
@@ -11991,21 +11991,21 @@ CASANO
       text-align: center;
     }
     .add-to-cart{
-      display: none !important; 
+      display: none !important;
     }
     .variant-product,
     .product-icon-action{
-      display: none !important; 
+      display: none !important;
     }
-  }  
-  
-  
+  }
+
+
 }
 
 @media (max-width: 575.98px){
-  
+
   .section-slideshow-v2{
-    .itemv-slide-h2{    
+    .itemv-slide-h2{
       .info-sideh2{
         .picture-slideshow{
           img{
@@ -12043,20 +12043,20 @@ CASANO
           width:80%;
           opacity: 0.5;
         }
-      }    
-    }  
+      }
+    }
     .slick-dots {
       bottom: 20px;
       left: 50%;
-      transform: translate(-50%);     
+      transform: translate(-50%);
 
     }
   }
 
-  
+
   .section-slideshow-v3{
-    
-    
+
+
     .info-sideh3{
       .picture-slideshow{
         img{
@@ -12076,7 +12076,7 @@ CASANO
             padding: 12px 25px;
             margin-top: 20px;
           }
-        }      
+        }
       }
     }
   }
@@ -12095,11 +12095,11 @@ CASANO
   .collection-page-fullwidth .content-page .shop_control .filter-drop-right .filter, .collection-page-sidebar .content-page .shop_control .filter-drop-right .filter{
   	display:none !important;;
   	}
-  
+
   .product-variabale .content-page-detail .detail-info .product-title{
     padding-top: 30px;
   }
-  
+
   .blog-page{
     .content-blog-page{
       padding-top: 50px;
@@ -12120,9 +12120,9 @@ CASANO
       }
     }
   }
-  
- 
-  
+
+
+
   .contact-page {
     padding-top: 50px;
     .section-contact-form{
@@ -12136,9 +12136,9 @@ CASANO
       }
     }
   }
-  
-  
-  
+
+
+
   .aboutus-pages{
     padding-top: 50px;
     .info-about-top {
@@ -12163,12 +12163,12 @@ CASANO
       padding-top: 50px;
       padding-bottom: 50px
     }
-  } 
-  
+  }
+
   .mt-moile{
   	margin-top:50px;
   }
-  
+
   .next-slide{
     font-size: 20px;
     right: 0px;
@@ -12201,7 +12201,7 @@ CASANO
     visibility: visible;
     position: absolute;
   }
-  
+
   .product-item-v1{
     .img-product{
       .label-new,
@@ -12218,14 +12218,14 @@ CASANO
       padding-top: 16px;
     }
     .add-to-cart{
-      display: none !important; 
+      display: none !important;
     }
     .variant-product,
     .product-icon-action{
-      display: none !important; 
+      display: none !important;
     }
   }
-  
+
   .product-item-v2{
     .img-product{
       .label-new,
@@ -12243,14 +12243,14 @@ CASANO
       padding-top: 16px;
     }
     .add-to-cart{
-      display: none !important; 
+      display: none !important;
     }
     .variant-product,
     .product-icon-action{
-      display: none !important; 
+      display: none !important;
     }
   }
-  
+
   .product-item-v3{
     .img-product{
       .label-new,
@@ -12272,14 +12272,14 @@ CASANO
       visibility: visible;
     }
     .add-to-cart{
-      display: none !important; 
+      display: none !important;
     }
     .variant-product,
     .product-icon-action{
-      display: none !important; 
+      display: none !important;
     }
   }
-  
+
   .product-item-v4{
     .img-product{
       .label-new,
@@ -12302,19 +12302,19 @@ CASANO
       text-align: center;
     }
     .add-to-cart{
-      display: none !important; 
+      display: none !important;
     }
     .variant-product,
     .product-icon-action{
-      display: none !important; 
+      display: none !important;
     }
-  }  
-  
+  }
+
   .title-all-home1 .block-title {
     padding-bottom: 12px;
     margin-bottom: 15px;
   }
-  
+
   .section-banner-v2 {
     margin-top: 50px;
     .box-img img {
@@ -12340,7 +12340,7 @@ CASANO
       }
     }
   }
-  
+
   .section-product-v1{
     .product-item-v1,
     .product-item-v2,
@@ -12349,8 +12349,8 @@ CASANO
     .product-item-v4 {
       margin-top: 30px;
     }
-  } 
- 
+  }
+
   .section-banner-v1{
     .box-banner{
       .info-banner-top{
@@ -12359,7 +12359,7 @@ CASANO
         .title{
           font-size: 20px;
         }
-      }    
+      }
     }
     .col-lg-6{
       margin-top:30px;
@@ -12368,7 +12368,7 @@ CASANO
       }
     }
   }
-  
+
 
   .section-newsletter-v1{
     padding-top: 50px;
@@ -12395,11 +12395,11 @@ CASANO
       padding-left: 16px;
     }
   }
-  
+
   .section-collection-v2 {
-    margin-top: 50px;   
+    margin-top: 50px;
   }
-  
+
   .section-product-v2{
     .product-section-v2-pdtop{
       padding-top:30px;
@@ -12419,7 +12419,7 @@ CASANO
       }
     }
   }
-  
+
   .section-banner-v3 {
     margin-top: 50px;
     .box-img img {
@@ -12438,7 +12438,7 @@ CASANO
       }
     }
   }
-  
+
   .footer_v2{
     text-align: center;
     .top-footer {
@@ -12462,7 +12462,7 @@ CASANO
       }
     }
   }
-  
+
   .footer_v5{
     .col-lg-3{
       margin-top: 30px;
@@ -12477,7 +12477,7 @@ CASANO
       }
     }
   }
-  
+
   .section-banner-v4 {
     margin-top: 50px;
     .col-lg-6{
@@ -12497,7 +12497,7 @@ CASANO
       }
     }
   }
-  
+
   .section-blog-v1 {
     margin-top: 50px;
     padding-bottom: 50px !important;
@@ -12512,11 +12512,11 @@ CASANO
     }
 
   }
-  
+
   .section-intagram-v1{
     .box-sextion-top{
       .icon-top{
-        font-size: 50px;        
+        font-size: 50px;
       }
       .title_insta {
         margin-top: 20px;
@@ -12527,7 +12527,7 @@ CASANO
       width: 50%;
     }
   }
-  
+
   .section-newsletter-v2{
     text-align: center;
     padding-bottom: 50px;
@@ -12549,7 +12549,7 @@ CASANO
         display:none;
       }
     }
-    
+
     .newletter_email .newsletter-form-wrap input,
     .newletter_email .newsletter-form-wrap .submit-newsletter{
       height: 45px;
@@ -12558,7 +12558,7 @@ CASANO
       min-width: 60px;
     }
   }
-  
+
   .section-collection-v3{
     margin-top: 20px;
     .col-12{
@@ -12571,12 +12571,12 @@ CASANO
       }
     }
   }
-  
+
   .section-product-v3 {
     margin-top: 50px;
     text-align:center;
     .box-info-product{
-      .title-top{      	    
+      .title-top{
         padding-bottom: 22px;
         margin-bottom: 30px;
         max-width: unset;
@@ -12601,9 +12601,9 @@ CASANO
       visibility: visible;
       z-index:1;
     }
-  
+
   }
-  
+
   .section-banner-v5{
     .box-img img {
       min-height: 400px;
@@ -12643,14 +12643,14 @@ CASANO
       }
     }
   }
-  
+
   .section-newsletter-v3{
     padding: 50px 20px 50px 20px;
     .form-group {
       margin-bottom: 0;
     }
   }
-  
+
   .footer_v3 {
     .copyright p{
       text-align: center;
@@ -12659,8 +12659,8 @@ CASANO
     .border-content .menu ul li{
       line-height: 30px;
     }
-  }  
-  
+  }
+
   .section-product-v5{
     .title-tab{
       margin-bottom: 30px;
@@ -12701,7 +12701,7 @@ CASANO
       }
     }
   }
-  
+
   .section-banner-v6{
     .banner-box.one{
     	margin-bottom:30px;
@@ -12711,7 +12711,7 @@ CASANO
     }
 
   }
-  
+
   .footer_v4{
     text-align: center;
     .copyright p {
@@ -12720,8 +12720,8 @@ CASANO
     .menu{
       padding: 20px 5px;
     }
-  }  
-  
+  }
+
   .section-banner-v7{
     padding-top: 150px;
     padding-bottom: 150px;
@@ -12781,8 +12781,8 @@ CASANO
         font-weight: 400;
       }
     }
-  }  
-  
+  }
+
   .section-service-v1 {
     margin-top: 50px;
     padding-top: 50px;
@@ -12793,19 +12793,19 @@ CASANO
       background-color: #ffffff36;
     }
   }
-  
+
   //page
-  
-  
-  
-  
-  .product-details-center-image{    
+
+
+
+
+  .product-details-center-image{
     .content-page-detail{
       padding-bottom: 0px;
     }
   }
-  
-  
+
+
   .product-variabale .content-page-detail {
     padding-bottom: 0px;
   }
@@ -12840,7 +12840,7 @@ CASANO
       }
     }
   }
-  
+
   .product-variabale{
     .content-page-detail {
       .detail-info{
@@ -12856,7 +12856,7 @@ CASANO
         .gutter:nth-child(even) {
           padding-left: 15px;
         }
-        
+
         .galaryone{
           margin-top:10px;
         }
@@ -12867,7 +12867,7 @@ CASANO
     }
   }
 
-  
+
 }
 
 /* ========================================
@@ -12944,10 +12944,10 @@ DUONG
   }
   .product-item-list{
 
-    
 
-    .product{  
-      
+
+    .product{
+
       .img-product{
         overflow:hidden;
         .label-new{
@@ -13015,7 +13015,7 @@ DUONG
 
       .info-product{
         padding-left: 25px;
-        .product-icon-action{ 
+        .product-icon-action{
           background-color: #fff;
           max-width: 320px;
           display: table;
@@ -13045,7 +13045,7 @@ DUONG
             text-align: center;
             &:hover{
               i{
-                color: #41cce5;	
+                color: #41cce5;
               }
               svg{
                 fill: #41cce5;
@@ -13160,7 +13160,7 @@ DUONG
           border-bottom: 1px solid #f1f1f1;
           padding: 20px 0;
           position: relative;
-          
+
           img{
             width: 100%;
             float: left;
@@ -13173,25 +13173,25 @@ DUONG
               font-family: $font-primary;
               font-size: 14px;
               font-weight: 400;
-              color: #000;   
+              color: #000;
               &:hover{
               	color: $color-main2;
               }
             }
-            
+
           }
           .price-product{
             .price-old {
               font-family: $font-primary;
               font-size: 12px;
               font-weight: 600;
-              color: #000;   
+              color: #000;
             }
             .price{
               font-family: $font-primary;
               font-size: 14px;
               font-weight: 600;
-              color: #000; 
+              color: #000;
             }
           }
         }
@@ -13216,7 +13216,7 @@ DUONG
         font-weight: 300;
         color: #010101;
         position: relative;
-        
+
         &:before{
         	content: '' ;
           	height: 2px;
@@ -13227,19 +13227,19 @@ DUONG
           	transform: translateX(-50%);
           	background: #010101;
         }
-        
+
       }
     }
     .bread-crumb{
       a{
-      	text-transform: uppercase;	
+      	text-transform: uppercase;
         color:#878787;
         &:hover{
         	color: $color-main2;
         }
       }
       strong{
-      	text-transform: uppercase;	
+      	text-transform: uppercase;
         color:#878787;
       }
     }
@@ -13261,7 +13261,7 @@ DUONG
       }
     }
     .bread-crumb{
-      a{	
+      a{
         color:#fff;
         font-size:14px;
         &:hover{
@@ -13388,7 +13388,7 @@ DUONG
         width: 100%;
         height: 0;
         opacity: 0;
-        visibility: hidden;      
+        visibility: hidden;
         -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
         z-index: -1;
@@ -13536,12 +13536,12 @@ DUONG
                 padding: 0;
                 width: unset;
                 border: 0;
-                
+
               }
               .qty_plus{
                 right: 10px;
                 top	: 10px;
-                left: unset; 
+                left: unset;
               }
               .qty_minus{
                 right: 10px;
@@ -13582,8 +13582,8 @@ DUONG
           }
         }
       }
-      
-      
+
+
     }
   }
 }
@@ -13749,7 +13749,7 @@ DUONG
         }
       }
     }
-    
+
 }
 
 @-webkit-keyframes underline-link {
@@ -13797,7 +13797,7 @@ DUONG
         a{
         	text-decoration:  none;
           	color: #7a7a7a;
-          	
+
         }
         &:hover{
           a{
@@ -13806,7 +13806,7 @@ DUONG
         }
       }
     }
-    
+
     .spr-form-review-rating{
       .spr-starrating{
         a{
@@ -13834,7 +13834,7 @@ DUONG
     }
   }
 
-} 
+}
 
 input,select, textarea{
 	border: 1px solid #e4e4e4;
@@ -14189,14 +14189,14 @@ RESPONSIVE
 
 }
 @media (min-width: 992px) and (max-width: 1199.98px){
-  
+
    .product-list-view{
     .product-item-list{
       .product{
         .info-product{
           padding-left: 0;
 
-       
+
           .product-icon-action{
             max-width: 200px;
           }
@@ -14270,7 +14270,7 @@ RESPONSIVE
       border-radius: 50px !important;
       padding: 0 5px !important;
     }
-    
+
     .btn-video{
       svg{
         width: 27px;
@@ -14293,7 +14293,7 @@ RESPONSIVE
   .filter_ver2 .filter_sidebar {
     padding: 20px;
   }
-  
+
    .breadcrumb_collection, .breadcrumb_collection2{
     .bg-breadcrumb{
       padding: 150px 0 80px 0 ;
@@ -14306,7 +14306,7 @@ RESPONSIVE
         .info-product{
           padding-left: 0;
 
-       
+
           .product-icon-action{
             max-width: 200px;
           }
@@ -14345,7 +14345,7 @@ RESPONSIVE
           margin: 20px 0 20px 0;
         }
       }
-      
+
       .shop_control{
         padding : 25px 0 !important;
         .style_layout_prod{
@@ -14381,7 +14381,7 @@ RESPONSIVE
       border-radius: 50px !important;
       padding: 0 5px !important;
     }
-    
+
     .btn-video{
       svg{
         width: 27px;
@@ -14398,12 +14398,12 @@ RESPONSIVE
       border-radius: 50px !important;
       padding: 0 5px !important;
     }
-    
+
     .content-page-detail{
       padding-bottom: 20px;
       .detail-info{
         width: 100%;
-        padding-left: 0px; 
+        padding-left: 0px;
       }
     }
     .sidebar_info {
@@ -14481,7 +14481,7 @@ RESPONSIVE
     }
   }
 
-    
+
 }
    .page-cart .content-cart-page .cart_totals{
     .continue-shopping1{
@@ -14552,10 +14552,10 @@ RESPONSIVE
 
       .product-thumbnail {
         width: 100% !important;
-        a { 
+        a {
           img {
             float:right;
-            
+
           }
         }
       }
@@ -14568,9 +14568,9 @@ RESPONSIVE
         }
       }
     }
-    .shop-table { 
-      thead, tbody, tfoot { 
-        tr { 
+    .shop-table {
+      thead, tbody, tfoot {
+        tr {
           th {
             outline: none;
             border:none;
@@ -14582,7 +14582,7 @@ RESPONSIVE
         }
       }
     }
-    
+
     .shipping {
       label {
         margin-top: 10px;
@@ -14613,15 +14613,15 @@ RESPONSIVE
     width: 100% !important;
   } */
 }
-  
 
-  
 
-  
+
+
+
   .article-page .article_sidebar{
   	padding-top: 30px;
   }
-  .article-page .blog-comment-detail .comment-details{ 
+  .article-page .blog-comment-detail .comment-details{
     padding: 25px 0;
     .comment-thumb{
       width: 80px;
@@ -14637,14 +14637,14 @@ RESPONSIVE
     .contact-email{
     	width: 100%;
       	padding-left: 0;
-      	float: none;	
+      	float: none;
     }
   }
   .article-page .reply-comment .title_form{
   	padding: 20px 0;
   }
   .article-page {
-    .content-single-blog { 
+    .content-single-blog {
       .article_title{
 		font-size: 30px;
         width: 100%;
@@ -14687,7 +14687,7 @@ RESPONSIVE
     }
   }
   }
-  
+
   .blog-page .content-blog-page .blog-list-view .blog_grid{
   	padding-top: 30px;
   }
@@ -14710,7 +14710,7 @@ RESPONSIVE
         .info-product{
           padding-left: 0;
           padding-top: 25px;
-          .title-product{ 
+          .title-product{
             a{
               font-size: 16px;
               font-weight: 500;
@@ -14722,13 +14722,13 @@ RESPONSIVE
             }
             .price{
               font-size: 16px !important;
-            }     
-          }         
+            }
+          }
           .product-icon-action{
             max-width: 200px;
             .quick-view{
               display: none;
-            }  
+            }
           }
         }
       }
@@ -14779,7 +14779,7 @@ RESPONSIVE
         justify-content: center;
         padding: 20px 0;
       }
-     
+
     }
     .filter-to-left{
 
@@ -14790,7 +14790,7 @@ RESPONSIVE
       }
     }
   }
-  
+
   .prod_extended,.product_sidebar,.prod_sticky{
     .btn-360{
       svg{
@@ -14808,7 +14808,7 @@ RESPONSIVE
       border-radius: 50px !important;
       padding: 0 5px !important;
     }
-    
+
     .btn-video{
       svg{
         width: 27px;
@@ -14829,7 +14829,7 @@ RESPONSIVE
       padding-bottom: 20px;
       .detail-info{
         width: 100%;
-        padding-left: 0px; 
+        padding-left: 0px;
         .product-title {
         	font-size: 18px;
         }
@@ -14842,9 +14842,9 @@ RESPONSIVE
           }
         }
       }
-    } 
+    }
   }
-  
+
 
 
 
@@ -14936,7 +14936,7 @@ RESPONSIVE
     }
   }
 
-    
+
 }
   .page-cart .content-cart-page .cart_totals{
     .continue-shopping1{
@@ -15007,10 +15007,10 @@ RESPONSIVE
 
       .product-thumbnail {
         width: 100% !important;
-        a { 
+        a {
           img {
             float:right;
-            
+
           }
         }
       }
@@ -15023,9 +15023,9 @@ RESPONSIVE
         }
       }
     }
-    .shop-table { 
-      thead, tbody, tfoot { 
-        tr { 
+    .shop-table {
+      thead, tbody, tfoot {
+        tr {
           th {
             outline: none;
             border:none;
@@ -15037,7 +15037,7 @@ RESPONSIVE
         }
       }
     }
-    
+
     .shipping {
       label {
         margin-top: 10px;
@@ -15068,13 +15068,13 @@ RESPONSIVE
     width: 100% !important;
   } */
 }
-  
+
 
 
   .article-page .article_sidebar{
   	padding-top: 30px;
   }
-  .article-page .blog-comment-detail .comment-details{ 
+  .article-page .blog-comment-detail .comment-details{
     padding: 25px 0;
     .comment-thumb{
       width: 80px;
@@ -15090,14 +15090,14 @@ RESPONSIVE
     .contact-email{
     	width: 100%;
       	padding-left: 0;
-      	float: none;	
+      	float: none;
     }
   }
   .article-page .reply-comment .title_form{
   	padding: 20px 0;
   }
   .article-page {
-    .content-single-blog { 
+    .content-single-blog {
       .article_title{
 		font-size: 30px;
         width: 100%;
@@ -15140,11 +15140,11 @@ RESPONSIVE
     }
   }
   }
-  
+
   .blog-page .content-blog-page .blog-list-view .blog_grid{
   	padding-top: 30px;
   }
-  
+
   .collection-page-fullwidth .collection_prod, .collection-page-sidebar .collection_prod{
   	margin-top: 0;
   }
@@ -15170,7 +15170,7 @@ RESPONSIVE
         .info-product{
           padding-left: 0;
           padding-top: 25px;
-          .title-product{ 
+          .title-product{
             a{
               font-size: 16px;
               font-weight: 500;
@@ -15182,13 +15182,13 @@ RESPONSIVE
             }
             .price{
               font-size: 16px !important;
-            }     
-          }         
+            }
+          }
           .product-icon-action{
             max-width: 200px;
             .quick-view{
               display: none;
-            }  
+            }
           }
         }
       }
@@ -15250,7 +15250,7 @@ RESPONSIVE
       }
     }
     .filter-to-left{
-      
+
       width: 100%;
       left: -100%;
       .filter_sidebar{
@@ -15276,7 +15276,7 @@ RESPONSIVE
       border-radius: 50px !important;
       padding: 0 5px !important;
     }
-    
+
     .btn-video{
       svg{
         width: 27px;
@@ -15295,17 +15295,17 @@ RESPONSIVE
     }
     .gutter {
       &:nth-child(even) {
-        padding-left: 15px; 
+        padding-left: 15px;
       }
       &:nth-child(odd) {
-        padding-right: 15px; 
+        padding-right: 15px;
       }
     }
     .content-page-detail{
       padding-bottom: 20px;
       .detail-info{
         width: 100%;
-        padding-left: 0px; 
+        padding-left: 0px;
         .product-title {
         	font-size: 18px;
         }
@@ -15318,9 +15318,9 @@ RESPONSIVE
           }
         }
       }
-    } 
-  }  
- 
+    }
+  }
+
   .prod_sticky{
     .content-page-detail{
       .img_sticky{
@@ -15335,21 +15335,21 @@ RESPONSIVE
   }
   .col-6 {
     &:nth-child(even) {
-      padding-left: 7.5px; 
+      padding-left: 7.5px;
     }
     &:nth-child(odd) {
-      padding-right: 7.5px; 
+      padding-right: 7.5px;
     }
   }
-  
+
 }
 
 .gutter {
     &:nth-child(even) {
-      padding-left: 7px; 
+      padding-left: 7px;
     }
     &:nth-child(odd) {
-      padding-right: 7px; 
+      padding-right: 7px;
     }
   }
 
@@ -15362,7 +15362,7 @@ RESPONSIVE
     }
   }
 }
-// 5 col 
+// 5 col
 
 .col-2dot4,
 .col-sm-2dot4,
@@ -15572,6 +15572,7 @@ BEGIN CSS Eveland - NGA
 
 
 body {
+  background-color: #333333;
   font-family: $font-primary;
   transition: all .5s ease;
   &.activedestop{
@@ -15580,7 +15581,7 @@ body {
   }
   &.cartover{
     overflow: hidden;
-  } 
+  }
 
 }
 
@@ -15658,7 +15659,7 @@ body {
           }
         }
       }
-    
+
     .btn{
       height: 55px;
       border-radius: 0;
@@ -15702,7 +15703,7 @@ body {
             }
         }
       }
-     
+
       .or_creat{
         .box-register{
           display: block;
@@ -15794,7 +15795,7 @@ body {
 }
 
 .search-full-destop{
-  .search-eveland{  
+  .search-eveland{
     width: 100%;
     height: 0%;
     opacity: 0;
@@ -15823,7 +15824,7 @@ body {
         line-height: 1.2;
         text-transform: unset;
         margin-bottom: 1em;
-      }   
+      }
 
     }
 
@@ -15852,7 +15853,7 @@ body {
         }
         &:active,
         &:focus{
-          border-bottom: 1px solid #ccc;        
+          border-bottom: 1px solid #ccc;
         }
       }
       button{
@@ -15876,7 +15877,7 @@ body {
       z-index: 2;
       a{
         font-size: 12px;
-        line-height: 35px;        
+        line-height: 35px;
         text-align: center;
         display: inline-block;
         text-transform: uppercase;
@@ -15942,7 +15943,7 @@ body {
     position: unset;
   }
 
-  
+
   .menuleft {
     width: 70px;
     text-align: left;
@@ -15962,16 +15963,16 @@ body {
     }
   }
 
-  
-  
-  
-  
+
+
+
+
   .menuright {
     width: 70px;
     text-align: right;
     i{font-size: 20px;
       font-weight: bold;
-      color: $color-main; 
+      color: $color-main;
     }
 
     a {
@@ -15992,7 +15993,7 @@ body {
         height: 20px;
         line-height: 20px;
         background: $color-main2;
-        border-radius: 50%;        
+        border-radius: 50%;
       }
     }
   }
@@ -16017,7 +16018,7 @@ body {
 
 }
 
-.box_contentmenu {  
+.box_contentmenu {
   height: 100%;
   width: 380px;
   max-width: calc(100% - 20px);
@@ -16040,14 +16041,14 @@ body {
     width: 5px;
   }
   ::-webkit-scrollbar-track {
-    background: #fff; 
+    background: #fff;
   }
   ::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 10px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
   } */
   .form-control{
     border-radius: 0;
@@ -16131,7 +16132,7 @@ body {
             vertical-align: middle;
           }
         }
-        
+
 
       }
     }
@@ -16218,13 +16219,13 @@ body {
               bottom: 0;
             }
           }
-          .title_menu_mb.title_only_one{            
+          .title_menu_mb.title_only_one{
             &:before {
               display:none
             }
             a{
               color: #868686;
-              font-size: 14px;            
+              font-size: 14px;
               text-transform: capitalize;
               text-decoration: none;
               font-weight: 400;
@@ -16247,7 +16248,7 @@ body {
             transition: 0.5s;
             text-decoration: none;
             text-transform: uppercase;
-           
+
             .label_menu {
               top: -10px;
               left: 90%;
@@ -16313,7 +16314,7 @@ body {
               }
             }
           }
-          .title_menu_mb.title_only_one{          
+          .title_menu_mb.title_only_one{
             font-size: 14px;
             line-height: 24px;
             font-weight: 400;
@@ -16529,7 +16530,7 @@ body {
       }
 
     }
-    
+
     .close-menu-mobile{
       background-color: $color-main2;
       color: {{settings.bgmenu_mobile}};
@@ -16540,7 +16541,7 @@ body {
       text-transform: uppercase;
       letter-spacing: 1.5px;
       font-size: 12px;
-    } 
+    }
   }
 }
 
@@ -16560,7 +16561,7 @@ POPup newletter
     position: absolute;
     width: 100%;
   }
-  .modal-window {    
+  .modal-window {
     min-height: 320px;
     position: relative;
     top: 50%;
@@ -16638,7 +16639,7 @@ POPup newletter
             }
 
           }
-          
+
           .message{
             margin-top: 0 !important;
             clear: both;
@@ -16705,14 +16706,14 @@ POPup newletter
     &.active{
       border-bottom: 1px solid #000;
     }
-    
+
   }
   label{
       font-family: "poppins";
       font-size: 14px;
     }
   input{
-    
+
     &::placeholder{
       font-size: 13px;
       color: #ccc;
@@ -16734,7 +16735,7 @@ POPup newletter
     &:before{
       content: '';
       position: absolute;
-      opacity: 0;    
+      opacity: 0;
       top: 0;
       left: 0;
       right: 0;
@@ -16747,7 +16748,7 @@ POPup newletter
     &:after{
       content: '';
       position: absolute;
-      opacity: 0;    
+      opacity: 0;
       top: 0;
       left: 0;
       right: 0;
@@ -16758,7 +16759,7 @@ POPup newletter
       transition: all 0.3s ease-out;
 
     }
-     
+
     &:hover{
       background-color: #fff;
       color: $color-main2;
@@ -16766,7 +16767,7 @@ POPup newletter
       &:before{
           transform: translateX(0);
           opacity: 1;
- 
+
         }
         &:after{
           transform: translateY(0);
@@ -16818,14 +16819,14 @@ POPup newletter
       width: 3px;
     }
     ::-webkit-scrollbar-track {
-      background: #fff; 
+      background: #fff;
     }
     ::-webkit-scrollbar-thumb {
       background: #ddd;
       border-radius: 10px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #ccc; 
+      background: #ccc;
     }
   &.active {
     right: 0;
@@ -16891,9 +16892,9 @@ POPup newletter
         overflow: hidden;
         position: relative;
         text-align: left;
-        
+
         .minicart_item {
-        li {          
+        li {
           border-bottom: 1px solid #e1e1e1;
           align-items: flex-start;
           position: relative;
@@ -16942,7 +16943,7 @@ POPup newletter
             a {
               position: absolute;
               top: 19px;
-              right: 0px;              
+              right: 0px;
               color: $color-main;
               text-decoration: none;
               i{
@@ -16955,7 +16956,7 @@ POPup newletter
           }
         }
       }
-      
+
       }
 
     }
@@ -16981,7 +16982,7 @@ POPup newletter
         color: $color-main2;
       }
     }
-    
+
     .action-checkout {
       bottom: 0;
       position: absolute;
@@ -17003,7 +17004,7 @@ POPup newletter
         transition: color 0.3s ease 0s, background-color 0.3s ease 0s;
         &:hover{
           background-color: $color-main2;
-          
+
         }
       }
       .button-checkout {
@@ -17022,11 +17023,11 @@ POPup newletter
         transition: color 0.3s ease 0s, background-color 0.3s ease 0s;
          &:hover{
           background-color: $color-main2;
-          
+
         }
       }
     }
-    
+
     .list_product_minicart.empty{
       height: 100vh;
       .empty-product_minicart{
@@ -17085,14 +17086,14 @@ POPup newletter
       width: 3px;
     }
     ::-webkit-scrollbar-track {
-      background: #fff; 
+      background: #fff;
     }
     ::-webkit-scrollbar-thumb {
       background: #ddd;
       border-radius: 10px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #ccc; 
+      background: #ccc;
     }
     .close-menu-horizon {
       font-size: 20px;
@@ -17205,7 +17206,7 @@ POPup newletter
             }
           }
         }
-        .title_menu_mb.title_only_one{          
+        .title_menu_mb.title_only_one{
           font-size: 14px;
           line-height: 24px;
           font-weight: 400;
@@ -17241,7 +17242,7 @@ POPup newletter
     bottom: 0;
     z-index: 4;
   }
-}  
+}
 
 
 #header{
@@ -17348,8 +17349,8 @@ POPup newletter
                     text-decoration:none;
                     text-transform: uppercase;
                     transition: all 0.5s ease;
-                    color:{{settings.hdv_color_text}}; 
-                    
+                    color:{{settings.hdv_color_text}};
+
                     &:after {
                       content: '';
                       display: block;
@@ -17359,7 +17360,7 @@ POPup newletter
                       margin-top: 17px;
                     }
                     &:hover{
-                      color:{{settings.hdv_color_text_hover}}; 
+                      color:{{settings.hdv_color_text_hover}};
                     }
                   }
                 }
@@ -17454,7 +17455,7 @@ POPup newletter
 
             }
 
-            .list-woman {        
+            .list-woman {
               margin-top: 1px;
               opacity: 1;
               visibility: visible;
@@ -17496,7 +17497,7 @@ POPup newletter
             &:last-child {
               margin-right:0px !important;
             }
-            
+
             a{
               text-decoration:none;
               color: {{settings.hdv_color_content_header}};
@@ -17539,11 +17540,11 @@ POPup newletter
               }
             }
           }
-         
+
         }
       }
     }
-    
+
   }
 }
 #header.header-v1-h1{
@@ -17568,10 +17569,10 @@ POPup newletter
             a{
               color: {{settings.hdv_color_content_header_change}};
             }
-           
+
           }
         }
-      }      
+      }
     }
   }
 }
@@ -17801,7 +17802,7 @@ POPup newletter
   .menu {
     ul {
       li {
-        .list-home {        
+        .list-home {
           left:0px;
           width: 1100px;
           max-width:100vw;
@@ -17867,7 +17868,7 @@ POPup newletter
 RESPONSIVE
 ======================================== */
 @media (min-width: 1200px) and (max-width: 1500px){
-  
+
   #header.header-v2-h2 .menu ul li .list-home {
   left: -445px;
   max-width: 100vw !important;
@@ -17876,7 +17877,7 @@ RESPONSIVE
   left: -528px;
   max-width: 100vw !important;
 }
-  
+
   #header.header-v3-h3 .container-casa .menu ul li .list-home{
     left: -816px;
     max-width: 90vw !important;
@@ -17885,11 +17886,11 @@ RESPONSIVE
 	left: -921px;
     max-width: 90vw !important;
 }
-  
+
   #header.header-v3-h3 .container-casa .menu ul li .list-woman.shop{
     left: -350px;
   }
-  
+
   #header.header-v1-h1 .container-casa .menu ul li .list-home{
     width: 1100px;
     max-width: 100vw !important;
@@ -17921,7 +17922,7 @@ RESPONSIVE
     }
   }
 
-  
+
    .section-slideshow-v4{
     .slick-dots{
       bottom: 40px;
@@ -18005,7 +18006,7 @@ RESPONSIVE
   .section-banner-v7 .info {
     padding: 50px;
   }
-  
+
   .section-product-v6{
     margin-top:80px;
 
@@ -18028,7 +18029,7 @@ RESPONSIVE
     margin-top:60px;
   }
   .search-full-destop{
-    .search-eveland{  
+    .search-eveland{
       .wg-search-form{
         width: 90%;
       }
@@ -18121,7 +18122,7 @@ RESPONSIVE
       }
     }
   }
-  
+
   .section-slideshow-v6{
     .itemv-slide-h6{
       padding-top: 200px;
@@ -18133,7 +18134,7 @@ RESPONSIVE
       }
     }
   }
-  
+
 
 
   .section-slideshow-v5{
@@ -18151,7 +18152,7 @@ RESPONSIVE
         top: 37%;
         right: 22%;
         .box-title{
-          h3{        
+          h3{
             font-size: 50px;
           }
         }
@@ -18169,7 +18170,7 @@ RESPONSIVE
       }
       .text-vertical{
         right: 14px;
-        top: 30%;     
+        top: 30%;
         span{
           font-size: 12px;
         }
@@ -18189,7 +18190,7 @@ RESPONSIVE
 
     }
   }
-  
+
   .section-blog-v2{
     .content-blog{
       .content-section-blog{
@@ -18206,7 +18207,7 @@ RESPONSIVE
             .title-blog{
               padding-top: 7px;
               a{
-                font-size: 22px;          
+                font-size: 22px;
               }
             }
           }
@@ -18262,7 +18263,7 @@ RESPONSIVE
       position: absolute;
     }
 
-  }  
+  }
 
 
   .section-info-v1 {
@@ -18282,7 +18283,7 @@ RESPONSIVE
       margin-top: 50px;
     }
   }
-  
+
 
 
   .section-brand-v2{
@@ -18307,7 +18308,7 @@ RESPONSIVE
         }
         button.next-slide
         {
-         
+
           right: 10px;
         }
       }
@@ -18333,7 +18334,7 @@ RESPONSIVE
       }
     }
   }
-  
+
   .section-product-v4 .product-item-v1 {
     padding-bottom: 35px;
   }
@@ -18387,12 +18388,12 @@ RESPONSIVE
 
   }
 
-  
 
 
 
 
-  
+
+
 
   .section-countdown-v1{
     .countdown{
@@ -18404,7 +18405,7 @@ RESPONSIVE
           font-size: 18px;
         }
         .title-product-countdown{
-          font-size:30px;        
+          font-size:30px;
         }
         .label-hot{
           margin-top: 25px;
@@ -18431,16 +18432,16 @@ RESPONSIVE
           padding: 12px 35px;
         }
       }
-      .img-bottom{      
+      .img-bottom{
         left: 5%;
         width: 20%;
       }
     }
   }
-  
- 
 
-	
+
+
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px){
@@ -18448,14 +18449,14 @@ RESPONSIVE
     margin-top:60px;
   }
   .search-full-destop{
-    .search-eveland{  
+    .search-eveland{
       .wg-search-form{
         width: 90%;
       }
     }
   }
 
-  
+
    .popup{
 
     .modal-window {
@@ -18492,7 +18493,7 @@ RESPONSIVE
       }
     }
   }
-  
+
   .section-slideshow-v4{
     .slick-dots{
       bottom: 30px;
@@ -18557,14 +18558,14 @@ RESPONSIVE
 
   }
 
-  
 
 
 
-  
+
+
   .section-countdown-v2{
      margin-top: 50px;
-    .info-section-countdow{   
+    .info-section-countdow{
       top:80px;
       .content{
         .box-content-countdow{
@@ -18598,7 +18599,7 @@ RESPONSIVE
         }
         .picture-time{
           transform: translateY(-35%);
-          .time {            
+          .time {
             margin-top: 50px;
             ul {
               li {
@@ -18626,7 +18627,7 @@ RESPONSIVE
     }
   }
 
-  
+
    .section-instagram-v4{
     margin-top:60px;
     margin-bottom: 60px;
@@ -18678,7 +18679,7 @@ RESPONSIVE
 
   }
 
-  
+
   .section-blog-v3{
     padding-top:60px;
     padding-bottom: 60px;
@@ -18745,7 +18746,7 @@ RESPONSIVE
 
   }
 
-  
+
 
 
   .section-slideshow-v6{
@@ -18759,9 +18760,9 @@ RESPONSIVE
       }
     }
   }
-  
 
-  
+
+
   .section-slideshow-v5{
     .slick-dots{
       bottom: 200px;
@@ -18787,7 +18788,7 @@ RESPONSIVE
         transform: translate(-50%,-50%);
         width: 85%;
         .box-title{
-          h3{        
+          h3{
             font-size: 45px;
           }
         }
@@ -18809,7 +18810,7 @@ RESPONSIVE
     }
   }
 
-  
+
 
    .section-blog-v2{
     .content-blog{
@@ -18827,7 +18828,7 @@ RESPONSIVE
             .title-blog{
               padding-top: 7px;
               a{
-                font-size: 22px;          
+                font-size: 22px;
               }
             }
           }
@@ -18884,7 +18885,7 @@ RESPONSIVE
     }
 
   }
-  
+
 
 
   .section-info-v1 {
@@ -18904,7 +18905,7 @@ RESPONSIVE
       margin-top: 40px;
     }
   }
-  
+
 
 
   .section-brand-v2{
@@ -18929,7 +18930,7 @@ RESPONSIVE
         }
         button.next-slide
         {
-         
+
           right: 10px;
         }
       }
@@ -19003,7 +19004,7 @@ RESPONSIVE
     }
 
   }
-  
+
 
 
 
@@ -19022,7 +19023,7 @@ RESPONSIVE
           font-size: 18px;
         }
         .title-product-countdown{
-          font-size:30px;        
+          font-size:30px;
         }
         .label-hot{
           margin-top: 25px;
@@ -19049,14 +19050,14 @@ RESPONSIVE
           padding: 12px 35px;
         }
       }
-      .img-bottom{      
+      .img-bottom{
         left: 5%;
         width: 20%;
       }
     }
   }
 
- 
+
 
 
 
@@ -19067,7 +19068,7 @@ RESPONSIVE
     margin-top:50px;
   }
   .search-full-destop{
-    .search-eveland{  
+    .search-eveland{
       .wg-search-form{
         width: 90%;
       }
@@ -19098,9 +19099,9 @@ RESPONSIVE
         }
       }
     }
-  } 
-   
-  
+  }
+
+
   .section-slideshow-v4{
     .slick-dots{
       bottom: 30px;
@@ -19166,7 +19167,7 @@ RESPONSIVE
 
   .section-countdown-v2{
      margin-top: 40px;
-    .info-section-countdow{   
+    .info-section-countdow{
       top:30px;
       .content{
         flex-direction: column;
@@ -19228,7 +19229,7 @@ RESPONSIVE
             }
           }
         }
-      }      
+      }
     }
     .box-picture{
       img{
@@ -19238,7 +19239,7 @@ RESPONSIVE
     }
   }
 
-  
+
   .section-instagram-v4{
     margin-top:50px;
     margin-bottom: 50px;
@@ -19319,7 +19320,7 @@ RESPONSIVE
     }
     .info_blog{
       margin-top:30px;
-      .title-blog{      
+      .title-blog{
         a{
           font-size: 22px;
         }
@@ -19383,7 +19384,7 @@ RESPONSIVE
   }
 
   .search-full-destop{
-    .search-eveland{  
+    .search-eveland{
       .wg-search-form{
         width: 90%;
       }
@@ -19393,7 +19394,7 @@ RESPONSIVE
       margin-top: 30px;
     }
   }
-  
+
   .popup{
     .modal-window{
       width:80%;
@@ -19418,8 +19419,8 @@ RESPONSIVE
         }
       }
     }
-  }  
-  
+  }
+
   .section-slideshow-v4{
     .slick-dots{
       bottom: 30px;
@@ -19481,12 +19482,12 @@ RESPONSIVE
     }
 
   }
-  
+
 
 
   .section-countdown-v2{
      margin-top: 20px;
-    .info-section-countdow{   
+    .info-section-countdow{
       top:30px;
       .content{
         flex-direction: column;
@@ -19548,7 +19549,7 @@ RESPONSIVE
             }
           }
         }
-      }      
+      }
     }
     .box-picture{
       img{
@@ -19557,7 +19558,7 @@ RESPONSIVE
       }
     }
   }
-  
+
   .section-instagram-v4{
     margin-top:50px;
     margin-bottom: 50px;
@@ -19617,7 +19618,7 @@ RESPONSIVE
     }
 
   }
-  
+
   .section-blog-v3{
     padding-top:50px;
     padding-bottom: 50px;
@@ -19637,7 +19638,7 @@ RESPONSIVE
     }
     .info_blog{
       margin-top:30px;
-      .title-blog{      
+      .title-blog{
         a{
           font-size: 22px;
         }
@@ -19691,7 +19692,7 @@ RESPONSIVE
     }
 
   }
- 
+
 
 }
 
