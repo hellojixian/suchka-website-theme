@@ -106,7 +106,11 @@
           }
         },
         "datepicker": {
-          "show_previous_month": "Показать предыдущий месяц, {{month}} {{year}}"
+          "show_previous_month": "Показать предыдущий месяц, {{month}} {{year}}",
+          "show_next_month": "Показать в следующем месяце, {{month}} {{year}}",
+          "range_start": "Начало диапазона",
+          "in_range": "В диапазоне",
+          "range_end": "Конец диапазона"
         }
       },
       "shipping": {
@@ -698,6 +702,110 @@
             "last_name_too_long": "Фамилия содержит слишком много букв"
           }
         }
+      },
+      "contact": {
+        "title": "Информация",
+        "address_title": "Адрес",
+        "shipping_used_as_billing_notice": "Он также будет использоваться в качестве вашего платежного адреса для этого заказа.",
+        "delivery_option_title": "Способ доставки",
+        "contact_method_title": "Контакт",
+        "email_label": "Электронная почта",
+        "email_placeholder": "Электронная почта",
+        "email_or_phone_label": "Электронная почта или номер мобильного телефона",
+        "email_or_phone_placeholder": "Электронная почта или номер мобильного телефона",
+        "stored_addresses_label": "Сохраненные адреса",
+        "new_address_label": "Использовать новый адрес",
+        "first_name_label": "Имя",
+        "optional_first_name_label": "Имя (необязательно)",
+        "last_name_label": "Фамилия",
+        "company_label": "Компания",
+        "optional_company_label": "Компания (необязательно)",
+        "address1_label": "Адрес",
+        "address2_label": "Квартира, люкс и т.д.",
+        "optional_address2_label": "Квартира, люкс и т. д. (по желанию)",
+        "city_label": "Город",
+        "country_label": "Страна\/регион",
+        "country_code": "Код страны\/региона",
+        "province_label": "Провинция",
+        "province_placeholder": "Провинция",
+        "county_label": "округ",
+        "county_placeholder": "округ",
+        "state_label": "Состояние",
+        "state_placeholder": "Состояние",
+        "region_label": "Область",
+        "region_placeholder": "Область",
+        "region_none": "Не выбрано, ничего не выбрано",
+        "prefecture_label": "Префектура",
+        "prefecture_placeholder": "Префектура",
+        "governorate_label": "мухафаза",
+        "governorate_placeholder": "мухафаза",
+        "emirate_label": "Эмират",
+        "emirate_placeholder": "Эмират",
+        "state_and_territory_label": "Штат\/территория",
+        "state_and_territory_placeholder": "Штат\/территория",
+        "phone_label": "Телефон",
+        "optional_phone_label": "Телефон опционально)",
+        "phone_placeholder": "Телефон",
+        "phone_tooltip": "В случае, если нам нужно связаться с вами по поводу вашего заказа",
+        "zip_code_label": "Почтовый индекс",
+        "zip_code_placeholder": "Почтовый индекс",
+        "postal_code_label": "Почтовый индекс",
+        "postal_code_placeholder": "Почтовый индекс",
+        "postcode_label": "Почтовый индекс",
+        "postcode_placeholder": "Почтовый индекс",
+        "pincode_label": "Пин-код",
+        "pincode_placeholder": "Пин-код",
+        "civic_number_warning": "Добавьте номер дома, если он у вас есть",
+        "optional_last_name_label": "Фамилия (необязательно)",
+        "optional_recipient_label": "Внимание (необязательно)",
+        "different_shipping_address_label": "Отправить на другой адрес",
+        "different_shipping_address_text": "Использовать одноразовый адрес для этого заказа",
+        "change_company_location_link_label": "Изменить местоположение компании",
+        "change_location_link_label": "Изменить местоположение",
+        "ship_to_company": "Отправить в {{companyName}}"
+      },
+      "delivery_options": {
+        "free_total_label": "Бесплатно",
+        "ship": "Корабль",
+        "shipping_address": "Адрес доставки",
+        "pick_up": "Подобрать",
+        "pick_up_locations": "Пункты выдачи",
+        "pick_up_in_one_hour": "Обычно готов через 1 час",
+        "pick_up_in_two_hours": "Обычно готов через 2 часа",
+        "pick_up_in_four_hours": "Обычно готов через 4 часа",
+        "pick_up_in_twenty_four_hours": "Обычно готов в течение 24 часов",
+        "pick_up_in_two_to_four_days": "Обычно готов через 2-4 дня",
+        "pick_up_in_five_or_more_days": "Обычно готов через 5+ дней",
+        "pick_up_in_zero_to_two_hours": "Готов забрать через 2 часа",
+        "pick_up_in_two_to_four_hours": "Готов забрать через 4 часа",
+        "pick_up_immediately": "Готов забрать сейчас",
+        "pick_up_next_day": "Готов забрать на следующий день",
+        "pickup_point_method_definition": "Отправка в пункт выдачи",
+        "retail_method_definition": "Розничная доставка",
+        "none_method_definition": "Нет доставки",
+        "subscription_pickup_information": "Этот способ доставки будет применяться ко всем товарам в этом заказе и ко всем будущим заказам по этой подписке."
+      },
+      "customer_account": {
+        "not_user_label": "Не %{first_name}?",
+        "have_an_account_label": "У вас уже есть аккаунт?",
+        "sign_in_link_label": "Авторизоваться",
+        "sign_out_link_label": "Выйти",
+        "save_my_information_label": "Сохраните эту информацию для следующего раза",
+        "invalid_address": "Выбранный адрес недействителен",
+        "incomplete_address": "Выбранный адрес неполный. %{update_address_link} или выберите другой адрес."
+      },
+      "stock": {
+        "page_title": "Проблемы с инвентарем",
+        "title": "Распродано",
+        "items_unavailable_notice": "Некоторые предметы больше не доступны. Ваша корзина была обновлена.",
+        "product_column_header": "Продукты",
+        "quantity_column_header": "Количество",
+        "price_column_header": "Цена",
+        "status_column_header": "Положение дел",
+        "removed_from_cart_notice": "Удалено из корзины",
+        "sold_out_label": "Распроданный",
+        "reduced_label": "Уменьшенный",
+        "reduced_with_quantity_label": "Осталось только %{quantity_available}"
       }
     },
     "errors": {
@@ -1008,7 +1116,18 @@
       "save": "Сохранять",
       "save_accessibility_label": "Сохранить адрес {{address}}",
       "section_title_accessibility_label": "Добавить адрес",
-      "update_success_notification": "Адрес обновлен"
+      "update_success_notification": "Адрес обновлен",
+      "attention": "Внимание",
+      "attention_help_text": "Имя человека или отдела",
+      "auto_complete_close_accessibility_label": "Закрыть предложения",
+      "auto_complete_title": "Предложения",
+      "billing_address": "Использовать в качестве платежного адреса",
+      "cancel": "Отмена",
+      "cancel_accessibility_label": "Отменить редактирование адреса {{address}}",
+      "creation_success_notification": "Адрес добавлен",
+      "default_address": "Это мой адрес по умолчанию",
+      "default_address_creation_success_notification": "Добавлен адрес по умолчанию",
+      "default_address_update_success_notification": "Адрес по умолчанию обновлен"
     },
     "B2B": {
       "account_information": {
@@ -1311,6 +1430,119 @@
       "subscription_policy": "Политика подписки",
       "terms_of_sale": "Условия продажи",
       "terms_of_service": "Условия использования"
+    },
+    "order_details": {
+      "marketing_checkmark_label": "Вы подписаны на получение новостей и предложений по электронной почте",
+      "returns": {
+        "expand_events_label": "Показать детали",
+        "hide_events_label": "Скрыть детали",
+        "ineligible_return_message": "Ни один товар в этом заказе не подлежит возврату.",
+        "ineligible_return_message_when_returned": "Никакие дополнительные товары в этом заказе не подлежат возврату.",
+        "print_shipping_label": "Распечатать транспортную этикетку",
+        "return_and_refund_modal_header": "Политика возврата",
+        "tracking_number": "Идентификационный номер:"
+      },
+      "shipping": {
+        "address": "Адрес доставки",
+        "address_map_marker": "Адрес доставки",
+        "method": "Способ доставки",
+        "summary": "Перевозки",
+        "free": "Бесплатно",
+        "free_shipping_discount": "Бесплатная доставка",
+        "one_time": "Разовая доставка",
+        "subscription": "Доставка по подписке"
+      },
+      "pickup": {
+        "pickup": "Подобрать",
+        "pickup_location": "Выбрать место"
+      },
+      "show_items": "Показать элементы",
+      "show_order_summary": "Показать сводку заказа",
+      "hide_order_summary": "Скрыть сводку заказа",
+      "subtitle": "Подтверждено {{date}}",
+      "subtotal": "Промежуточный итог",
+      "summary_list_title_accessibility_label": "Заказ товаров",
+      "summary_title": "Итог заказа",
+      "summary_totals_title_accessibility_label": "Сумма заказа",
+      "shop_order_tracking": {
+        "download_shop_to_track": "Скачать Магазин для отслеживания посылки",
+        "track_order_with_shop": "Отслеживание заказа в магазине",
+        "title_header": "Сканируйте с помощью телефона",
+        "real_time_delivery_updates": "Магазин отправит вам обновления доставки в режиме реального времени, как только ваш заказ будет отправлен."
+      },
+      "edit_summary": {
+        "added": "Добавлен",
+        "added_with_quantity": "Добавлено {{quantity}}",
+        "removed": "Удаленный",
+        "removed_with_quantity": "{{quantity}} удалено",
+        "updated_at": "Ваш заказ был обновлен {{date}}"
+      },
+      "shop_pay": {
+        "order_completed_with": "Заказ выполнен с",
+        "learn_more": "Узнать больше"
+      },
+      "taxes": "Налоги",
+      "duties": "Обязанности",
+      "ok_duties_tooltip": "Этот заказ отправляется из другой страны, поэтому к сумме вашего заказа были добавлены пошлины.",
+      "error_duties_tooltip": "Этот заказ отправляется из другой страны, поэтому при доставке могут взиматься пошлины и налоги.",
+      "zero_duties_tooltip": "Этот заказ отправляется из другой страны. Пошлины не взимаются с заказов на эту сумму.",
+      "tip": "Кончик",
+      "title": "Заказать {{name}}",
+      "total": "Общий",
+      "unit_price": "{{price}} \/ шт.",
+      "pagination": {
+        "load_more": "Загрузи больше",
+        "load_more_accessibility_label": "Загрузить больше элементов",
+        "loading_accessibility_label": "Загрузка предметов"
+      },
+      "login_to_view_all_order_details": "Войдите, чтобы просмотреть все детали заказа.",
+      "log_in": "Авторизоваться",
+      "logged_in_account_no_permission_to_order": "Вы вошли как {{email}} . У этой учетной записи нет разрешения на управление этим заказом.",
+      "log_in_to_a_different_account": "Войдите в другую учетную запись"
+    },
+    "addresses": {
+      "add_button": "Добавить адрес",
+      "add_button_text": "Добавлять",
+      "add_button_accessibility_label": "Добавить адрес",
+      "back_button": "Назад",
+      "back_button_accessibility_label": "Вернуться к редактированию адреса {{address}}",
+      "add_address_banner": "Добавьте адреса для использования при оформлении заказа",
+      "no_addresses_banner": "Адреса не добавлены",
+      "address_deleted_notification": "Адрес удален",
+      "cancel_adding_address_accessibility_label": "Отменить добавление адреса",
+      "cancel_deletion_button": "Отмена",
+      "cancel_deletion_button_accessibility_label": "Отменить удаление {{address}}",
+      "default_address": {
+        "title": "Адрес по умолчанию",
+        "title_accessibility_label": "Адрес по умолчанию: {{address}}"
+      },
+      "delete_button": "Удалить",
+      "delete_button_accessibility_label": "Удалить {{address}}",
+      "delete_confirmation_button": "Удалить адрес",
+      "delete_confirmation_button_accessibility_label": "Удалить {{address}}",
+      "delete_confirmation_message": "Удалить адрес? Существующие заказы не затрагиваются.",
+      "delete_confirmation_title": "Удалить адрес?",
+      "delete_confirmation_description": "Существующие заказы не затрагиваются.",
+      "edit_button": "Редактировать",
+      "edit_button_accessibility_label": "Изменить {{address}}",
+      "edit_section_accessibility_label": "Изменить {{address}}",
+      "edit_modal_title": {
+        "default": "Изменить адрес",
+        "billing": "Изменить платежный адрес",
+        "shipping": "Изменить адрес доставки"
+      },
+      "loading_accessibility_message": "Загрузка адреса",
+      "loading_addresses_accessibility_message": "Загрузка адресов",
+      "loading_billing_accessibility_message": "Загрузка платежного адреса",
+      "loading_finished_accessibility_message": "Загружена новая страница адресов",
+      "loading_shipping_accessibility_message": "Загрузка адреса доставки",
+      "pagination": {
+        "load_more": "Загрузи больше",
+        "load_more_accessibility_label": "Загрузить больше адресов"
+      },
+      "save_new_address_accessibility_label": "Сохранить адрес",
+      "title": "Адреса",
+      "billing_address_dropdown_placeholder": "Адрес для выставления счета"
     }
   },
   "product_detail": {
