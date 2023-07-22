@@ -641,6 +641,63 @@
           }
         },
         "alternative_payment_currency_total": "Списано как %{amount_due}"
+      },
+      "wallets": {
+        "return_to_store": "Вернуться в магазин",
+        "redirect_hint": "Вам будет предложено войти в систему с {{walletName}} .",
+        "logged_in": "Подключено к {{email}}",
+        "shipping_line_label": "Перевозки",
+        "payment_in_progress_title": "Выполняется платеж",
+        "payment_in_progress_body": "Ваш платеж обрабатывается. Ваш заказ будет выполнен в ближайшее время.",
+        "call_to_action": "Оплатить с помощью {{walletName}}",
+        "redirection_notice": "После нажатия « {{buttonLabel}} » вы будете перенаправлены на {{walletName}} для безопасного завершения покупки.",
+        "errors": {
+          "unavailable": {
+            "title": "{{walletName}} недоступен",
+            "description": "{{walletName}} недоступен. Используйте другой способ оплаты или повторите попытку позже.",
+            "instructions": "Возникла проблема с {{walletName}} . Вернитесь в магазин, чтобы повторить попытку, или проверьте другим способом."
+          },
+          "generic": "Возникла проблема с {{walletName}} . Попробуйте еще раз или используйте другой способ оплаты.",
+          "terminal": "Возникла проблема с {{walletName}} . Пожалуйста, используйте другой способ оплаты.",
+          "detour": {
+            "stock_problems": "Некоторые предметы больше не доступны. Закройте {{walletName}} и повторите попытку.",
+            "price_change": "Цены на некоторые товары изменились. Закройте {{walletName}} , чтобы проверить свой заказ, и повторите попытку.",
+            "queue": "Вы поставлены в очередь на кассу. Закройте {{walletName}} , чтобы продолжить."
+          },
+          "unsupported": {
+            "address": "Продавец не может доставить по этому адресу",
+            "postal_code": "Это местоположение не поддерживается"
+          },
+          "outdated": {
+            "shipping_method": "Варианты доставки изменились для вашего заказа. Проверьте свой выбор."
+          },
+          "invalid": {
+            "shipping_address": "Введите действительный адрес доставки",
+            "billing_address": "Введите действительный платежный адрес",
+            "shipping_option": "Выберите действительный вариант доставки",
+            "email": "Введите действительный адрес электронной почты",
+            "zone": "Введите действительный штат\/провинцию",
+            "postal_code": "Введите действительный почтовый индекс",
+            "reduction_code": "Введите действительный код скидки или подарочную карту"
+          },
+          "missing": {
+            "first_name": "Введите имя",
+            "last_name": "Введите фамилию",
+            "address1": "Введите адрес",
+            "address2": "Введите квартиру, люкс и т. д.",
+            "city": "Введите город",
+            "province": "Выберите штат\/провинцию",
+            "country": "Выберите страну\/регион",
+            "zip": "Введите почтовый индекс",
+            "phone": "Введите номер телефона"
+          },
+          "formatting": {
+            "name_contains_emojis": "Удалить эмодзи из своего имени",
+            "postal_code_contains_emoji": "Удалите смайлики из своего почтового индекса",
+            "first_name_too_long": "Имя содержит слишком много букв",
+            "last_name_too_long": "Фамилия содержит слишком много букв"
+          }
+        }
       }
     },
     "errors": {
@@ -657,7 +714,35 @@
       "invalid_expiry_year": "недействительный год истечения срока действия",
       "reset_password_html": "Этот адрес электронной почты уже связан с учетной записью. Если эта учетная запись принадлежит вам, вы можете <a href=\"\/account\/login#recover\">сбросить пароль<\/a>",
       "verify_email": "Мы отправили электронное письмо на адрес %{customer_email}. Нажмите на ссылку, чтобы подтвердить свой адрес электронной почты.",
-      "product_not_available": "продукт не опубликован для этого клиента."
+      "product_not_available": "продукт не опубликован для этого клиента.",
+      "blank": "не может быть пустым",
+      "blocked_address": "Это местоположение не поддерживается.",
+      "credit_card_session_expired": "Срок действия авторизации кредитной карты истек, введите платежную информацию еще раз. Ваша карта не была списана.",
+      "empty": "не может быть пустым",
+      "invalid_email": "Адрес эл. почты должен быть действительным",
+      "discount_disabled": "Эта скидка отключена",
+      "discount_expired": "Эта скидка больше не действует",
+      "discount_limit_reached": "Эта скидка достигла предела использования",
+      "discount_not_found": "Не удалось найти действующую скидку, соответствующую введенному коду",
+      "customer_already_used_once_per_customer_discount_notice": "Эта скидка достигла предела использования",
+      "gift_card_already_applied": "Код уже применен к вашей кассе",
+      "gift_card_code_invalid": "Код недействителен",
+      "gift_card_currency_mismatch": "Ваша подарочная карта находится в %{gift_card_currency}. Свяжитесь с нами, чтобы перевыпустить его в %{checkout_currency}.",
+      "gift_card_depleted": "На этой подарочной карте не осталось средств",
+      "gift_card_disabled": "Подарочная карта отключена",
+      "gift_card_expired": "Срок действия подарочной карты истек",
+      "invalid": "является недействительным",
+      "bad_domain": "содержит недопустимое доменное имя",
+      "taken": "уже принято",
+      "contains_html_tags": "не может содержать теги HTML",
+      "too_short": "слишком короткий (минимум %{count} символов)",
+      "too_long": "слишком длинный (максимум %{count} символов)",
+      "password_mismatch": "должен соответствовать предоставленному паролю",
+      "contains_spaces": "начинается или заканчивается пробелами.",
+      "email_domain_invalid": "провайдер не поддерживается",
+      "invalid_for_country": "недействителен для %{country}",
+      "invalid_for_country_and_province": "недействителен для %{провинция} и %{страна}",
+      "invalid_province_in_country": "недопустимая провинция в %{country}"
     },
     "notices": {
       "customer": {
@@ -864,6 +949,53 @@
         "two_to_four_hours": "Обычно готов через 4 часа",
         "immediately": "Готов забрать сейчас",
         "next_day": "Готов забрать на следующий день"
+      }
+    },
+    "pagination": {
+      "previous": "Предыдущий",
+      "next": "Следующий"
+    },
+    "links": {
+      "powered_by_shopify": "Работает на Shopify",
+      "learn_more": "Узнать больше"
+    },
+    "feed": {
+      "more": "Более"
+    },
+    "attributes": {
+      "email": "электронная почта",
+      "password": "пароль",
+      "password_confirmation": "Подтверждение пароля",
+      "first_name": "имя",
+      "last_name": "фамилия",
+      "body": "тело",
+      "signature": "Адрес"
+    },
+    "addresses": {
+      "zip_code": "Почтовый индекс",
+      "postal_code": "Почтовый индекс",
+      "postcode": "Почтовый индекс",
+      "pincode": "Пин-код",
+      "region": "Область",
+      "prefecture": "Префектура",
+      "province": "Провинция",
+      "state": "Состояние",
+      "state_and_territory": "Штат\/территория",
+      "county": "округ",
+      "emirate": "Эмират",
+      "governorate": "мухафаза",
+      "confirm": "Вы уверены, что хотите удалить этот адрес?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "Избранное",
+        "best_selling": "Бестселлер",
+        "az": "По алфавиту AZ",
+        "za": "По алфавиту ЗА",
+        "price_ascending": "Цена, от низкой к высокой",
+        "price_descending": "Цена, от высокой к низкой",
+        "date_ascending": "Дата, старая к новой",
+        "date_descending": "Дата, от нового к старому"
       }
     }
   },
@@ -1076,6 +1208,109 @@
         "delivered": "Доставлено {{date}}",
         "empty_state_order_source_description": "Здесь будут отображаться только заказы, размещенные на {{email}} ."
       }
+    },
+    "payment_methods": {
+      "payment_details": {
+        "edit_payment_method_button_accessibility_label": "Изменить способ оплаты, оканчивающийся на {{lastDigits}}",
+        "loading_shop_pay": "Загрузка магазина Оплатить",
+        "invalid_payment_method": "Неверный способ оплаты",
+        "invalid_payment_method_message": "Используйте новую кредитную карту, чтобы продолжать получать предстоящие заказы.",
+        "replace_payment_method": "Заменить способ оплаты"
+      },
+      "edit_payment_method": {
+        "title": "Изменить способ оплаты",
+        "save_payment_method_button": "Сохранять",
+        "cancel_edit_payment_method_button": "Отмена",
+        "payment_method_updated_toast": "Способ оплаты обновлен",
+        "billing_address": "Адрес для выставления счета",
+        "billing_address_add_new": "Добавить новое",
+        "billing_address_choose_from_list": "Выбрать из списка",
+        "future_purchases_notice": "Этот способ оплаты будет сохранен для будущих покупок."
+      },
+      "card_fields": {
+        "card_number_label": "Номер карты",
+        "card_number_placeholder": "Номер карты",
+        "name_on_card_label": "Имя на карте",
+        "name_on_card_placeholder": "Имя на карте",
+        "card_expiry_label": "Срок годности (ММ \/ ГГ)",
+        "card_expiry_placeholder": "Срок годности (ММ \/ ГГ)",
+        "card_verification_value_label": "Код безопасности",
+        "card_verification_value_placeholder": "Код безопасности",
+        "card_start_label": "Дата выпуска (ММ \/ ГГ)",
+        "card_start_placeholder": "Дата выпуска (ММ \/ ГГ)",
+        "tooltip": {
+          "tooltip_accessibility_label": "Больше информации",
+          "card_verification_value_explanation_amex": "4-значный защитный код на лицевой стороне карты",
+          "card_verification_value_explanation_other": "3-значный код безопасности на обратной стороне вашей карты",
+          "card_verification_value_explanation": "Трехзначный защитный код обычно находится на обратной стороне карты. Карты American Express имеют четырехзначный код, расположенный на лицевой стороне.",
+          "card_security_notice": "Все транзакции безопасны и зашифрованы."
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "Введите свое имя точно так, как оно написано на вашей карте",
+          "credit_card_number_invalid": "Введите действующий номер карты",
+          "credit_card_expiry_invalid": "Введите действительную дату истечения срока действия карты",
+          "credit_card_verification_value_blank": "Введите CVV или код безопасности на вашей карте"
+        }
+      },
+      "payment_delete": {
+        "title": "Удалить способ оплаты",
+        "description_without_replacement": "Этот способ оплаты больше не будет доступен для будущих покупок.",
+        "description_with_replacement": "Удаление этого способа оплаты повлияет на предварительно авторизованные платежи. При желании вы можете заменить его другим способом оплаты, чтобы продолжать получать предстоящие заказы.",
+        "warning_message_with_replacement": {
+          "with_pending_orders_and_subscriptions": "Удаление этого способа оплаты повлияет на предварительно авторизованные платежи. Если вы не выберете альтернативный способ оплаты, этот способ оплаты по-прежнему будет взиматься за любые непогашенные остатки по существующим заказам. Выбор альтернативного способа оплаты позволит вам получать предстоящие заказы на подписку без перерыва.",
+          "with_pending_orders": "Если вы удалите этот способ оплаты, он будет удален из вашей учетной записи и больше не будет доступен для будущих покупок. Если вы не выберете альтернативный способ оплаты, с него все равно будет взиматься непогашенная задолженность по существующим заказам.",
+          "with_subscriptions": "Удаление этого способа оплаты повлияет на предварительно авторизованные платежи. Замените его альтернативным способом оплаты, чтобы продолжать получать будущие заказы."
+        },
+        "warning_message_without_replacement": {
+          "with_pending_orders_and_subscriptions": "Удаление этого способа оплаты повлияет на предварительно авторизованные платежи. Этот способ оплаты по-прежнему будет взимать плату за любые непогашенные остатки по существующим заказам, но вы не будете получать будущие заказы на подписку. Добавьте альтернативный способ оплаты, чтобы продолжать получать заказы на подписку.",
+          "with_pending_orders": "Если вы удалите этот способ оплаты, он будет удален из вашей учетной записи и больше не будет доступен для будущих покупок. Он по-прежнему будет взиматься за любые непогашенные остатки по существующим заказам.",
+          "with_subscriptions": "Удаление этого способа оплаты повлияет на предварительно авторизованные платежи. Добавьте альтернативный способ оплаты, чтобы продолжать получать будущие заказы."
+        },
+        "payment_method_selector_placeholder": "Выберите альтернативный способ оплаты (необязательно)",
+        "payment_method_selector_no_alternative_payment": "Нет метода замены",
+        "replace_method_with_new_method_description": "Ваш {{currentPaymentMethodName}} будет удален и заменен вашим {{newPaymentMethodName}} .",
+        "error_when_deleting": "Приносим свои извинения, но что-то пошло не так, и мы не смогли удалить этот способ оплаты. Повторите попытку позже или обновите страницу.",
+        "delete_and_replace_button": "Удалить и заменить",
+        "delete_and_replace_button_accessibility_label": "Удалите {{currentPaymentMethodName}} и замените на {{newPaymentMethodName}} .",
+        "deleted_successfully": "Способ оплаты успешно удален.",
+        "loading_available_payment_methods_accessibility_label": "Загрузка доступных способов оплаты"
+      },
+      "add_payment_method": {
+        "title": "Добавить способ оплаты",
+        "payment_method_added_confirmation": "Добавлен способ оплаты",
+        "billing_address": {
+          "title": "Адрес для выставления счета",
+          "add_billing_address_button": "Добавить новое",
+          "add_billing_address_button_accessibility_label": "Добавить новый платежный адрес",
+          "choose_billing_address_from_list_button": "Выбрать из списка",
+          "choose_billing_address_from_list_button_accessibility_label": "Выберите платежный адрес из списка",
+          "missing_billing_address_error_message": "Пожалуйста, укажите платежный адрес"
+        }
+      }
+    },
+    "payment_method_brands": {
+      "visa": "Виза",
+      "mastercard": "Мастеркард",
+      "discover": "Обнаружить",
+      "dinersclub": "Клуб закусочных",
+      "elo": "Эло",
+      "visaelectron": "Виза Электрон",
+      "maestro": "Маэстро",
+      "forbrugsforeningen": "Форбругсфоренинген",
+      "dankort": "Данкорт",
+      "hipercard": "Гиперкард",
+      "unionpay": "ЮнионПей",
+      "laser": "Лазер",
+      "shoppay": "Магазин Оплатить"
+    },
+    "shop_policies": {
+      "legal_notice": "Официальное уведомление",
+      "privacy_policy": "Политика конфиденциальности",
+      "refund_policy": "Политика возврата",
+      "shipping_policy": "Политика доставки",
+      "subscription_policy": "Политика подписки",
+      "terms_of_sale": "Условия продажи",
+      "terms_of_service": "Условия использования"
     }
   },
   "product_detail": {
@@ -1085,5 +1320,29 @@
   },
   "quickview": {
     "total": "Общий"
+  },
+  "general": {
+    "meta": {
+      "tags": "Отмечен \" {{ tags }} \"",
+      "page": "Страница {{ page }}"
+    },
+    "password_page": {
+      "opening_soon": "Открытие в ближайшее время",
+      "sign_up": "Подписаться",
+      "spread_the_word": "Распространить слово:",
+      "login_form_heading": "Войдите в магазин, используя пароль:",
+      "login_form_password_label": "Пароль",
+      "login_form_password_placeholder": "Ваш пароль",
+      "login_form_submit": "Входить",
+      "signup_form_heading": "Узнайте, когда мы откроемся:",
+      "signup_form_email_label": "Электронная почта",
+      "signup_form_email_placeholder": "Ваш адрес электронной почты",
+      "signup_form_email_placeholder2": "Введите адрес электронной почты ",
+      "signup_form_submit": "Представлять на рассмотрение",
+      "signup_form_success": "Мы отправим вам электронное письмо прямо перед открытием!",
+      "admin_link_html": "Вы владелец магазина? <a href=\"\/admin\" class=\"text-link\">Войдите здесь<\/a>",
+      "password_link": "Войти с помощью пароля",
+      "powered_by_shopify_html": "Этот магазин будет работать на ShopiLaunch, LLC"
+    }
   }
 }
