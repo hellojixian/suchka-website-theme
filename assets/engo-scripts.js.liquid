@@ -1173,10 +1173,16 @@ jQuery(document).ready(function($) {
 
   function productdestopscroll() {
     var $nav = $(".product-detail-overlay");
-    $nav.removeClass('product-detail-scroll');
+    var $detail = $(".product-detail-overlay");
+    $detail.removeClass('product-detail-scroll');
 
     $(document).scroll(function() {
-      $nav.toggleClass('product-detail-scroll', $(this).scrollTop() > $nav.height());
+      if ($(this).scrollTop() > $nav.height() && $(this).scrollTop() < ($nav.height() + $detail.height())) {
+        $detail.toggleClass('product-detail-scroll', true);
+      } else {
+        $detail.toggleClass('product-detail-scroll', false);
+      }
+
     });
   }
 
