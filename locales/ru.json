@@ -1685,7 +1685,139 @@
           "total": "Общий"
         },
         "delivered": "Доставлено {{date}}",
-        "empty_state_order_source_description": "Здесь будут отображаться только заказы, размещенные на {{email}} ."
+        "empty_state_order_source_description": "Здесь будут отображаться только заказы, размещенные на {{email}} .",
+        "empty_state_subtitle": "Перейти в магазин, чтобы сделать заказ.",
+        "empty_state_title": "Заказов пока нет",
+        "empty_state_title_for_pending_orders": "Нет отложенных ордеров",
+        "estimated_shortform": "Стандартное восточное время. {{date}}",
+        "estimated_delivery": "Ориентировочная доставка {{date}}",
+        "one_images_accessibility_label": "Заказ включает {{lineItemName1}}",
+        "two_images_accessibility_label": "Заказ включает {{lineItemName1}} , {{lineItemName2}}",
+        "three_images_accessibility_label": "Заказ включает {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}}",
+        "four_images_accessibility_label": "Заказ включает {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} , {{lineItemName4}}",
+        "more_than_three_products_accessibility_label": "Заказ включает {{lineItemName1}} , {{lineItemName2}} и еще {{numberOfAdditionalProducts}} продуктов",
+        "more_than_four_products_accessibility_label": "Заказ включает {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} и еще {{numberOfAdditionalProducts}} продуктов",
+        "plus_more": "+ {{numberOfAdditionalProducts}}",
+        "plus_more_products": "+ {{numberOfAdditionalProducts}} товаров",
+        "carousel": {
+          "one_products_accessibility_label": "Заказ включает {{lineItemName1}} количество {{lineItemQuantity1}}",
+          "two_products_accessibility_label": "Заказ включает {{lineItemName1}} количество {{lineItemQuantity1}} , {{lineItemName2}} количество {{lineItemQuantity2}}",
+          "three_products_accessibility_label": "Заказ включает {{lineItemName1}} количество {{lineItemQuantity1}} , {{lineItemName2}} количество {{lineItemQuantity2}} , {{lineItemName3}} количество {{lineItemQuantity3}}",
+          "four_products_accessibility_label": "Заказ включает {{lineItemName1}} количество {{lineItemQuantity1}} , {{lineItemName2}} количество {{lineItemQuantity2}} , {{lineItemName3}} количество {{lineItemQuantity3}} , {{lineItemName4}} количество {{lineItemQuantity4}}",
+          "five_products_accessibility_label": "Заказ включает {{lineItemName1}} количество {{lineItemQuantity1}} , {{lineItemName2}} количество {{lineItemQuantity2}} , {{lineItemName3}} количество {{lineItemQuantity3}} , {{lineItemName4}} количество {{lineItemQuantity4}} , {{lineItemName5}} количество {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "Заказ включает {{lineItemName1}} количество {{lineItemQuantity1}} , {{lineItemName2}} количество {{lineItemQuantity2}} , {{lineItemName3}} количество {{lineItemQuantity3}} , {{lineItemName4}} количество {{lineItemQuantity4}} , {{lineItemName5}} количество {{lineItemQuantity5}} , {{lineItemName6}} количество {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "Заказ включает {{lineItemName1}} количество {{lineItemQuantity1}} , {{lineItemName2}} количество {{lineItemQuantity2}} , {{lineItemName3}} количество {{lineItemQuantity3}} , {{lineItemName4}} количество {{lineItemQuantity4}} , {{lineItemName5}} количество {{lineItemQuantity5}} , {{lineItemName6}} количество {{lineItemQuantity6}} и больше",
+          "view_order_details": "Посмотреть детали заказа",
+          "previous": "Предыдущий",
+          "next": "Следующий"
+        },
+        "items": {
+          "one": "{{count}} элемент",
+          "other": "{{count}} элементов"
+        },
+        "list_view": "Показать список",
+        "no_filtered_results_description": "Удалите или настройте фильтры, чтобы увидеть свои заказы",
+        "no_filtered_results_title": "Нет отфильтрованных результатов",
+        "order_link": "Посмотреть заказ {{name}}",
+        "order_number": "Заказать {{name}}",
+        "orders_title": "Подтвержденный",
+        "pagination": {
+          "nav_accessibility_label": "Кнопки навигации по заказам",
+          "next": "Следующий",
+          "next_accessibility_label": "Следующие заказы",
+          "previous": "Пред.",
+          "previous_accessibility_label": "Предыдущие заказы",
+          "load_more": "Загрузи больше",
+          "load_more_accessibility_label": "Загрузить больше заказов"
+        },
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "Посмотреть заказ для деталей",
+            "estimated_delivery": "Ориентировочная доставка {{date}}",
+            "last_updated": "Последнее обновление {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "Стандартное восточное время. доставка {{date}}"
+          }
+        },
+        "payment_status": {
+          "list_view": {
+            "overdue": "Оплата актуально",
+            "due": "Срок оплаты {{date}}",
+            "due_today": "Оплата сегодня",
+            "due_without_date": "Заплатить до",
+            "due_on_fulfillment": "Оплата по факту выполнения",
+            "pay_to_confirm": "Оплатить, чтобы подтвердить",
+            "payment_not_due": "Оплата еще не наступила"
+          },
+          "table_view": {
+            "overdue": "Просрочено",
+            "due": "Срок {{date}}",
+            "due_today": "Сегодня",
+            "paid": "Оплаченный",
+            "due_without_date": "Должный",
+            "due_on_fulfillment": "При исполнении",
+            "pay_to_confirm": "Оплатить, чтобы подтвердить",
+            "payment_not_due": "еще не срок"
+          }
+        },
+        "sort_by": "Сортировать по: {{option}}",
+        "sort_hide_options_accessibility_label": "Скрыть параметры сортировки для подтвержденных заказов.",
+        "sort_show_options_accessibility_label": "Показать параметры сортировки для подтвержденных заказов.",
+        "sort_currently_sorted_by_accessibility_label": "В настоящее время отсортировано по: {{option}}",
+        "sort_title": "Сортировать",
+        "sort": {
+          "date": {
+            "newest": "От нового к старому",
+            "oldest": "От старых к новым"
+          },
+          "location": {
+            "ascending": "Местоположение (Аризона)",
+            "descending": "Местоположение (Южная Америка)"
+          },
+          "order_number": {
+            "ascending": "Номер заказа (снизу вверх)",
+            "descending": "Номер заказа (по убыванию)"
+          },
+          "order_total": {
+            "ascending": "Сумма заказа (от меньших к большим)",
+            "descending": "Сумма заказа (от возрастания к убыванию)"
+          }
+        },
+        "table_view": "Показать таблицу",
+        "show_order_actions_accessibility_label": "Показать действия по заказу для заказа {{name}}"
+      },
+      "order_status": {
+        "attempted_delivery_label": "Попытка доставки",
+        "attempted_delivery_description": "Попытка доставки не удалась.",
+        "confirmed_description": "Мы получили ваш заказ.",
+        "on_its_way_description": "Эта посылка уже в пути.",
+        "out_for_delivery_description": "Эта посылка готова к доставке.",
+        "preparing_for_shipping_label": "Подготовка к отправке",
+        "preparing_for_shipping_description": "Эти товары готовятся к отправке.",
+        "ready_for_pickup_label": "Готов",
+        "ready_for_pickup_description": "Эти предметы готовы к выдаче. Пожалуйста, принесите подтверждение заказа, когда будете забирать свой заказ.",
+        "ready_for_pickup_location": "Ваш заказ готов к выдаче на месте",
+        "picked_up_label": "Взял",
+        "picked_up_description": "Эти предметы были подобраны.",
+        "canceled_description": "Ваш заказ был отменен {{date}} .",
+        "canceled_label": "Отменено",
+        "canceled_title": "Ваш заказ был отменен",
+        "come_back": "Вернитесь на эту страницу для получения обновлений о статусе вашего отправления.",
+        "company_tracking_number": "{{company}} номер для отслеживания:",
+        "confirmed_label": "Подтвержденный",
+        "confirmed_title": "Ваш заказ подтвержден",
+        "confirmed_description_pickup": "Когда ваш заказ будет готов к выдаче, вы получите электронное письмо.",
+        "confirmed_description_digital": "Когда ваш заказ будет готов, вы получите электронное письмо.",
+        "confirmed_description_gift_card_text": "Когда ваш заказ будет готов, вы получите сообщение.",
+        "delivered_description": "Эта посылка доставлена.",
+        "delivered_label": "Доставленный",
+        "delivered_title": "Ваша посылка доставлена",
+        "delivered_description_digital": "Ваш заказ выполнен.",
+        "delivered_description_gift_card": {
+          "one": "Подарочная карта была отправлена ​​по электронной почте.",
+          "other": "Подарочные карты были отправлены по электронной почте."
+        }
       }
     },
     "payment_methods": {
