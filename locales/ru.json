@@ -475,7 +475,90 @@
         "track": {
           "status_html": "<b>Сообщается об отслеживании открытия электронной почты.<\/b>",
           "visibility": "Мы будем видеть только то, открывали ли вы электронное письмо, как часть общего коэффициента открытия электронной почты."
+        },
+        "updated_policy": {
+          "status_html": "<b>Сообщается об отслеживании открытия электронной почты.<\/b>",
+          "visibility": "Мы обновили нашу политику и теперь отслеживаем открытие электронных писем. Расценки по электронной почте будут сообщаться анонимно. Мы будем видеть только то, открывали ли вы электронное письмо как часть общего коэффициента открытия электронной почты.",
+          "opt_out_html": "Если вы не хотите делиться этой информацией, вы можете <a style=\"text-decoration:underline;\" href=\"%{link}\">отказаться от подписки.<\/a>"
         }
+      }
+    },
+    "filters": {
+      "availability": {
+        "label": "Доступность",
+        "value": {
+          "in_stock": "В наличии",
+          "out_of_stock": "Распродано"
+        }
+      },
+      "vendor": {
+        "label": "Бренд"
+      },
+      "price": {
+        "label": "Цена"
+      },
+      "product_type": {
+        "label": "Тип продукта"
+      },
+      "boolean": {
+        "true_label": "Да",
+        "false_label": "Нет"
+      },
+      "tags": {
+        "label": "Дополнительные фильтры"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "Актуальность",
+        "price_ascending": "Цена, от низкой к высокой",
+        "price_descending": "Цена, от высокой к низкой"
+      }
+    },
+    "page_titles": {
+      "blog_or_article_with_error": "Ошибка – %{название}",
+      "products": "Продукты",
+      "shopping_cart": "Ваша Корзина",
+      "account": "Счет",
+      "create_account": "Зарегистрироваться",
+      "reset_account": "Сбросить учетную запись",
+      "addresses": "Адреса",
+      "order": "Заказать %{имя}",
+      "search": "Поиск",
+      "search_results": {
+        "one": "Поиск: %{count} результатов найдено для \"%{terms}\"",
+        "other": "Поиск: найдено %{count} результатов по запросу \"%{terms}\""
+      },
+      "collections": "Коллекции",
+      "not_found": "404 Не Найдено",
+      "challenge": "Испытание",
+      "checkpoint": "Контрольно-пропускной пункт"
+    },
+    "cart": {
+      "discounts_with_count": "Применено %{count} скидок"
+    },
+    "challenge": {
+      "message": "Чтобы продолжить, сообщите нам, что вы не робот.",
+      "error": "Ваш ответ неверен, попробуйте еще раз.",
+      "submit_button_text": "Представлять на рассмотрение"
+    },
+    "checkpoint": {
+      "message": "Решите капчу, чтобы продолжить",
+      "error": "Проверка капчи не удалась",
+      "submit_button_text": "Представлять на рассмотрение"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Обычно готов через 1 час",
+        "two_hours": "Обычно готов через 2 часа",
+        "four_hours": "Обычно готов через 4 часа",
+        "twenty_four_hours": "Обычно готов в течение 24 часов",
+        "two_to_four_days": "Обычно готов через 2-4 дня",
+        "five_or_more_days": "Обычно готов через 5+ дней",
+        "zero_to_two_hours": "Обычно готов через 2 часа",
+        "two_to_four_hours": "Обычно готов через 4 часа",
+        "immediately": "Готов забрать сейчас",
+        "next_day": "Готов забрать на следующий день"
       }
     }
   },
@@ -615,6 +698,87 @@
           }
         }
       }
+    },
+    "enable_javascript": "Чтобы просмотреть свою учетную запись, включите JavaScript в настройках браузера или войдите в систему с помощью другого браузера.",
+    "navigation_and_structure": {
+      "account_menu": {
+        "hide_accessibility_label": "Скрыть меню учетной записи",
+        "label": "Счет",
+        "show_accessibility_label": "Показать меню учетной записи",
+        "nav_accessibility_label": "Навигация по аккаунту",
+        "open_menu_accessibility_label": "Навигация по открытой учетной записи",
+        "close_menu_accessibility_label": "Закрыть навигацию по учетной записи",
+        "loading_message": "Загрузка навигации по учетной записи"
+      },
+      "action_menu_accessibility_label": "Больше действий",
+      "close_menu_accessibility_label": "Закрыть основную навигацию",
+      "contact_email_subject": "Контакт из интернет-магазина {{shopName}}",
+      "contact_link": "Связаться с нами",
+      "delete_confirmation": {
+        "cancel": "Отмена",
+        "delete": "Удалить"
+      },
+      "dismiss_toast": "Увольнять",
+      "document_title": "{{sectionName}} – {{shopName}} – Аккаунт",
+      "go_to_store_link": "Иди в магазин",
+      "loading_message": "Загрузка",
+      "log_out_link": "Выйти",
+      "logout_overlay_label": "Выйти из системы...",
+      "nav_label_accessibility_label": "Основная навигация",
+      "navigation_accessibility_message": "Вы перешли к {{sectionName}}",
+      "open_menu_accessibility_label": "Открыть главную навигацию",
+      "orders_link_label": "Заказы",
+      "shop_logo_accessibility_label": "Логотип {{shopName}}",
+      "subscriptions_link_label": "Подписки"
+    },
+    "account_information": {
+      "loading_accessibility_message": "Загрузка информации об учетной записи",
+      "loading_finished_accessibility_message": "Информация об учетной записи загружена",
+      "profile_card": {
+        "cancel": "Отмена",
+        "cancel_accessibility_label": "Отменить редактирование профиля",
+        "edit": "Редактировать",
+        "edit_accessibility_label": "Редактировать профиль",
+        "email_help_text": "Электронная почта, используемая для входа, не может быть изменена",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "no_name_provided_accessibility_label": "Имя не добавлено",
+        "phone_number_help_text": "Номер телефона, используемый для входа, не может быть изменен",
+        "save": "Сохранять",
+        "save_accessibility_label": "Сохранить профиль",
+        "title": "Профиль"
+      },
+      "profile_update_confirmation_message": "Профиль обновлен",
+      "title": "Информация Об Учетной Записи",
+      "people": {
+        "pagination": {
+          "load_more": "Загрузи больше",
+          "load_more_accessibility_label": "Загрузить больше людей",
+          "loading_accessibility_label": "Загрузка людей"
+        }
+      },
+      "add_button": "Добавлять"
+    },
+    "orders": {
+      "list_layout_accessibility_label": "Варианты макета",
+      "list_title": "Заказы",
+      "order_list": {
+        "column_headers": {
+          "order": "Заказ",
+          "items": "Предметы",
+          "total": "Общий"
+        },
+        "delivered": "Доставлено {{date}}",
+        "empty_state_order_source_description": "Здесь будут отображаться только заказы, размещенные на {{email}} ."
+      }
     }
+  },
+  "product_detail": {
+    "title": "Страница продукта",
+    "review": "Обзор",
+    "detail": "Описание"
+  },
+  "quickview": {
+    "total": "Общий"
   }
 }
