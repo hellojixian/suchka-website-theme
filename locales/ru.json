@@ -559,14 +559,20 @@
         "attempted_delivery_description_html": "Была предпринята попытка доставить ваш заказ, но она не удалась. %{contact_us}, чтобы организовать еще одну попытку доставки.",
         "attempted_delivery_local_title": "Пропущенная доставка",
         "attempted_delivery_local_description_html": "Мы не смогли доставить ваш заказ. Чтобы запланировать другую доставку, %{contact_us}.",
-        "delivered": "Доставленный"
+        "delivered": "Доставленный",
+        "gift_card_resend_failure": {
+          "one": "Возникла проблема с повторной отправкой подарочной карты. Попробуйте еще раз или свяжитесь с нами.",
+          "other": "Возникла проблема с повторной отправкой подарочных карт. Попробуйте еще раз или свяжитесь с нами."
+        }
       },
       "customer_payment_methods": {
         "update_card_button_label": "Обновление карты",
         "delete_customer_mandate": {
           "generic_error": "При обработке вашего запроса возникла проблема.",
           "success_message": "Ваш способ оплаты успешно удален"
-        }
+        },
+        "page_title": "Способы оплаты",
+        "title": "Способы оплаты"
       },
       "throttle": {
         "too_many_attempts": {
@@ -1293,6 +1299,158 @@
             "other": "Эти товары будут удалены из вашей корзины, так как для вашего адреса нет доступных способов доставки."
           },
           "label": "Без доставки"
+        }
+      },
+      "review": {
+        "title": "Обзор",
+        "review_title": "Просмотреть заказ",
+        "checkout_as_guest": "Оформить заказ как гость",
+        "blocks": {
+          "contact_method_title": "Контакт",
+          "billing_address_title": "Выставление счетов",
+          "shipping_address_title": "Корабль",
+          "shipping_method_title": "Метод",
+          "payment_method_title": "Оплата",
+          "change_link_label": "Изменять",
+          "change_contact_method_link_label": "Изменить контактную информацию",
+          "change_billing_address_link_label": "Изменить платежный адрес",
+          "change_shipping_address_link_label": "Изменить адрес доставки",
+          "change_shipping_method_link_label": "Изменить способ доставки",
+          "change_payment_method_link_label": "Изменить способ оплаты",
+          "pick_up_in_store_shipping_method_html": "Забрать в магазине · %{location_name}",
+          "purchase_order_number_title": "номер заказа",
+          "change_purchase_order_number_label": "Изменить номер заказа",
+          "change_delivery_method_link_label": "Изменить способ доставки",
+          "no_address": "(без адреса)",
+          "no_purchase_order_number": "(без номера заказа)",
+          "due_after_order_reviewed_html": "Осуществляется после проверки заказа"
+        },
+        "block_title": "Проверьте свою информацию"
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Пишите мне с новостями и предложениями",
+        "post_accept_marketing_checkbox_label": "Вы подписаны на получение новостей и предложений по электронной почте",
+        "pending_accept_marketing_checkbox_label": "Проверьте свою электронную почту, чтобы подтвердить подписку на новости и предложения",
+        "accept_sms_checkbox_label": "Пишите мне с новостями и предложениями",
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "политика конфиденциальности",
+            "terms_of_service": "Условия использования",
+            "description_html": "Регистрируясь с помощью текстового сообщения, вы соглашаетесь получать повторяющиеся автоматические маркетинговые сообщения, включая напоминания о корзине, на указанный номер телефона. Согласие не является условием покупки. Ответить СТОП, чтобы отписаться. Ответить ПОМОЩЬ для помощи. Частота сообщений варьируется. Могут применяться тарифы на сообщения и данные. Ознакомьтесь с нашими %{privacy_policy_link} и %{terms_of_service_link}.",
+            "description_transactional_html": "Вы можете получать текстовые сообщения, связанные с подтверждением заказа и обновлениями доставки. Ответить СТОП, чтобы отписаться. Ответить ПОМОЩЬ для помощи. Частота сообщений варьируется. Могут применяться тарифы на сообщения и данные. Просмотрите наши %{privacy_policy_modal_link} и %{terms_of_service_modal_link}."
+          },
+          "mobile_phone_number": "номер мобильного телефона",
+          "get_offers_by_text": "Получайте предложения по тексту"
+        },
+        "unsubscribe": {
+          "title": "Вы отписались",
+          "description": "Вы больше не будете получать от нас напоминания о корзине."
+        },
+        "accept_shop_pay_marketing_checkbox_label": "Подпишитесь на новости и предложения этого магазина"
+      },
+      "shop_policies": {
+        "refund_policy": "Политика возврата",
+        "privacy_policy": "Политика конфиденциальности",
+        "terms_of_service": "Условия использования",
+        "legal_notice": "Официальное уведомление",
+        "shipping_policy": "Политика доставки",
+        "terms_of_sale": "Условия продажи",
+        "subscription_policy": "Политика подписки",
+        "purchase_options_policy": "Политика вариантов покупки",
+        "contact_information": "Контактная информация",
+        "purchase_options_cancellation_policy": "Политика отмены"
+      },
+      "mor_policies": {
+        "terms_and_conditions": "Условия и положения торговца записью",
+        "privacy_policy": "Политика конфиденциальности зарегистрированного продавца"
+      },
+      "markets": {
+        "invalid_market_manager_error": "Проверьте свою контактную информацию перед завершением платежа"
+      },
+      "notifications": {
+        "title": "Уведомления"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "Сумма к оплате заказа %{order_name}",
+        "changes_summary": {
+          "added": {
+            "one": "Добавлен",
+            "other": "%{count} добавлено"
+          },
+          "removed": "Удаленный",
+          "subtracted": "%{count} удалено"
+        },
+        "additional_payment_requested": "Требуется оплата %{total_outstanding}",
+        "checkout_review_and_pay": "Ваш заказ %{order_name} обновлен. Просмотрите эти изменения, а затем оплатите, чтобы подтвердить свой заказ.",
+        "order_updated_on": "Ваш заказ был обновлен %{last_edited_at}.",
+        "order_review_and_pay": "Ваш заказ обновлен. Просмотрите и оплатите, чтобы подтвердить свой заказ.",
+        "pay_now": "Заплатить сейчас"
+      },
+      "change_currency": {
+        "currency_button_label": "%{валюта} (%{currency_symbol})",
+        "credit_card_will_be_charged_html": "С вашей кредитной карты будет снято %{amount}",
+        "payment_total_label": "Сумма платежа",
+        "change_currency_link": "Изменить на %{currency_name}",
+        "card_provider_fx_charges_warning": "Ваш поставщик карт может взимать комиссию за транзакции %{currency_code}.",
+        "currency_not_supported_by_shop": "Выбранная валюта больше недоступна. Все цены теперь указаны в %{currency_code}."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Ваша корзина обновлена ​​с учетом страны доставки.",
+        "cart_and_currency_updated_based_on_country": "Ваша корзина и валюта были обновлены в соответствии с вашей страной доставки."
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "Информация о вашей стране\/регионе обновлена. Введите адрес доставки, чтобы продолжить оформление заказа."
+      },
+      "tips": {
+        "title": "Добавить совет",
+        "description": "Поддержите команду %{shop_name}",
+        "presets_description": "Выберите процент чаевых",
+        "custom_label": "Пользовательский совет",
+        "add_tip": "Добавить совет",
+        "update_tip": "Совет по обновлению",
+        "message": "Спасибо, мы ценим это.",
+        "no_tip_label": "Никто"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "Купить %{product_name}",
+          "one": "Купите %{product_name} и %{count} другой товар",
+          "other": "Купите %{product_name} и %{count} другие товары"
+        }
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "one": "день",
+            "other": "%{count} дней"
+          },
+          "week": {
+            "one": "неделя",
+            "other": "%{count} недель"
+          },
+          "month": {
+            "one": "месяц",
+            "other": "%{count} месяцев"
+          },
+          "year": {
+            "one": "год",
+            "other": "%{count} лет"
+          }
+        },
+        "recurring_totals": "%{total_price} каждые %{интервал}",
+        "recurring_totals_with_initial_order_shipping_discount": "Первый платеж %{total_price_with_discount}, затем %{recurring_total}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "Первый платеж %{total_price}",
+            "other": "Первые %{count} платежей %{total_price} каждый"
+          },
+          "following_cycles": ", затем %{total_price} каждые %{интервал}"
+        },
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", затем %{count} оплата по %{total_price}",
+            "other": ", затем %{count} платежей по %{total_price} каждый"
+          }
         }
       }
     },
