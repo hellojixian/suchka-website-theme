@@ -1179,7 +1179,7 @@ jQuery(document).ready(function($) {
 
     $(document).scroll(function() {
       // console.log('sss',$(this).scrollTop())
-      if ($(this).scrollTop() > ($nav.height() + 150) && $(this).scrollTop() < ($nav.height() + ($frame.height() - window.height()))) {
+      if ($(this).scrollTop() > ($nav.height() + 150) && $(this).scrollTop() < ($nav.height() + ($frame.height() - $(window).height()))) {
         $detail.toggleClass('product-detail-scroll', true);
       } else {
         $detail.toggleClass('product-detail-scroll', false);
