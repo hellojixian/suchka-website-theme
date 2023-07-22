@@ -336,6 +336,180 @@
         "attempted_delivery_local_title": "Пропущенная доставка",
         "attempted_delivery_local_description_html": "Мы не смогли доставить ваш заказ. Чтобы запланировать другую доставку, %{contact_us}.",
         "delivered": "Доставленный"
+      },
+      "customer_payment_methods": {
+        "update_card_button_label": "Обновление карты",
+        "delete_customer_mandate": {
+          "generic_error": "При обработке вашего запроса возникла проблема.",
+          "success_message": "Ваш способ оплаты успешно удален"
+        }
+      },
+      "throttle": {
+        "too_many_attempts": {
+          "message": "Слишком много попыток",
+          "description": "Пожалуйста, повторите попытку через несколько минут"
+        },
+        "line_to_check_out": "Вы в очереди, чтобы проверить",
+        "cart_summary_heading": "Ваша корзина",
+        "merchandise": {
+          "available": "Доступный",
+          "sold_out": "Распроданный"
+        },
+        "inventory": {
+          "partial_inventory_banner": "Часть вашей корзины распродана и не будет доступна для покупки при оформлении заказа.",
+          "sold_out": {
+            "heading": "Ваша корзина распродана",
+            "storefront_body": "Вернитесь в магазин, чтобы продолжить покупки",
+            "no_storefront_body": "К сожалению, товар, который вы хотите приобрести, больше недоступен.",
+            "link": "Вернуться в магазин"
+          }
+        },
+        "title": "Очередь",
+        "time_to_checkout_title": "Время оформить заказ - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "Расчет примерного времени ожидания",
+          "less_than_one": "Расчетное время ожидания: менее минуты",
+          "one": "Расчетное время ожидания: {{count}} минута",
+          "other": "Расчетное время ожидания: {{count}} минут"
+        },
+        "last_checked": "(Последняя проверка: {{time}} )",
+        "footer": {
+          "heading": "Не обновляйте эту страницу, она обновится автоматически.",
+          "body": "Товары в вашей корзине не резервируются до тех пор, пока вы не завершите оформление заказа."
+        }
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "При обработке вашего запроса возникла проблема. Свяжитесь с владельцем магазина."
+      },
+      "no_address_location": {
+        "title": "Место без адреса",
+        "header": "У вас нет адреса доставки для этого места",
+        "message": "Свяжитесь с нами, чтобы добавить адрес этого места для завершения оформления заказа.",
+        "email_us_button_label": "Отправить нам письмо"
+      },
+      "order_errors": {
+        "creation_failure": "При создании вашего заказа возникла проблема. Попробуйте еще раз или свяжитесь с нами для получения более подробной информации.",
+        "network_failure": "Ваш заказ не может быть отправлен из-за сетевой ошибки. Проверьте подключение и повторите попытку."
+      },
+      "session_errors": {
+        "session_not_unique": "Возникла проблема с обработкой вашего заказа. Обновите эту страницу, чтобы вернуться в магазин.",
+        "session_already_finished": "Этот заказ уже отправлен. Вы можете вернуться в магазин, чтобы начать новый заказ."
+      },
+      "pickup_point": {
+        "location_is_currently_closed": "Закрыто",
+        "business_hours": "Часы работы",
+        "title": "Место сбора",
+        "or": "или",
+        "search_button": "Поиск",
+        "selector_tabs": "Селектор пункта самовывоза",
+        "selector_tab_map": "карта",
+        "selector_tab_list": "Список",
+        "could_not_resolve_address": "Не удалось найти ваш адрес. Попробуйте еще раз или используйте другой адрес",
+        "no_pickup_points_near_you": "Пункты самовывоза рядом с выбранным адресом не найдены",
+        "no_pickup_points_near_location": "Пункты самовывоза рядом с вашим местоположением не найдены",
+        "no_pickup_points_found": "Пункты самовывоза не найдены",
+        "paginator": {
+          "next_accessibility_label": "Следущая страница",
+          "previous_accessibility_label": "Предыдущая страница",
+          "header": {
+            "one": "Показано %{first} - %{last} из %{count} точки",
+            "other": "Показано %{first} - %{last} из %{count} баллов"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{pickup_point_index} из %{count} точек",
+            "other": "%{pickup_point_index} из %{count} баллов"
+          },
+          "selected_page": {
+            "one": "%{first} - %{last} из %{count} точки",
+            "other": "%{first} - %{last} из %{count} баллов"
+          }
+        },
+        "number_of_pickup_points_near_location": {
+          "one": "%{count} пункт выдачи рядом с вашим местоположением",
+          "other": "%{count} пунктов выдачи рядом с вашим местоположением"
+        },
+        "change": "Изменять",
+        "waiting_on_pickup_point_location_notice": "Поиск пунктов самовывоза...",
+        "geolocation": {
+          "shared_location_button": "Использовать мое местоположение",
+          "errors": {
+            "unsuported_by_browser": "Получение геолокации не поддерживается вашим браузером. Попробуйте еще раз или используйте другой браузер.",
+            "permission_not_allowed": "Разрешить делиться своим местоположением.",
+            "permission_denied": "Не удалось получить ваше местоположение. Попробуйте еще раз."
+          }
+        }
+      },
+      "error_page": {
+        "terminal": {
+          "title": "Возникла проблема с нашей кассой",
+          "message": "Обновите эту страницу или повторите попытку через несколько минут.",
+          "action": {
+            "cta": "Обновить страницу"
+          },
+          "request_id": "Идентификатор запроса: {{requestId}}"
+        }
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "Вернуться в корзину",
+        "return_to_cart_to_update_quantities": "%{return_to_cart_link_text}, чтобы обновить количество",
+        "subscription_changed": "Одна из ваших подписок изменилась.",
+        "company_location_changed": "Ваша корзина была обновлена. Проверьте свой заказ перед его отправкой.",
+        "company_location_changed_product_removed": "Ваша корзина обновлена, так как некоторые товары недоступны по этому адресу. Проверьте свой заказ перед его отправкой.",
+        "violations_title": "{{violation}} отсутствует или недействительно",
+        "individual_violations_title": {
+          "DeliveryViolations": "Адрес доставки",
+          "PaymentViolations": "Адрес для выставления счета",
+          "OtherViolations": "запросить информацию"
+        },
+        "all_violations_content": "Позвоните или {{emailLink}} нам, чтобы обновить эту информацию и оформить заказ:",
+        "all_violations_email_link": "электронная почта",
+        "editable_shipping_address_violations_message_title": "Добавьте эту информацию, чтобы завершить заказ:",
+        "editable_shipping_address_violations_message_footer": "Чтобы навсегда обновить адрес этого местоположения, {{emailLink}} .",
+        "editable_shipping_address_violations_email_link": "связаться с нами"
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "Обзор",
+          "link_label": "Условия и положения {{partnerDisplayName}}"
+        }
+      },
+      "online_store_chat": {
+        "title": "Вопросы? Поболтай с нами"
+      },
+      "local_pickup": {
+        "location_information": {
+          "one": "Рядом с %{address} находится магазин %{count} со складом",
+          "other": "Рядом с %{address} находится %{count} магазинов со складом"
+        },
+        "toggle_location": "Изменить мое местоположение",
+        "or": "ИЛИ",
+        "cancel": "Отмена",
+        "your_location": "ваше местоположение",
+        "search_button": "Найти магазины",
+        "no_stores_found": "Магазины не найдены",
+        "could_not_resolve_address": "Не удалось найти ваш адрес. Попробуйте еще раз или используйте другой адрес",
+        "paginator": {
+          "accessibility_label": "Разбивка на страницы местного самовывоза",
+          "previous": "Предыдущая страница",
+          "next": "Следущая страница",
+          "label": {
+            "one": "%{first} - %{last} из %{count} магазина",
+            "other": "%{first} - %{last} из %{count} магазинов"
+          }
+        },
+        "reveal_more_label": {
+          "one": "Показать еще %{count} места",
+          "other": "Показать еще %{count} местоположений"
+        }
+      },
+      "captcha": {
+        "title": "Пройдите CAPTCHA, чтобы продолжить",
+        "errors": {
+          "not_solved": "Пройдите CAPTCHA, чтобы продолжить"
+        }
+      },
+      "discount_errors": {
+        "generic_error": "Ваш заказ не может быть обработан, потому что ваш код скидки больше не доступен. Проверьте общую сумму заказа и повторите попытку."
       }
     },
     "errors": {
@@ -694,9 +868,69 @@
           },
           "draft": {
             "description": "Реквизиты для оплаты определяются при подтверждении заказа.",
-            "title": "Оплата еще не наступила"
-          }
+            "title": "Оплата еще не наступила",
+            "in_review": {
+              "description": "Реквизиты для оплаты определяются при подтверждении заказа.",
+              "title": "Оплата еще не наступила"
+            },
+            "submitted": {
+              "description": "Отправьте платеж, чтобы подтвердить этот заказ.",
+              "title": "Оплатить, чтобы подтвердить"
+            }
+          },
+          "paid": {
+            "title": "Оплаченный",
+            "title_with_date": "Оплачено {{date}}",
+            "description": "Ваш заказ полностью оплачен."
+          },
+          "refund": {
+            "title": "Возврат",
+            "title_with_date": "Возврат средств {{date}}",
+            "description_full_refund": "Вы получили полный возврат средств за этот заказ.",
+            "description_single_refund": "Вы получили частичное возмещение за этот заказ.",
+            "description_multiple_refunds": "Вы получили частичное возмещение за этот заказ."
+          },
+          "canceled": {
+            "title": "Платеж отменен",
+            "description": "Вам не будет предъявлено обвинение."
+          },
+          "pay_now": "Заплатить сейчас",
+          "pay_now_accessibility_label": "Оплатите сейчас заказ {{orderName}}",
+          "title": "Статус платежа"
+        },
+        "order_timeline": {
+          "expand_events_label": "Показать детали",
+          "expand_events_accessibility_label": "Показать подробности проекта заказа",
+          "hide_events_label": "Скрыть детали",
+          "hide_events_accessibility_label": "Скрыть сведения о черновике заказа"
+        },
+        "subtitle": "Отправлено {{date}}",
+        "title": "Заказать {{name}}"
+      },
+      "payment_methods": {
+        "payment_delete": {
+          "description_without_replacement": "Этот способ оплаты больше не будет доступен для будущих покупок в этом месте.",
+          "description_with_replacement": "Удаление этого способа оплаты повлияет на предварительно авторизованные платежи для этого местоположения. Замените его альтернативным способом оплаты, чтобы продолжать получать будущие заказы."
+        },
+        "payment_details": {
+          "order_label": "Заказать {{name}}",
+          "draft_label": "Проект заказа {{name}}"
         }
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "Добавить номер заказа",
+        "add_modal_title": "Добавить номер заказа",
+        "cancel": "Отмена",
+        "close_modal_accessibility_label": "Модальное окно закрытия номера заказа",
+        "discard": "Отказаться",
+        "discard_changes_modal_title": "Отменить изменения?",
+        "edit_accessibility_label": "Изменить номер заказа",
+        "edit_modal_title": "Изменить номер заказа",
+        "empty_state": "Нет номера заказа",
+        "modal_po_number_input_label": "номер заказа",
+        "modal_po_number_input_max_length_error": "Номера заказов на покупку содержат не более {{maxLength}} символов.",
+        "save": "Сохранять",
+        "title": "Заказ № {{poNumber}}"
       }
     },
     "enable_javascript": "Чтобы просмотреть свою учетную запись, включите JavaScript в настройках браузера или войдите в систему с помощью другого браузера.",
@@ -770,6 +1004,104 @@
         },
         "delivered": "Доставлено {{date}}",
         "empty_state_order_source_description": "Здесь будут отображаться только заказы, размещенные на {{email}} ."
+      }
+    },
+    "errors": {
+      "address_deletion_error": {
+        "description": "Не удалось удалить этот адрес. Попробуйте еще раз или обновите страницу."
+      },
+      "addresses_loading_issue": {
+        "description": "Ошибка подключения. Проверьте подключение к Интернету и повторите попытку."
+      },
+      "banner_title": {
+        "one": "Ошибка {{count}}",
+        "other": "Есть {{count}} ошибок"
+      },
+      "failed_address_creation": {
+        "description": "Не удалось создать адрес. Попробуйте обновить эту страницу или проверьте подключение к Интернету."
+      },
+      "failed_address_update": {
+        "description": "Не удалось обновить ваш адрес. Попробуйте обновить эту страницу или проверьте подключение к Интернету."
+      },
+      "load_orders_error": {
+        "title": "Не удалось загрузить заказы",
+        "description": "Повторите попытку или вернитесь позже.",
+        "retry_button": "Повторить попытку"
+      },
+      "load_paypal_error": {
+        "description": "Возникла проблема с загрузкой PayPal. Пожалуйста, попробуйте еще раз."
+      },
+      "no_access": {
+        "back_to_authentication_link": "Войдите в другую учетную запись",
+        "description": "Вы не зарегистрированы как клиент B2B в {{shopName}}",
+        "title": "Нет доступа"
+      },
+      "no_access_to_locations": {
+        "description": "У вас нет доступа ни к одному местоположению"
+      },
+      "not_found": {
+        "description": "Проверьте URL-адрес или повторите попытку через несколько минут.",
+        "title": "Проблема с загрузкой этой страницы"
+      },
+      "order_not_found": {
+        "description": "Этот заказ не существует, или у вас нет прав для его просмотра.",
+        "title": "Заказ не найден"
+      },
+      "profile_update_error": {
+        "description": "Не удалось обновить ваш профиль. Попробуйте обновить эту страницу или проверьте подключение к Интернету."
+      },
+      "retry_action_label": "Повторить попытку"
+    },
+    "payment_methods": {
+      "title": "Способы оплаты",
+      "add_payment_method_button": "Добавить способ оплаты",
+      "add_payment_method_banner": "Добавьте способ оплаты для более быстрого оформления заказа или предварительно авторизованных услуг.",
+      "no_payment_methods_banner": "Способы оплаты не добавлены",
+      "edit_payment_method_button_accessibility_label": "Изменить {{paymentMethodName}} оканчивающийся на {{lastDigits}}",
+      "edit_payment_method_brand_button_accessibility_label": "Изменить {{paymentMethodName}}",
+      "delete_payment_method_button": "Удалить",
+      "delete_payment_method_button_accessibility_label": "Удалить {{paymentMethodName}}",
+      "back_button": "Назад",
+      "back_button_accessibility_label": "Вернуться к {{paymentMethodStepTitle}}",
+      "generic_card": "Карта",
+      "expiration_warning_button_accessibility_label": "Показать предупреждение об истечении срока действия для {{paymentMethodName}} оканчивающегося на {{lastDigits}}",
+      "expires_soon": "Срок действия этой карты скоро истечет",
+      "expired": "Эта карта просрочена",
+      "card_update_consent": "Этот способ оплаты будет сохранен для будущих покупок.",
+      "digital_wallet_title": "Цифровой кошелек",
+      "credit_or_debit_card_title": "Кредитная или дебетовая карта",
+      "google_pay": {
+        "loading": "Загрузка Google Pay",
+        "errors": {
+          "generic": "Возникла проблема с Google Pay. Попробуйте еще раз или используйте другой способ оплаты.",
+          "missing_billing_address": "Google Pay требует платежный адрес. Пожалуйста, добавьте один в свой аккаунт."
+        }
+      },
+      "apple_pay": {
+        "loading": "Загрузка ApplePay",
+        "errors": {
+          "generic": "Возникла проблема с Apple Pay. Попробуйте еще раз или используйте другой способ оплаты.",
+          "not_available": "Apple Pay недоступен на этом устройстве.",
+          "missing_billing_address": "Apple Pay требует платежный адрес. Пожалуйста, добавьте один в свой аккаунт."
+        }
+      },
+      "payment_details": {
+        "title": "Сведения о способе оплаты",
+        "credit_card_details_accessibility_label": "заканчивается на {{lastDigits}}",
+        "billing_title": "Адрес для выставления счета",
+        "card_info_title": "Информация о карте",
+        "payment_method_expiring_on": "Срок действия истекает {{expiryDate}}",
+        "payment_method_expired_on": "Срок действия истек {{expiryDate}}",
+        "preauthorized_payments": "Предавторизованные платежи",
+        "close_payment_modal": "Закрывать",
+        "close_payment_modal_accessibility_label": "Закрыть модальное окно сведений о способе оплаты",
+        "payment_method_not_found_error": "Не удалось найти способ оплаты",
+        "payment_details_loading": "Загрузка сведений о способе оплаты",
+        "pre_authorized_payments": "Предавторизованные платежи",
+        "total_amount_of_subscription_line_items_left": "и ещё {{total}}",
+        "total_amount_of_subscription_line_items_left_accessibility_label": "Всего элементов {{totalItems}} , отображено элементов {{totalItemsToDisplay}} .",
+        "next_payment_due": "Срок следующего платежа {{dueDateInMonthDayYear}}",
+        "edit_payment_method_button": "Редактировать"
       }
     }
   },
