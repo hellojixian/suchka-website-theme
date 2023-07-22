@@ -797,7 +797,73 @@
             "other": "%{количество} элементов"
           }
         },
-        "alternative_payment_currency_total": "Списано как %{amount_due}"
+        "alternative_payment_currency_total": "Списано как %{amount_due}",
+        "title": "Итог заказа",
+        "group_title_label": "Часть \"%{group_title}\"",
+        "order_name_label": "Заказать %{имя}",
+        "shopping_cart_label": "Корзина",
+        "discount_title": "Скидка",
+        "discount_label": "Код скидки",
+        "discount_placeholder": "Код скидки",
+        "gift_card_title": "Подарочная карта",
+        "gift_card_label": "Подарочная карта",
+        "gift_card_placeholder": "Подарочная карта",
+        "gift_card_and_discount_title": "Подарочная карта или код скидки",
+        "gift_card_and_discount_label": "Подарочная карта или код скидки",
+        "gift_card_and_discount_placeholder": "Подарочная карта или код скидки",
+        "remove_gift_card_label": "Очистить подарочную карту",
+        "remove_discount_label": "Удалить скидку",
+        "free_shipping_discount_label": "Бесплатная доставка",
+        "applied_free_shipping_discount_label": "Применяемый",
+        "apply_discount_button_label": "Применять",
+        "applied_discount_message": "%{amount} от общей стоимости заказа",
+        "discount_has_been_applied": "Скидка применена",
+        "discount_has_been_removed": "Скидка удалена",
+        "gift_card_has_been_applied": "Подарочная карта применена",
+        "gift_card_has_been_removed": "Подарочная карта удалена",
+        "gift_card_subscriptions_notice": "Подарочные карты будут применяться только к вашему первому платежу.",
+        "discount_already_applied": "К данному заказу применена скидка. Вы не можете добавить еще одну скидку.",
+        "cart_does_not_meet_discount_requirements_notice": "Код скидки <strong style=\"text-transform:uppercase\">%{code}<\/strong> недействителен для товаров в вашей корзине",
+        "discount_requires_customer_notice": "Введите информацию о доставке, чтобы применить код скидки <strong style=\"text-transform:uppercase\">%{code}<\/strong>",
+        "customer_does_not_meet_discount_requirements_notice": "Код скидки <strong style=\"text-transform:uppercase\">%{code}<\/strong> сейчас недоступен для вас",
+        "shipping_information_does_not_meet_discount_requirements_notice": "Код скидки <strong style=\"text-transform:uppercase\">%{code}<\/strong> недоступен для вашего адреса доставки",
+        "customer_already_used_once_per_customer_discount_notice": "Код скидки <strong style=\"text-transform:uppercase\">%{code}<\/strong> уже использован",
+        "subtotal_label": "Промежуточный итог",
+        "shipping_label": "Перевозки",
+        "pickup_label": "Подобрать",
+        "no_pickup_location": "Самовывоз для этого заказа недоступен. Выберите другой способ доставки.",
+        "tip_label": "Кончик",
+        "calculating_shipping": "Расчет…",
+        "calculating": "Расчет…",
+        "shipping_default_value": "Рассчитывается на следующем шаге",
+        "shipping_pending_message": "Пока недоступно",
+        "shipping_policy_link": "Стоимость доставки",
+        "taxes_label": "Налоги",
+        "estimated_taxes_label": "Расчетные налоги",
+        "information_estimated_taxes_label": "Налоги (оценка)",
+        "estimated_taxes_finalization_tooltip_content": "Окончательный налог и общая сумма будут подтверждены по электронной почте или в текстовом сообщении после размещения заказа.",
+        "order_total_label": "Весь заказ",
+        "total_label": "Общий",
+        "total_outstanding_label": "Сумма к оплате",
+        "partial_total_label": "Общий",
+        "free_total_label": "Бесплатно",
+        "paid_label": "Оплаченный",
+        "payment_due_label": "Заплатить до",
+        "vat_label_html": "Включая %{amount} налогов",
+        "discount_and_gift_card_savings_notice": "После %{discount_amount} в скидках и %{gift_card_amount} в подарочных картах",
+        "discount_savings_notice": "После %{discount_amount} скидки",
+        "gift_card_savings_notice": "После %{gift_card_amount} в подарочных картах",
+        "cost_table_title": "Сводка затрат",
+        "description_label": "Описание",
+        "price_label": "Цена",
+        "quantity_label": "Количество",
+        "product_change_label": "Изменять",
+        "product_image_label": "Изображение продукта",
+        "scroll_order_summary": "Прокрутите, чтобы увидеть больше элементов",
+        "expand_order_summary": "Показать сводку заказа",
+        "collapse_order_summary": "Скрыть сводку заказа",
+        "original_price": "Изначальная цена",
+        "sale_price": "Цена продажи"
       },
       "wallets": {
         "return_to_store": "Вернуться в магазин",
@@ -958,7 +1024,41 @@
         "removed_from_cart_notice": "Удалено из корзины",
         "sold_out_label": "Распроданный",
         "reduced_label": "Уменьшенный",
-        "reduced_with_quantity_label": "Осталось только %{quantity_available}"
+        "reduced_with_quantity_label": "Осталось только %{quantity_available}",
+        "remove_from_cart_button_label": "Удалить из корзины",
+        "continue_shopping_button_label": "Продолжать",
+        "go_back_to_cart_button_label": "Вернуться в мою корзину",
+        "remove": "Удалять",
+        "empty_cart_label": "Ваша корзина пуста",
+        "quantity_update": {
+          "page_title": "Обновление количества",
+          "title": "Обновление количества",
+          "description": "Доступные количества для этих товаров изменились и обновляются в вашей корзине."
+        },
+        "unpurchasable_product": {
+          "title": "Недоступный для покупки продукт",
+          "header": "Некоторые товары были удалены из вашей корзины",
+          "message": "Эти товары недоступны для заказов B2B.",
+          "status_column_header": "Нет в наличии"
+        },
+        "unpurchasable_product_generic": {
+          "title": "Недоступный для покупки продукт",
+          "header": "Некоторые товары были удалены из вашей корзины",
+          "message": "Эти предметы недоступны.",
+          "status_column_header": "Нет в наличии"
+        },
+        "unshippable_product": {
+          "title": "Доставка недоступна",
+          "header": {
+            "one": "Доставка товара %{count} невозможна",
+            "other": "Доставка недоступна для %{count} товаров"
+          },
+          "message": {
+            "one": "Этот товар будет удален из вашей корзины, так как для вашего адреса нет доступных способов доставки.",
+            "other": "Эти товары будут удалены из вашей корзины, так как для вашего адреса нет доступных способов доставки."
+          },
+          "status_column_header": "Без доставки"
+        }
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "Текущий баланс %{сумма}",
@@ -1166,6 +1266,34 @@
         "payment_not_processed_title": "Ваш платеж не может быть обработан",
         "payment_not_processed_text": "Вам не было предъявлено обвинение. Вернитесь в корзину, чтобы завершить покупку.",
         "return_to_cart_button_label": "Вернуться в корзину"
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "Недоступный продукт",
+          "other": "Недоступные продукты"
+        },
+        "products_not_available": {
+          "one": "Этот товар будет удален из вашей корзины, так как он недоступен в вашей стране\/регионе.",
+          "other": "Эти продукты будут удалены из вашей корзины, так как они недоступны в вашей стране\/регионе."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "Этот продукт недоступен в вашей стране\/регионе.",
+          "other": "Эти продукты недоступны в вашей стране\/регионе."
+        },
+        "unavailable_label": "Недоступен"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "Доставка товара %{count} невозможна",
+            "other": "Доставка недоступна для %{count} товаров"
+          },
+          "message": {
+            "one": "Этот товар будет удален из вашей корзины, так как для вашего адреса нет доступных способов доставки.",
+            "other": "Эти товары будут удалены из вашей корзины, так как для вашего адреса нет доступных способов доставки."
+          },
+          "label": "Без доставки"
+        }
       }
     },
     "errors": {
