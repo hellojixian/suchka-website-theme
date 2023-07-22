@@ -2103,8 +2103,81 @@
         "delivered_description_gift_card": {
           "one": "Подарочная карта была отправлена ​​по электронной почте.",
           "other": "Подарочные карты были отправлены по электронной почте."
-        }
-      }
+        },
+        "delivered_description_gift_card_text": {
+          "one": "Подарочная карта была отправлена ​​смс.",
+          "other": "Подарочные карты были отправлены текстом."
+        },
+        "gift_card_label": {
+          "one": "Подарочная карта",
+          "other": "Подарочные карты"
+        },
+        "gift_card_resend": {
+          "one": "Отправить письмо повторно",
+          "other": "Отправить письмо повторно"
+        },
+        "gift_card_resend_text": {
+          "one": "Отправить текст повторно",
+          "other": "Отправить текст повторно"
+        },
+        "gift_resend_success": {
+          "one": "Подарочная карта повторно",
+          "other": "Подарочные карты повторно"
+        },
+        "gift_resend_failure": {
+          "one": "Возникла проблема с повторной отправкой подарочной карты. Попробуйте еще раз или свяжитесь с нами.",
+          "other": "Возникла проблема с повторной отправкой подарочных карт. Попробуйте еще раз или свяжитесь с нами."
+        },
+        "gift_card_resend_description": {
+          "one": "Если оно не было получено, отправьте письмо повторно или",
+          "other": "Если они не были получены, отправьте письмо повторно или"
+        },
+        "gift_card_resend_description_text": {
+          "one": "Если он не был получен, отправьте текст повторно или",
+          "other": "Если они не были получены, перешлите тексты или"
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "Подарочная карта будет отправлена ​​отдельным письмом.",
+          "other": "Каждая подарочная карта будет отправлена ​​отдельным письмом."
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "Подарочная карта будет отправлена ​​отдельным текстом.",
+          "other": "Каждая подарочная карта будет отправлена ​​отдельным текстом."
+        },
+        "estimated_delivery": "Ориентировочная доставка {{date}}",
+        "in_review_description": "Мы сообщим вам, если нам понадобится дополнительная информация или когда ваш заказ будет подтвержден.",
+        "in_review_label": "В обзоре",
+        "in_review_title": "Ваш заказ находится на рассмотрении",
+        "last_updated": "Последнее обновление {{date}}",
+        "multiple_shipments_label": "Несколько поставок",
+        "no_tracking_number": "У этой посылки нет номера для отслеживания.",
+        "on_its_way_label": "В пути",
+        "on_its_way_title": "Ваша посылка в пути",
+        "out_for_delivery_label": "На доставке",
+        "out_for_delivery_title": "Ваша посылка готова к доставке",
+        "resume_tracking": "Возобновить отслеживание",
+        "submitted_label": "Поданный",
+        "submitted_description": "Проверьте детали заказа и оплаты.",
+        "track_shipment": "Отследить доставку",
+        "request_return": "Запросить возврат",
+        "view_order_for_details": "Посмотреть заказ для деталей"
+      },
+      "status_mark_as_delivered": "Отметить как доставленное",
+      "status_title": "Статус заказа",
+      "buy_again": "Купить снова",
+      "buy_again_accessibility_label": "Купить снова для заказа {{orderId}}",
+      "manage": "Управлять",
+      "manage_accessiblity_label": "Управление заказом {{orderId}}",
+      "group_title_label": "Часть: {{groupTitle}}",
+      "havent_received_your_delivery": "Не получили посылку?",
+      "didnt_pick_up_order": "Не забрали заказ?",
+      "if_you_didnt_receive_this": "Если вы не получили это,",
+      "if_not_received": {
+        "one": "Если он не был получен,",
+        "other": "Если они не были получены,"
+      },
+      "let_us_know": "Дайте нам знать",
+      "contact_us": "связаться с нами."
     },
     "payment_methods": {
       "payment_details": {
@@ -2276,7 +2349,72 @@
       "login_to_view_all_order_details": "Войдите, чтобы просмотреть все детали заказа.",
       "log_in": "Авторизоваться",
       "logged_in_account_no_permission_to_order": "Вы вошли как {{email}} . У этой учетной записи нет разрешения на управление этим заказом.",
-      "log_in_to_a_different_account": "Войдите в другую учетную запись"
+      "log_in_to_a_different_account": "Войдите в другую учетную запись",
+      "shipment_timeline": {
+        "expand_events_label": "Показать детали",
+        "expand_events_accessibility_label": "Показать детали доставки заказа",
+        "hide_events_label": "Скрыть детали",
+        "hide_events_accessibility_label": "Скрыть детали доставки заказа"
+      },
+      "addresses_section_title": "Выставление счетов и доставка",
+      "order_details": "Информация для заказа",
+      "order_details_skeleton_accessibility_label": "Войдите, чтобы просмотреть все детали заказа.",
+      "billing_address": "Адрес для выставления счета",
+      "card_ending_with": "заканчивается на {{lastDigits}}",
+      "contact": "Контакт",
+      "contact_information": "Контактная информация",
+      "company": "Компания",
+      "fully_refunded_label": "ВОЗВРАТ",
+      "group_title_label": "Часть: {{groupTitle}}",
+      "discount": "Скидка",
+      "hide_items": "Скрыть элементы",
+      "loading": "Загрузка сведений о заказе",
+      "loading_finished_accessibility_message": "Детали заказа загружены",
+      "location": "Расположение",
+      "image_gallery": {
+        "next": "Показать следующие элементы",
+        "previous": "Показать предыдущие элементы"
+      },
+      "mobile_summary_toggle_button": {
+        "open": "Показать сводку заказа",
+        "closed": "Скрыть сводку заказа"
+      },
+      "no_data": "Никто",
+      "no_data_provided_accessibility_label": "{{fieldName}} пусто",
+      "not_applicable": "Н\/Д",
+      "paid_amount": "Оплаченный",
+      "partially_refunded_label": "ЧАСТИЧНО ВОЗВРАЩЕНО",
+      "payment": {
+        "status_in_review": "Оплата после проверки",
+        "status_unpaid": "Срок оплаты {{date}}",
+        "title": "Оплата",
+        "card_payment_details": "заканчивается на {{lastDigits}} - {{formattedTransactionAmount}}",
+        "gift_card_payment_details": "заканчивается на {{lastDigits}} - {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "Оплата в рассрочку через ShopPay.",
+          "view_schedule": "Посмотреть расписание"
+        },
+        "manual_payment_methods": {
+          "money_order": "Денежный перевод - {{formattedTransactionAmount}}",
+          "cash_on_delivery": "Оплата наложенным платежом (COD) – {{formattedTransactionAmount}}",
+          "bank_deposit": "Банковский депозит – {{formattedTransactionAmount}}"
+        }
+      },
+      "paid_with_shop_pay_installments_card": {
+        "paid_with_shop_pay_installments": "Оплачивается с помощью Shop Pay в рассрочку",
+        "description": "Будьте в курсе графика платежей с помощью напоминаний в приложении «Магазин».",
+        "payment_reminders_button": "Получайте напоминания об оплате",
+        "desktop_qr_code_content": {
+          "title": "Поиск напоминаний",
+          "description": "Получайте напоминания о своих рассрочках в магазине."
+        }
+      },
+      "refunded_amount": "Возмещено",
+      "request_return_failed": "При обработке вашего запроса возникла проблема. Пожалуйста, попробуйте еще раз.",
+      "remaining_amount": "Оставшийся",
+      "marketing_section_title": "Новости и предложения",
+      "marketing_description": "Вы будете получать маркетинговые электронные письма. Вы можете отписаться в любое время.",
+      "marketing_checkbox_label": "Пишите мне с новостями и предложениями"
     },
     "addresses": {
       "add_button": "Добавить адрес",
