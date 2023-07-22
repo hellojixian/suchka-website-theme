@@ -1177,12 +1177,12 @@ jQuery(document).ready(function($) {
     $detail.removeClass('product-detail-scroll');
 
     $(document).scroll(function() {
+      console.log($(this).scrollTop())
       if ($(this).scrollTop() > $nav.height() && $(this).scrollTop() < ($nav.height() + $detail.height())) {
         $detail.toggleClass('product-detail-scroll', true);
       } else {
         $detail.toggleClass('product-detail-scroll', false);
       }
-
     });
   }
 
