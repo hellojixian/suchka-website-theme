@@ -319,7 +319,135 @@
         },
         "alternative_payment_currency_total_notice": "Примечание: с вас будет снята сумма в размере %{amount_due}.",
         "waiting_on_taxes_message": "Если ваши налоги не будут рассчитаны в течение следующих нескольких секунд, обновите страницу.",
-        "waiting_on_taxes_notice": "Расчет налогов"
+        "waiting_on_taxes_notice": "Расчет налогов",
+        "offsite_gateway_redirect_hint_multi_currency_html": "Всего %{gateway_label} %{total_shop_price}",
+        "receiver_payment_experience_hint": "После оформления заказа вы получите реквизиты для оплаты. Внесите платеж в Multibanco или онлайн в течение %{due_days} дней.",
+        "billing_address_title": "Адрес для выставления счета",
+        "billing_address_description": "Выберите адрес, соответствующий вашей карте или способу оплаты.",
+        "billing_address_description_no_shipping_address": "Введите адрес, соответствующий вашей карте или способу оплаты.",
+        "no_js_credit_card_fields_redirect_hint": "Вы будете перенаправлены для добавления платежной информации.",
+        "card_fields_container_prefix": "Полевой контейнер для:",
+        "card_fields_unavailable_html": {
+          "one": "Оплата кредитными и дебетовыми картами в данный момент недоступна.<br> <a href=\"%{current_url}\">Обновите эту страницу<\/a> или повторите попытку позже.",
+          "other": "Оплата кредитными и дебетовыми картами в данный момент недоступна.<br> <a href=\"%{current_url}\">Обновите эту страницу<\/a> или попробуйте другой способ оплаты."
+        },
+        "card_fields_processing_error": "Возникла проблема с обработкой платежа. Попробуйте обновить эту страницу или проверьте подключение к Интернету.",
+        "technical_error": "Платежи не могут быть обработаны прямо сейчас из-за технических проблем. Повторите попытку через несколько минут.",
+        "no_method_error": "В данный момент этот магазин не может принимать платежи.",
+        "not_configured_error": "В данный момент этот магазин не может принимать платежи.",
+        "missing_credit_card_error": "Введите данные карты для завершения платежа",
+        "billing_address_not_supported_for_payment_method_error": "Этот способ оплаты недоступен для вашего платежного адреса и валюты. Пожалуйста, попробуйте другой способ оплаты.",
+        "generic_incorrect_card_info": "Не удалось проверить ваши платежные реквизиты. Проверьте данные карты и повторите попытку.",
+        "sofort_label": "Софорт банковский перевод",
+        "shop_pay_installments_label": "Оплата в рассрочку",
+        "paypal_modal": {
+          "order_contains_subscriptions": "Подписка",
+          "order_contains_fixed_selling_plans": "Итого может не включать налоги, доставку, отложенные платежи и некоторые скидки. Продолжайте оплачивать сумму, причитающуюся сегодня."
+        },
+        "klarna_label": "Кларна",
+        "klarna_pay_later_label": "Платите позже с Klarna",
+        "klarna_pay_now_label": "Оплатить сейчас с Klarna",
+        "bancontact_label": "Банкконтакт",
+        "giropay_label": "Жиропай",
+        "multibanco_label": "Мультибанко",
+        "klarna_slice_it_label": "Финансы с Klarna",
+        "ideal_label": "ИДЕАЛЬНО",
+        "bank_picker_label": "Банк",
+        "purchase_options_card_update_agreement_label_html": "Обновляя способ оплаты, вы разрешаете платежи за повторяющиеся или отложенные покупки в соответствии с <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">политикой отмены<\/a> этого магазина.",
+        "subscription_card_update_agreement_label": "Изменение способа оплаты обновит вашу подписку и будущие регулярные платежи.",
+        "subscription_agreement_label": "Я понимаю, что соглашаюсь на подписку. Он будет продлеваться по указанной цене и с указанной периодичностью, пока не закончится или не будет %{отменен}.",
+        "subscription_agreement_cancelled": "отменен",
+        "subscription_agreement_label_html": "Я понимаю, что соглашаюсь на подписку. Он будет продлеваться с указанной ценой и периодичностью, пока не закончится или не будет\n <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">отменен<\/a> .\n",
+        "purchase_options_agreement_label": "Я понимаю, что один или несколько товаров в моей корзине являются отложенными или повторяющимися покупками. Продолжая, я соглашаюсь с %{cancellation_policy_label} и разрешаю вам взимать плату с моего способа оплаты в соответствии с ценами, периодичностью и датами, указанными на этой странице, до тех пор, пока мой заказ не будет выполнен или я не отменю его, если это разрешено.",
+        "purchase_options_agreement_label_html": "Я понимаю, что один или несколько товаров в моей корзине являются отложенными или повторяющимися покупками. Продолжая, я соглашаюсь с\n <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">политика отмены<\/a>\n и уполномочиваю вас взимать плату с моего метода оплаты по ценам, частоте и датам, указанным на этой странице, до моего\n заказ выполнен или я отменяю, если это разрешено.\n",
+        "change_currency_section_description": "Выберите вариант валюты",
+        "no_real_orders_dev_store": "Этот магазин не может принимать реальные заказы или реальные платежи.",
+        "waiting_on_payment_methods": "Получение доступных способов оплаты...",
+        "apple_pay_payment_error": "Ваш платеж не может быть завершен. Попробуйте еще раз или используйте другой способ оплаты.",
+        "taxes_not_included": "Налоги не включены",
+        "no_taxes_banner_content": "Налоги с этого заказа взиматься не будут. После того, как вы получили платеж, налоги больше не могут быть добавлены.",
+        "paypal": {
+          "connect": "Нажмите, чтобы подключить свою учетную запись PayPal"
+        },
+        "apple": {
+          "connect": "Нажмите, чтобы подключить свою учетную запись Apple Pay",
+          "not_available": "Apple Pay недоступен в этом браузере. Чтобы подключить учетную запись Apple Pay, вам потребуется использовать Safari на устройстве Apple."
+        },
+        "google": {
+          "connect": "Нажмите, чтобы подключиться к своей учетной записи Google Pay",
+          "error_authorizing": "Ошибка авторизации платежа"
+        },
+        "account_connected": "Аккаунт подключен.",
+        "mor_disclaimer_html": "Нажав кнопку ниже и завершив свой заказ, вы соглашаетесь приобрести товар(ы) у Global-e в качестве зарегистрированного продавца.\n для этой транзакции на <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">Условиях<\/a> Global-e\n и <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">Политика конфиденциальности<\/a> . Global-e — международная\n поставщик услуг по выполнению заказов в %{shop_name}\n",
+        "pending_payment": {
+          "due_notice": "Ваш платеж в размере %{amount_due} должен быть произведен %{due_date}.",
+          "multibanco": {
+            "instruction_html": "Произведите платеж в Multibanco или онлайн, используя указанные ниже реквизиты. Если у вас есть вопросы или вы хотите обновить детали платежа, %{contact_us}.",
+            "entity": "Сущность",
+            "reference": "Ссылка",
+            "amount": "Количество",
+            "find_nearest_atm": "Найти ближайший банкомат"
+          }
+        },
+        "update_payment_method": "Обновить способ оплаты",
+        "order_covered_by_store_credit_notice": "Ваш заказ покрывается кредитом вашего магазина.",
+        "order_covered_by_redeemables_notice": "Ваш заказ покрыт.",
+        "store_credit": {
+          "label": "Кредит магазина",
+          "apply_label": "Применить кредит магазина"
+        },
+        "clear": "Прозрачный",
+        "billing_must_match_shipping_notice": "Платежный адрес вашего способа оплаты должен совпадать с адресом доставки.",
+        "same_billing_address_checkbox_label": "Использовать адрес доставки в качестве платежного адреса",
+        "location_billing_address_label": "Платежный адрес местоположения",
+        "fact_billing_address_label": "Адрес для выставления счета",
+        "location_shipping_address_label": "Адрес доставки",
+        "no_working_method_error": "В данный момент этот магазин не может принимать платежи. Обновите эту страницу или вернитесь позже.",
+        "brand_not_available": "Этот магазин не принимает {{brand}} . Пожалуйста, используйте другую карту для оплаты.",
+        "shipping_rate_updated": "Доступные способы доставки были обновлены. Подтвердите свой выбор перед выездом.",
+        "billing_address_invalid_phone": "Обновите номер телефона в платежном адресе для {{label}} {{last_digits}} , чтобы продолжить.",
+        "billing_address_invalid_phone_no_card": "Обновите номер телефона в платежном адресе, чтобы продолжить.",
+        "preview_not_available": {
+          "title": "Предварительный просмотр недоступен",
+          "content": "Не волнуйтесь, эта экспресс-касса работает для ваших клиентов.",
+          "button": "Хорошо"
+        },
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "Введите действительную дату выпуска",
+              "issue_number": "Введите действительный номер выпуска"
+            },
+            "invalid": {
+              "verification_value": "Введите действительный CVV или код безопасности"
+            }
+          }
+        },
+        "simulated_checkout": "Предварительный просмотр скоро",
+        "vaulting_agreement_label": "Сохраните мою платежную информацию в %{company} для более быстрой оплаты.",
+        "business_customer_vaulting_payment_label": "Сохраните эту карту для будущих покупок в этом месте. Я разрешаю %{company} использовать этот способ оплаты для будущих покупок в этом месте. Любой контакт, назначенный этому местоположению, имеет право использовать эту карту.",
+        "purchase_options_and_vaulting_agreement_label": "Один или несколько товаров в вашей корзине являются отложенными или повторяющимися покупками. Продолжая оплату, вы соглашаетесь с тем, что с вашего способа оплаты будет автоматически взиматься плата по цене и периодичности, указанным на этой странице, до тех пор, пока он не закончится или вы не отмените его. Все отмены регулируются %{cancellation_policy_label}.",
+        "purchase_options_cancellation_policy_label": "политика отмены",
+        "use_different_credit_card_label": "Использовать другую карту",
+        "saved_credit_card": "Ваша сохраненная кредитная карта",
+        "saved_credit_card_info": "Последние четыре цифры",
+        "saved_credit_cards_modal": {
+          "view_all_label": "Посмотреть все сохраненные карты",
+          "done": "Сделанный",
+          "cancel": "Отмена"
+        },
+        "expired_cards_info": {
+          "one": "Существует %{count} карта с истекшим сроком действия, которую вы можете просмотреть и изменить в своем аккаунте.",
+          "other": "Карт с истекшим сроком действия: %{count}, которые вы можете просматривать и редактировать в своем аккаунте."
+        },
+        "local_payment_method_receiver_notice": "После оформления заказа вы получите реквизиты для оплаты. Внесите платеж в банкомате или онлайн в течение {{dueDays}} дней.",
+        "order_edit_banner_title": "Требуется оплата {{amount_owed}}",
+        "order_edit_banner_subtitle": "Ваш заказ {{order_number}} был обновлен. Просмотрите эти изменения, а затем оплатите, чтобы подтвердить свой заказ.",
+        "order_edit_banner_single_item_added": "Добавлен",
+        "order_edit_banner_multiple_items_added": "{{amount}} добавлено",
+        "order_edit_banner_single_item_removed": "Удаленный",
+        "order_edit_banner_multiple_items_removed": "{{amount}} удалено",
+        "order_edit_banner_single_item_returned": "Вернулся"
       },
       "payment_gateway": {
         "debit_card_label": "Дебетовая карточка",
