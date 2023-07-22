@@ -337,6 +337,284 @@
         "attempted_delivery_local_description_html": "Мы не смогли доставить ваш заказ. Чтобы запланировать другую доставку, %{contact_us}.",
         "delivered": "Доставленный"
       }
+    },
+    "errors": {
+      "invalid_state_in_country": "недопустимое состояние в %{country}",
+      "invalid_region_in_country": "недопустимый регион в %{country}",
+      "less_than_or_equal_to": "должно быть меньше или равно %{count}",
+      "not_supported": "не поддерживается",
+      "full_name_required": "Введите имя и фамилию",
+      "invalid_for_card_type": "не действует",
+      "invalid_type": "извините, мы не принимаем карты этого типа",
+      "invalid_format": "формат недействителен",
+      "expired": "истек",
+      "invalid_start_date_or_issue_number_for_debit": "требуется действительная дата начала или номер выпуска",
+      "invalid_expiry_year": "недействительный год истечения срока действия",
+      "reset_password_html": "Этот адрес электронной почты уже связан с учетной записью. Если эта учетная запись принадлежит вам, вы можете <a href=\"\/account\/login#recover\">сбросить пароль<\/a>",
+      "verify_email": "Мы отправили электронное письмо на адрес %{customer_email}. Нажмите на ссылку, чтобы подтвердить свой адрес электронной почты.",
+      "product_not_available": "продукт не опубликован для этого клиента."
+    },
+    "notices": {
+      "customer": {
+        "password_reset_error": "Ошибка сброса пароля",
+        "no_account_found": "Учетная запись с таким адресом электронной почты не найдена.",
+        "invalid_credentials": "Неверный адрес электронной почты или пароль.",
+        "denylisted_reset_password": "Не удалось получить доступ к вашей учетной записи, поскольку текущий пароль не является безопасным. Вы получите электронное письмо для обновления пароля."
+      },
+      "address": {
+        "updated": "Адрес успешно обновлен.",
+        "error_updating": "Ошибка при обновлении адреса",
+        "created": "Адрес создан",
+        "error_creating": "Ошибка при создании адреса.",
+        "deleted": "Адрес успешно удален",
+        "error_deleting": "Ошибка удаления адреса."
+      },
+      "order": {
+        "not_available": "Этот заказ недоступен",
+        "financial_status": {
+          "authorized": "Авторизованный",
+          "pending": "В ожидании",
+          "paid": "Оплаченный",
+          "unpaid": "Неоплачиваемый",
+          "voided": "Аннулировано",
+          "partially_paid": "Частично оплачено",
+          "partially_refunded": "Частично возвращен",
+          "refunded": "Возмещено",
+          "expired": "Истекший"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Выполнено",
+          "complete": "Полный",
+          "partial": "Частичный",
+          "unfulfilled": "невыполненный",
+          "restocked": "Пополнение"
+        },
+        "transaction_status": {
+          "success": "Успех",
+          "pending": "В ожидании",
+          "failure": "Отказ",
+          "error": "Ошибка"
+        },
+        "cancel_reason": {
+          "declined": "Платеж отклонен",
+          "inventory": "Элементы недоступны",
+          "fraud": "Мошеннический заказ",
+          "customer": "Клиент изменил\/отменил заказ",
+          "staff": "Ошибка персонала",
+          "other": "Другой"
+        },
+        "cash_on_delivery": "Наложенный платеж (COD)"
+      },
+      "cart": {
+        "only_n_items_available": "В корзину можно добавить только %{count} %{name}.",
+        "too_many_items_in_cart": "Вы не можете добавить больше %{name} в корзину.",
+        "less_than_minimum": "Этот элемент имеет минимум %{min}.",
+        "more_than_maximum": "Этот элемент имеет максимум %{max}.",
+        "not_respect_step": "Вы можете добавить этот элемент только кратно %{шаг}.",
+        "all_items_in_cart": "Все %{count} %{name} в вашей корзине.",
+        "empty_update": "не могу обновить пустую корзину",
+        "missing_parameters": "нет допустимого идентификатора или параметра строки",
+        "generic_error": "Ошибка корзины",
+        "product_not_available": "Товар недоступен",
+        "too_many_line_items_error": "Ваша корзина не может содержать более %{max} товаров.",
+        "link_expired": "Срок действия ссылки истек",
+        "link_no_longer_exists": "Ссылка больше не существует.",
+        "stock_problems_html": "Один или несколько элементов больше не доступны. Мы предоставили <a href=\"%{link}\">обновленную корзину<\/a> .",
+        "changed": "Корзина изменена",
+        "items_changed": "Изменился один или несколько элементов.",
+        "product_sold_out": "Товар '%{name}' уже распродан.",
+        "variant_not_found": "Не могу найти вариант",
+        "variant_requires_selling_plan": "Вариант можно приобрести только с планом продаж.",
+        "selling_plan_not_available_for_company_locations": "Для заказов B2B доступна только разовая покупка",
+        "digital_product_not_available_for_company_locations": "Этот товар нельзя добавить в заказ B2B",
+        "selling_plan_not_applicable": "Невозможно применить план продаж к варианту",
+        "shipping_address_not_required": "Эта корзина не требует доставки",
+        "shipping_address_invalid": "Не удалось рассчитать стоимость доставки. Продолжайте оформлять заказ, чтобы выбрать тариф доставки, прежде чем завершить заказ.",
+        "bundle_requires_components": "Набор продуктов \"%{name}\" не может быть добавлен в корзину.",
+        "gift_card_with_components_not_supported": "Набор продуктов \"%{name}\" не может быть добавлен в корзину.",
+        "bundle_products_not_supported_for_b2b_draft": "Связанные товары нельзя добавлять в заказы B2B для этого местоположения."
+      },
+      "storefront": {
+        "invalid_password": "Неверный пароль, попробуйте еще раз."
+      },
+      "tags": {
+        "add_articles": "Ограничьте поиск статьями, также имеющими тег %{tag}",
+        "add_products": "Ограничить выбор продуктами, соответствующими тегу %{tag}",
+        "remove_articles": "Расширьте поиск статей без тега %{tag}",
+        "remove_products": "Удалить тег %{tag}"
+      }
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Благодарим вас за подписку на нашу рассылку.",
+        "disclaimer": "Вы можете отписаться в любое время.",
+        "unsubscribe": "Отписаться"
+      },
+      "unsubscribed": {
+        "confirmation": "Вы отписались от нашего списка рассылки.",
+        "disclaimer": "Вы больше не будете получать от нас маркетинговые новости. Вы можете подписаться снова в любое время.",
+        "preview": "Вы просматриваете, что увидят клиенты, когда откажутся от подписки."
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>Вы согласились на отслеживание открытия по электронной почте.<\/b>",
+          "visibility": "Расценки по электронной почте будут сообщаться анонимно. Мы увидим только то, открывали ли вы электронное письмо как часть агрегированного коэффициента открытия электронной почты.",
+          "opt_out_html": "Вы можете <a style=\"text-decoration:underline;\" href=\"%{link}\">отказаться<\/a> от отслеживания открытия электронной почты, если не хотите делиться этой информацией.",
+          "preview_bar": "Вы предварительно просматриваете, что увидят клиенты, когда они выберут отслеживание открытых писем."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>Вы отказались от отслеживания открытых писем.<\/b>",
+          "visibility": "Мы не увидим, открывали ли вы наши электронные письма.",
+          "opt_in_html": "<a style=\"text-decoration:underline;\" href=\"%{link}\">Включите<\/a> отслеживание открытия по электронной почте.",
+          "preview_bar": "Вы просматриваете, что увидят клиенты, когда они откажутся от отслеживания открытых писем."
+        },
+        "no_longer_track": {
+          "status_html": "<b>Мы больше не отслеживаем открытие писем.<\/b>",
+          "privacy_policy": "После отправки этого письма мы обновили нашу политику конфиденциальности и больше не отслеживаем открытия."
+        },
+        "track": {
+          "status_html": "<b>Сообщается об отслеживании открытия электронной почты.<\/b>",
+          "visibility": "Мы будем видеть только то, открывали ли вы электронное письмо, как часть общего коэффициента открытия электронной почты."
+        }
+      }
+    }
+  },
+  "customer_accounts": {
+    "address_form": {
+      "loading_add_form_accessibility_message": "Загрузка новой адресной формы",
+      "loading_edit_form_accessibility_message": "Загрузка формы редактирования адреса",
+      "loading_form_accessibility_message": "Загрузка адресной формы",
+      "loading_finished_accessibility_message": "Адресная форма загружена",
+      "save": "Сохранять",
+      "save_accessibility_label": "Сохранить адрес {{address}}",
+      "section_title_accessibility_label": "Добавить адрес",
+      "update_success_notification": "Адрес обновлен"
+    },
+    "B2B": {
+      "account_information": {
+        "company_card_name_label": "Название компании",
+        "company_card_section_accessibility_label": "Компания"
+      },
+      "locations": {
+        "contact_email": "Электронная почта",
+        "contact_list_title": "Люди",
+        "contact_name": "Имя",
+        "contact_permissions": "Разрешения",
+        "contact_phone_number": "Номер телефона",
+        "location_picker_label": "Название местоположения",
+        "location_picker_accessibility_label": "Название местоположения: {{locationName}}",
+        "net_payment_terms_description": "{{name}} : платежи должны быть произведены в течение {{numberOfDays}} дней.",
+        "own_role_contact_name": "Ты",
+        "pagination": {
+          "load_more": "Загрузи больше",
+          "load_more_accessibility_label": "Загрузить больше местоположений"
+        },
+        "payment_details_title": "Детали оплаты",
+        "payment_terms": "Условия оплаты",
+        "permissions_label": "Ваши разрешения",
+        "permissions_title": "Разрешения",
+        "section_title": "Расположение",
+        "shipping_address_required": "Добавьте адрес доставки в это место, чтобы начать размещать заказы.",
+        "staff_and_permissions_title": "Персонал и разрешения",
+        "tax_details_title": "Налоговая информация",
+        "tax_id": "ИНН",
+        "tax_exemptions": "Налоговые льготы",
+        "multiple_tax_exemptions": "Еще {{taxExemptionsCount}}",
+        "multiple_tax_exemptions_and": "и",
+        "tax_exemptions_modal_close": "Закрывать",
+        "taxes_none": "Никто",
+        "tax_exemption_not_applicable": "Н\/Д",
+        "tax_exemptions_modal_button_accessibility_label": "Посмотреть все налоговые льготы"
+      },
+      "location_selection": {
+        "continue_to_store": "Продолжать хранить",
+        "description": "Если в вашей корзине уже есть товары, изменение местоположения может повлиять на цены и количество в корзине.",
+        "list_accessibility_label": "Список локаций",
+        "list_item_without_address_accessibility_label": "{{name}} : нет адреса",
+        "list_loading_accessibility_message": "Загрузка списка локаций",
+        "list_loading_address_accessibility_message": "Загрузка адреса для {{locationName}}",
+        "list_loading_finished_accessibility_message": "Список локаций загружен",
+        "loading_store_accessibility_message": "Собираюсь в магазин",
+        "no_location_title": "Только личные заказы",
+        "no_location_description": "У вас больше нет разрешения размещать заказы для {{company}} . Вы по-прежнему можете размещать персональные заказы.",
+        "no_locations_found": "Местоположений не найдено",
+        "search": "Поиск местоположения",
+        "search_location_title": "Выберите место",
+        "selection_cancel_button": "Отмена",
+        "selection_confirmation_button": "Выберите местоположение",
+        "title": "Для какого места вы покупаете?",
+        "clear_search": "Очистить поиск",
+        "try_new_search": "Попробуйте новый поиск"
+      },
+      "addresses": {
+        "add_billing_address_button": "Добавить платежный адрес",
+        "add_billing_address_section_accessibility_label": "Добавить платежный адрес",
+        "add_shipping_address_button": "Добавить адрес доставки",
+        "add_shipping_address_section_accessibility_label": "Добавить адрес доставки",
+        "billing_address_card_title": "Адрес для выставления счета",
+        "cancel_adding_billing_address_accessibility_label": "Отменить добавление платежного адреса",
+        "cancel_adding_shipping_address_accessibility_label": "Отменить добавление адреса доставки",
+        "save_new_billing_address_accessibility_label": "Сохранить платежный адрес",
+        "save_new_shipping_address_accessibility_label": "Сохранить адрес доставки",
+        "shipping_address_card_title": "Адрес доставки"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "Скрыть все",
+          "show_all": "Показать все",
+          "hide_all_accessibility_label": "Скрыть все заказы на просмотре",
+          "show_all_accessibility_label": "Показать все заказы в обзоре",
+          "show_all_orders_in_review": "Показать все заказы в обзоре",
+          "show_less_orders_in_review": "Показать меньше заказов в обзоре",
+          "title": "В ожидании",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "У вас нет отложенных заказов",
+            "pending_orders": {
+              "one": "У вас есть {{count}} отложенный заказ",
+              "other": "У вас есть {{count}} отложенных заказов"
+            },
+            "more_than_pagination_length": "У вас более {{count}} отложенных ордеров"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{count}} +",
+          "pagination": {
+            "nav_accessibility_label": "Кнопки навигации по заказам в обзоре"
+          }
+        },
+        "order_list_column_headers_location": "Расположение",
+        "order_list_column_headers_contact": "Контакт",
+        "removed_company_contact_tooltip": "Удалено из компании"
+      },
+      "draft_order_details": {
+        "draft_order_subtitle": "Подтверждено {{date}} из заказа {{draftOrderName}}",
+        "loading": "Загрузка сведений о заказе",
+        "loading_finished_accessibility_message": "Детали заказа загружены",
+        "payment_status": {
+          "pending": {
+            "banner_overdue": {
+              "one": "Ваш платеж просрочен на {{count}} день",
+              "other": "Ваш платеж просрочен на {{count}} дн."
+            },
+            "banner_due": {
+              "one": "Ваш платеж подлежит оплате через {{count}} день",
+              "other": "Платеж должен быть произведен через {{count}} дн."
+            },
+            "banner_due_today": "Ваш платеж должен быть произведен сегодня",
+            "title": "Заплатить до",
+            "title_with_date": "Срок оплаты {{date}}",
+            "title_due_on_receipt": "Оплата еще не наступила",
+            "title_due_on_fulfillment": "Оплата по факту выполнения",
+            "description_overdue": "Ваш платеж просрочен.",
+            "description_partially_paid": "Этот заказ был частично оплачен. У вас есть остаток.",
+            "description_authorized": "Платежный метод будет списан в установленный срок, или вы можете заплатить сейчас.",
+            "description_due_on_receipt": "Когда наступит срок оплаты, вы получите счет.",
+            "description_due_on_fulfillment": "Оплата производится после того, как все позиции в этом заказе будут выполнены."
+          },
+          "draft": {
+            "description": "Реквизиты для оплаты определяются при подтверждении заказа.",
+            "title": "Оплата еще не наступила"
+          }
+        }
+      }
     }
   }
 }
