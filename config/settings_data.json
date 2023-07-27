@@ -4181,7 +4181,15 @@
       "1576743369289",
       "1576924335516",
       "1576924352374"
-    ]
+    ],
+    "blocks": {
+      "8154336783611098045": {
+        "type": "shopify:\/\/apps\/izyrent\/blocks\/izyrent\/cda4a37a-6d4d-4f3d-b8e5-c19d5c367c6a",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Home 1": {
