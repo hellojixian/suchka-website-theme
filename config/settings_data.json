@@ -311,7 +311,7 @@
     "content_colum_fv5_4": "Get updates by subscribe our weekly newsletter",
     "icon_mail_fv5": "icon-mail",
     "enable_fv5_bottom": true,
-    "fv5_bottom_copyright": "<p class=\"text-copyright mb-0\">©2023 <a href=\"http:\/\/suchka.me\" target=\"_blank\">Suchka LLC, UA<\/a> .All rights reserved<\/p>",
+    "fv5_bottom_copyright": "<p class=\"mb-0\" style=\"margin: 10px auto;\"><a href=\"https:\/\/suchka.me\/pages\/test\" style=\"color: blue;\">test page<\/a> <\/p>\n<p class=\"text-copyright mb-0\">©2023 <a href=\"http:\/\/suchka.me\" target=\"_blank\">Suchka LLC, UA<\/a> .All rights reserved<\/p>",
     "fv5_bottom_payment_img": "shopify:\/\/shop_images\/payment-logo_b97fa7c6-41dd-415e-b90f-359330bef12e.png",
     "po_style": "po_swatchs",
     "show_new_label": true,
@@ -3288,6 +3288,9 @@
     "sections": {
       "footer": {
         "type": "footer",
+        "custom_css": [
+
+        ],
         "settings": {
           "select_fts": "footer_v5"
         }
@@ -3701,7 +3704,6 @@
       },
       "1566027923019": {
         "type": "section-slideshow-v1",
-        "disabled": true,
         "blocks": {
           "1566027923019-0": {
             "type": "slideshow",
@@ -3736,6 +3738,7 @@
           "1566027923019-0",
           "1566027923019-1"
         ],
+        "disabled": true,
         "settings": {
           "margin_top": "",
           "margin_bottom": ""
@@ -3800,7 +3803,6 @@
       },
       "1576726456424": {
         "type": "section-slideshow-v3",
-        "disabled": true,
         "blocks": {
           "1576726456424-0": {
             "type": "slideshow",
@@ -3837,6 +3839,7 @@
           "1576726456424-0",
           "1576726456424-1"
         ],
+        "disabled": true,
         "settings": {
           "margin_top": "",
           "margin_bottom": ""
@@ -3907,7 +3910,6 @@
       },
       "1576739241224": {
         "type": "section-slideshow-v2",
-        "disabled": true,
         "blocks": {
           "1576739241224-0": {
             "type": "slideshow",
@@ -3944,6 +3946,7 @@
           "1576739241224-0",
           "1576739241224-1"
         ],
+        "disabled": true,
         "settings": {
           "margin_top": "",
           "margin_bottom": ""
@@ -3951,7 +3954,6 @@
       },
       "1576739379208": {
         "type": "section-product-v5",
-        "disabled": true,
         "blocks": {
           "1576739379208-0": {
             "type": "tab",
@@ -3989,6 +3991,7 @@
           "1576739379208-1",
           "1576739379208-2"
         ],
+        "disabled": true,
         "settings": {
           "style_select_product": "style_1",
           "margin_top": "",
@@ -3997,7 +4000,6 @@
       },
       "1576739401085": {
         "type": "section-service-v2",
-        "disabled": true,
         "blocks": {
           "1576739401085-0": {
             "type": "service",
@@ -4029,6 +4031,7 @@
           "1576739401085-1",
           "1576739401085-2"
         ],
+        "disabled": true,
         "settings": {
           "margin_top": "",
           "margin_bottom": ""
@@ -4072,7 +4075,6 @@
       },
       "1576743490165": {
         "type": "section-collection-v1",
-        "disabled": true,
         "blocks": {
           "1576744823637": {
             "type": "shopnow",
@@ -4091,6 +4093,7 @@
           "1576744823637",
           "1576744831797"
         ],
+        "disabled": true,
         "settings": {
           "block_title": "Spring winter 2019",
           "block_description": "Interior brings 41 years of interior designs experience right to your home or office. Our design professionals are equipped to help you determine the products and design that work best for our customers within the colors and lighting of your surroundings more than your expectation",
