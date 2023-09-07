@@ -311,7 +311,7 @@
     "content_colum_fv5_4": "Get updates by subscribe our weekly newsletter",
     "icon_mail_fv5": "icon-mail",
     "enable_fv5_bottom": true,
-    "fv5_bottom_copyright": "<p class=\"text-copyright mb-0\">©2023 <a href=\"http:\/\/suchka.me\" target=\"_blank\">Suchka LLC, UA<\/a> .All rights reserved<a href=\"https:\/\/suchka.me\/pages\/refund\" style=\"margin-left: 20px; color: blue;\">test page<\/a><\/p>",
+    "fv5_bottom_copyright": "<p class=\"text-copyright mb-0\">©2023 <a href=\"http:\/\/suchka.me\" target=\"_blank\">Suchka LLC, UA<\/a> .All rights reserved<a href=\"https:\/\/suchka.me\/pages\/refund\" style=\"margin-left: 20px; color: blue;\">refund<\/a><\/p>",
     "fv5_bottom_payment_img": "shopify:\/\/shop_images\/payment-logo_b97fa7c6-41dd-415e-b90f-359330bef12e.png",
     "po_style": "po_swatchs",
     "show_new_label": true,
