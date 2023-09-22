@@ -3426,7 +3426,7 @@
           "show_tag": true,
           "enable_description_tab": true,
           "destab_title": "Description",
-          "enable_addition_tab": true,
+          "enable_addition_tab": false,
           "addtab_title": "Additional Information",
           "addtab_content": "Proin faucibus arcu quis ante. In hac habitasse platea dictumst. Ut a nisl id ante tempus hendrerit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero.",
           "enable_review_tab": true,
