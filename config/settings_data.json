@@ -308,7 +308,7 @@
     "titlecolum_fv5_3": "Contact",
     "menu_fv5_3": "footer-v5-3",
     "titlecolum_fv5_4": "Help & Support",
-    "content_colum_fv5_4": "",
+    "content_colum_fv5_4": "<a href=\"https:\/\/www.google.com\" target=\"_blank\">Оплата і доставка<\/a>\nОбмін та повернення товару",
     "icon_mail_fv5": "icon-mail",
     "enable_fv5_bottom": true,
     "fv5_bottom_copyright": "<p> E-mail: <a href=\"mailto:team@suchka.me\"> team@suchka.me<\/a> <\/p>\n<p class=\"text-copyright mb-0\">©2023 <a href=\"http:\/\/suchka.me\" target=\"_blank\">Suchka LLC, UA<\/a> .All rights reserved<\/p>",
