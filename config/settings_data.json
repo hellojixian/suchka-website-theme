@@ -3644,9 +3644,8 @@
       "list-collection": {
         "type": "list-collection",
         "settings": {
-          "bg_breadcrumb": "shopify:\/\/shop_images\/bg-support.jpg",
+          "bg_breadcrumb": "shopify:\/\/shop_images\/2V8A6579.jpg",
           "enable_map": true,
-          "image_map": "",
           "link_map": "",
           "describe": "Contact us to find out more or how we can help you better.",
           "enable_info": true,
