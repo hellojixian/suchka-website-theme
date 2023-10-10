@@ -4062,6 +4062,7 @@
       },
       "1576743369289": {
         "type": "section-banner-v8",
+        "disabled": true,
         "settings": {
           "backgroud_image": "shopify:\/\/shop_images\/banner-1.jpg",
           "sub_title_banner": "New PRODUCT",
